@@ -1,0 +1,526 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="description" content="Overview of course material: FYS3150/4150 Computational Physics 1">
+
+<title>Overview of course material: FYS3150/4150 Computational Physics 1</title>
+
+
+<style type="text/css">
+/* blueish style */
+
+/* Color definitions:  http://www.december.com/html/spec/color0.html
+   CSS examples:       http://www.w3schools.com/css/css_examples.asp */
+
+body {
+  margin-top: 1.0em;
+  background-color: #ffffff;
+  font-family: Helvetica, Arial, FreeSans, san-serif;
+  color: #000000;
+}
+h1 { font-size: 1.8em; color: #1e36ce; }
+h2 { font-size: 1.6em; color: #1e36ce; }
+h3 { font-size: 1.4em; color: #1e36ce; }
+a { color: #1e36ce; text-decoration:none; }
+tt { font-family: "Courier New", Courier; }
+/* pre style removed because it will interfer with pygments */
+p { text-indent: 0px; }
+hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+p.caption { width: 80%; font-style: normal; text-align: left; }
+hr.figure { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+.alert-text-small   { font-size: 80%;  }
+.alert-text-large   { font-size: 130%; }
+.alert-text-normal  { font-size: 90%;  }
+.alert {
+  padding:8px 35px 8px 14px; margin-bottom:18px;
+  text-shadow:0 1px 0 rgba(255,255,255,0.5);
+  border:1px solid #bababa;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  color: #555;
+  background-color: #f8f8f8;
+  background-position: 10px 5px;
+  background-repeat: no-repeat;
+  background-size: 38px;
+  padding-left: 55px;
+  width: 75%;
+ }
+.alert-block {padding-top:14px; padding-bottom:14px}
+.alert-block > p, .alert-block > ul {margin-bottom:1em}
+.alert li {margin-top: 1em}
+.alert-block p+p {margin-top:5px}
+.alert-notice { background-image: url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_gray_notice.png); }
+.alert-summary  { background-image:url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_gray_summary.png); }
+.alert-warning { background-image: url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_gray_warning.png); }
+.alert-question {background-image:url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_gray_question.png); }
+
+div { text-align: justify; text-justify: inter-word; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [(' FYS4411/9411: Computational Physics notes ',
+               1,
+               None,
+               '___sec0'),
+              (' Introduction to computational physics ', 2, None, '___sec1'),
+              (' Introduction to programming ', 2, None, '___sec2'),
+              (' Matrices and linear algebra ', 2, None, '___sec3'),
+              (' Diagonalization and eigenvalue problems ',
+               2,
+               None,
+               '___sec4'),
+              (' Ordinary differential equations ', 2, None, '___sec5'),
+              (' Partial differential equations ', 2, None, '___sec6'),
+              (' Numerical integration ', 2, None, '___sec7'),
+              (' Introduction to Monte Carlo methods ', 2, None, '___sec8'),
+              (' Brownian motion and randow walks ', 2, None, '___sec9'),
+              (' Statistical physics ', 2, None, '___sec10'),
+              (' Quantum mechanical systems ', 2, None, '___sec11')]}
+end of tocinfo -->
+
+<body>
+
+    
+<!-- ------------------- main content ---------------------- -->
+
+<!-- Strange way of testing for vortex... -->
+
+
+<center><h1>Overview of course material: FYS3150/4150 Computational Physics 1</h1></center>  <!-- document title -->
+
+<p>
+<!-- author(s): Morten Hjorth-Jensen -->
+
+<center>
+<b>Morten Hjorth-Jensen</b>  (<tt>morten.hjorth-jensen at fys.uio.no</tt>)
+</center>
+
+
+<p>
+<!-- institution(s) -->
+
+<p>
+The teaching material is produced in various formats for printing and on-screen reading.
+
+<p>
+<!-- !split -->
+<div class="alert alert-block alert-warning alert-text-normal">
+<b>Warning.</b>
+<p>
+The PDF files are based on LaTeX and have seldom technical
+failures that cannot be easily corrected.
+The HTML-based files, called &quot;HTML&quot; and &quot;ipynb&quot; below, apply MathJax
+for rendering LaTeX formulas and sometimes this technology gives rise
+to unexpected failures (e.g.,
+incorrect rendering in a web page despite correct LaTeX syntax in the
+formula). Consult the corresponding PDF
+files if you find missing or incorrectly rendered
+formulas in HTML or ipython notebook files.
+</div>
+
+
+<h1 id="___sec0">FYS4411/9411: Computational Physics notes </h1>
+
+<h2 id="___sec1">Introduction to computational physics </h2>
+
+<ul>
+ <li> LaTeX PDF:</li>
+
+<ul>
+   <li> For printing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/pdf/intro-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/pdf/intro-print6.pdf" target="_self">6 pages per sheet</a></li>
+</ul>
+
+   <li> For screen viewing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/pdf/intro-beamer.pdf" target="_self">standard Beamer format</a></li>
+</ul>
+
+</ul>
+
+ <li> HTML:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/html/intro-solarized.html" target="_self">solarized style</a></li>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/html/intro-reveal.html" target="_self">reveal.js beige slide style</a></li>
+</ul>
+
+ <li> iPython notebook:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/ipynb/intro.ipynb" target="_self">ipynb file</a></li>
+</ul>
+
+</ul>
+
+<h2 id="___sec2">Introduction to programming </h2>
+
+<ul>
+ <li> LaTeX PDF:</li>
+
+<ul>
+   <li> For printing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/languages/pdf/languages-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/languages/pdf/languages-print6.pdf" target="_self">6 pages per sheet</a></li>
+</ul>
+
+   <li> For screen viewing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/languages/pdf/languages-beamer.pdf" target="_self">standard Beamer format</a></li>
+</ul>
+
+</ul>
+
+ <li> HTML:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/languages/html/languages-solarized.html" target="_self">solarized style</a></li>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/languages/html/languages-reveal.html" target="_self">reveal.js beige slide style</a></li>
+</ul>
+
+ <li> iPython notebook:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/languages/ipynb/languages.ipynb" target="_self">ipynb file</a></li>
+</ul>
+
+</ul>
+
+<h2 id="___sec3">Matrices and linear algebra </h2>
+
+<ul>
+ <li> LaTeX PDF:</li>
+
+<ul>
+   <li> For printing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/linalg/pdf/linalg-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/linalg/pdf/linalg-print6.pdf" target="_self">6 pages per sheet</a></li>
+</ul>
+
+   <li> For screen viewing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/linalg/pdf/linalg-beamer.pdf" target="_self">standard Beamer format</a></li>
+</ul>
+
+</ul>
+
+ <li> HTML:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/linalg/html/linalg-solarized.html" target="_self">solarized style</a></li>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/linalg/html/linalg-reveal.html" target="_self">reveal.js beige slide style</a></li>
+</ul>
+
+ <li> iPython notebook:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/linalg/ipynb/linalg.ipynb" target="_self">ipynb file</a></li>
+</ul>
+
+</ul>
+
+<h2 id="___sec4">Diagonalization and eigenvalue problems </h2>
+
+<ul>
+ <li> LaTeX PDF:</li>
+
+<ul>
+   <li> For printing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/eigvalues/pdf/eigvalues-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/eigvalues/pdf/eigvalues-print6.pdf" target="_self">6 pages per sheet</a></li>
+</ul>
+
+   <li> For screen viewing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/eigvalues/pdf/eigvalues-beamer.pdf" target="_self">standard Beamer format</a></li>
+</ul>
+
+</ul>
+
+ <li> HTML:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/eigvalues/html/eigvalues-solarized.html" target="_self">solarized style</a></li>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/eigvalues/html/eigvalues-reveal.html" target="_self">reveal.js beige slide style</a></li>
+</ul>
+
+ <li> iPython notebook:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/eigvalues/ipynb/eigvalues.ipynb" target="_self">ipynb file</a></li>
+</ul>
+
+</ul>
+
+<h2 id="___sec5">Ordinary differential equations </h2>
+
+<ul>
+ <li> LaTeX PDF:</li>
+
+<ul>
+   <li> For printing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/ode/pdf/ode-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/ode/pdf/ode-print6.pdf" target="_self">6 pages per sheet</a></li>
+</ul>
+
+   <li> For screen viewing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/ode/pdf/ode-beamer.pdf" target="_self">standard Beamer format</a></li>
+</ul>
+
+</ul>
+
+ <li> HTML:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/ode/html/ode-solarized.html" target="_self">solarized style</a></li>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/ode/html/ode-reveal.html" target="_self">reveal.js beige slide style</a></li>
+</ul>
+
+ <li> iPython notebook:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/ode/ipynb/ode.ipynb" target="_self">ipynb file</a></li>
+</ul>
+
+</ul>
+
+<h2 id="___sec6">Partial differential equations </h2>
+
+<ul>
+ <li> LaTeX PDF:</li>
+
+<ul>
+   <li> For printing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/pde/pdf/pde-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/pde/pdf/pde-print6.pdf" target="_self">6 pages per sheet</a></li>
+</ul>
+
+   <li> For screen viewing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/pde/pdf/pde-beamer.pdf" target="_self">standard Beamer format</a></li>
+</ul>
+
+</ul>
+
+ <li> HTML:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/pde/html/pde-solarized.html" target="_self">solarized style</a></li>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/pde/html/pde-reveal.html" target="_self">reveal.js beige slide style</a></li>
+</ul>
+
+ <li> iPython notebook:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/pde/ipynb/pde.ipynb" target="_self">ipynb file</a></li>
+</ul>
+
+</ul>
+
+<h2 id="___sec7">Numerical integration </h2>
+
+<ul>
+ <li> LaTeX PDF:</li>
+
+<ul>
+   <li> For printing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/integrate/pdf/integrate-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/integrate/pdf/integrate-print6.pdf" target="_self">6 pages per sheet</a></li>
+</ul>
+
+   <li> For screen viewing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/integrate/pdf/integrate-beamer.pdf" target="_self">standard Beamer format</a></li>
+</ul>
+
+</ul>
+
+ <li> HTML:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/integrate/html/integrate-solarized.html" target="_self">solarized style</a></li>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/integrate/html/integrate-reveal.html" target="_self">reveal.js beige slide style</a></li>
+</ul>
+
+ <li> iPython notebook:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/integrate/ipynb/integrate.ipynb" target="_self">ipynb file</a></li>
+</ul>
+
+</ul>
+
+<h2 id="___sec8">Introduction to Monte Carlo methods </h2>
+
+<ul>
+ <li> LaTeX PDF:</li>
+
+<ul>
+   <li> For printing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/mcint/pdf/mcint-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/mcint/pdf/mcint-print6.pdf" target="_self">6 pages per sheet</a></li>
+</ul>
+
+   <li> For screen viewing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/mcint/pdf/mcint-beamer.pdf" target="_self">standard Beamer format</a></li>
+</ul>
+
+</ul>
+
+ <li> HTML:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/mcint/html/mcint-solarized.html" target="_self">solarized style</a></li>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/mcint/html/mcint-reveal.html" target="_self">reveal.js beige slide style</a></li>
+</ul>
+
+ <li> iPython notebook:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/mcint/ipynb/mcint.ipynb" target="_self">ipynb file</a></li>
+</ul>
+
+</ul>
+
+<h2 id="___sec9">Brownian motion and randow walks </h2>
+
+<ul>
+ <li> LaTeX PDF:</li>
+
+<ul>
+   <li> For printing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/rw/pdf/rw-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/rw/pdf/rw-print6.pdf" target="_self">6 pages per sheet</a></li>
+</ul>
+
+   <li> For screen viewing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/rw/pdf/rw-beamer.pdf" target="_self">standard Beamer format</a></li>
+</ul>
+
+</ul>
+
+ <li> HTML:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/rw/html/rw-solarized.html" target="_self">solarized style</a></li>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/rw/html/rw-reveal.html" target="_self">reveal.js beige slide style</a></li>
+</ul>
+
+ <li> iPython notebook:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/rw/ipynb/rw.ipynb" target="_self">ipynb file</a></li>
+</ul>
+
+</ul>
+
+<h2 id="___sec10">Statistical physics </h2>
+
+<ul>
+ <li> LaTeX PDF:</li>
+
+<ul>
+   <li> For printing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/statphys/pdf/statphys-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/statphys/pdf/statphys-print6.pdf" target="_self">6 pages per sheet</a></li>
+</ul>
+
+   <li> For screen viewing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/statphys/pdf/statphys-beamer.pdf" target="_self">standard Beamer format</a></li>
+</ul>
+
+</ul>
+
+ <li> HTML:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/statphys/html/statphys-solarized.html" target="_self">solarized style</a></li>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/statphys/html/statphys-reveal.html" target="_self">reveal.js beige slide style</a></li>
+</ul>
+
+ <li> iPython notebook:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/statphys/ipynb/statphys.ipynb" target="_self">ipynb file</a></li>
+</ul>
+
+</ul>
+
+<h2 id="___sec11">Quantum mechanical systems </h2>
+
+<ul>
+ <li> LaTeX PDF:</li>
+
+<ul>
+   <li> For printing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/vmc/pdf/vmc-print.pdf" target="_self">Standard one-page format</a>, compact: <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/vmc/pdf/vmc-print6.pdf" target="_self">6 pages per sheet</a></li>
+</ul>
+
+   <li> For screen viewing:</li>
+
+<ul>
+     <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/vmc/pdf/vmc-beamer.pdf" target="_self">standard Beamer format</a></li>
+</ul>
+
+</ul>
+
+ <li> HTML:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/vmc/html/vmc-solarized.html" target="_self">solarized style</a></li>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/vmc/html/vmc-reveal.html" target="_self">reveal.js beige slide style</a></li>
+</ul>
+
+ <li> iPython notebook:</li>
+
+<ul>
+   <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/vmc/ipynb/vmc.ipynb" target="_self">ipynb file</a></li>
+</ul>
+
+</ul>
+
+
+<!-- ------------------- end of main content --------------- -->
+
+
+</body>
+</html>
+    
+
