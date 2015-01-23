@@ -1,26 +1,28 @@
 # Strange way of testing for vortex...
 # #ifdef NON_VORTEX
-TITLE: Overview of course material: FYS4411/9411 Computational Physics 2
+TITLE: Overview of course material: FYS3150/4150 Computational Physics 1
 
 TOC: off
 # #else
-TITLE: Overview of course material: FYS4411/9411 Computational Physics 2
+TITLE: Overview of course material: FYS3150/4150 Computational Physics 1
 AUTHOR: Morten Hjorth-Jensen  Email:morten.hjorth-jensen@fys.uio.no
 # #endif
 
 <%
-pub_url = 'http://compphysics.github.io/ComputationalPhysics2/doc/pub'
-published = ['intro', 'basicMB', 'mc', 'hfock', 'fci', 'mbpt', 'cc', 'srg', 'gf',]
+pub_url = 'http://compphysics.github.io/ComputationalPhysics1/doc/pub'
+published = ['intro', 'languages', 'linalg', 'eigvalues', 'ode', 'pde', 'integrate', 'mcint', 'rw', 'statphys', 'vmc',]
 chapters = {
  'intro': 'Introduction to computational physics',
- 'basicMB': 'Definitions of the many-body problem',
- 'mc': 'Monte Carlo  methods',
- 'hfock': 'Mean-field theories, Hartree-Fock and density functional theories',
- 'fci': 'Large-scale diagonalization methods',
- 'mbpt': 'Many-body perturbation theory',
- 'cc': 'Coupled cluster theory',
- 'srg': 'Similarity transformation methods',
- 'gf': 'Green function theory based methods',
+ 'languages': 'Introduction to programming',
+ 'linalg': 'Matrices and linear algebra',
+ 'eigvalues': 'Diagonalization and eigenvalue problems',
+ 'ode': 'Ordinary differential equations',
+ 'pde': 'Partial differential equations',
+ 'integrate': 'Numerical integration',
+ 'mcint': 'Introduction to Monte Carlo methods',
+ 'rw': 'Brownian motion and randow walks',
+ 'statphys': 'Statistical physics',
+ 'vmc': 'Quantum mechanical systems',
 }
 %>
 
@@ -36,7 +38,7 @@ chapters = {
    * For screen viewing:
      * "standard Beamer format": "${pub_url}/${name}/pdf/${name}-beamer.pdf"
  * HTML:
-   * "solarized style": "${pub_url}/${name}/html/${name}-solarized.html"
+   * "solarized style": "${pub_url}/${name}/html/${name}.html"
    * "reveal.js beige slide style": "${pub_url}/${name}/html/${name}-reveal.html"
  * iPython notebook:
    * "ipynb file": "${pub_url}/${name}/ipynb/${name}.ipynb"
@@ -63,7 +65,7 @@ formulas in HTML or ipython notebook files.
 
 
 
-======= FYS4411/9411: Computational Physics notes =======
+======= FYS3150/4150 Computational Physics 1 Notes =======
 
 % for ch in published:
 ===== ${chapters[ch]} =====

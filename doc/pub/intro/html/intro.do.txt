@@ -1,9 +1,7 @@
-TITLE: Slides from FYS3150/4150 Lectures
-AUTHOR: Morten Hjorth-Jensen at Department of Physics and Center of Mathematics for Applications, University of Oslo & National Superconducting Cyclotron Laboratory, Michigan State University
-DATE: today
+TITLE: Slides from FYS3150/4150 Lectures, introduction to the course
+AUTHOR: Morten Hjorth-Jensen at Department of Physics, University of Oslo & National Superconducting Cyclotron Laboratory, Michigan State University
+DATE: Fall 2014
 
-!split
-======= Week 34 =======
 
 !split
 ===== Overview of week 34 =====

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  19 JAN 2015 16:02
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  23 JAN 2015 10:46
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1298,37 +1298,37 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 109.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 109.
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 132.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 129.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/lm/omslmr.fd
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 132.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 129.
  [1
 
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
  [4]
-<fig-slides/Nebbdyr2.pdf, id=59, 508.90125pt x 315.1775pt>
+<fig-slides/Nebbdyr2.pdf, id=54, 508.90125pt x 315.1775pt>
 File: fig-slides/Nebbdyr2.pdf Graphic file (type pdf)
 
 <use fig-slides/Nebbdyr2.pdf>
-Package pdftex.def Info: fig-slides/Nebbdyr2.pdf used on input line 416.
+Package pdftex.def Info: fig-slides/Nebbdyr2.pdf used on input line 413.
 (pdftex.def)             Requested size: 207.0021pt x 128.20406pt.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 425.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 422.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \hbox (41.45212pt too wide) in paragraph at lines 425--426
+Overfull \hbox (41.45212pt too wide) in paragraph at lines 422--423
 []\T1/lmr/m/n/10 (-20) H. P. Lang-tan-gen INF-VERK3830 [][]$\T1/lmtt/m/n/10 htt
 p : / / heim . ifi . uio . no / ~hpl / INF-[]VERK4830/$[][] 
  []
 
 
-Overfull \hbox (50.11711pt too wide) in paragraph at lines 429--430
+Overfull \hbox (50.11711pt too wide) in paragraph at lines 426--427
 []\T1/lmr/m/n/10 (-20) More books re-viewed at [][]$\T1/lmtt/m/n/10 http :: / /
  www . accu . org/$[][] \T1/lmr/m/n/10 (-20) and [][]$\T1/lmtt/m/n/10 http : / 
 / www . comeaucomputing .
@@ -1336,11 +1336,11 @@ Overfull \hbox (50.11711pt too wide) in paragraph at lines 429--430
 
 [5 <./fig-slides/Nebbdyr2.pdf>] [6]
 No file intro.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 516.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 513.
 [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 516.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 513.
  (./intro.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 516.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 513.
 
 
  *File List*
@@ -1484,45 +1484,36 @@ fig-slides/Nebbdyr2.pdf
   t1lmtt.fd    2009/10/30 v1.6 Font defs for Latin Modern
  ***********
 
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 516.
-
-Package rerunfilecheck Warning: File `intro.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `intro.out':
-(rerunfilecheck)             Before: 1EE2028F809D9CCA59F6451E16EDFE12;42
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 516.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 513.
+Package rerunfilecheck Info: File `intro.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 513.
  ) 
 Here is how much of TeX's memory you used:
- 22253 strings out of 493488
- 394579 string characters out of 3141326
- 493537 words of memory out of 3000000
- 24991 multiletter control sequences out of 15000+200000
- 63640 words of font info for 99 fonts, out of 3000000 for 9000
+ 22245 strings out of 493488
+ 394464 string characters out of 3141326
+ 493533 words of memory out of 3000000
+ 24985 multiletter control sequences out of 15000+200000
+ 57643 words of font info for 97 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  68i,7n,65p,920b,396s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Outline0.1} has been referenced but does not exis
-t, replaced by a fixed one
-
-{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/te
-xlive/2012/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2012
-/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2012/texmf-dist/fo
-nts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2012/texmf-dist/fonts/type1/
-public/lm/lmbx10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/lm/
-lmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/lm/lmmi7.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local
-/texlive/2012/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/201
-2/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2012/texmf-dist
-/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1
-/public/lm/lmri10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/lm
-/lmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/lm/lmtt10.pf
-b>
-Output written on intro.pdf (7 pages, 333962 bytes).
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
+texlive/2012/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/20
+12/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2012/texmf-dist/
+fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2012/texmf-dist/fonts/type
+1/public/lm/lmbx10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/l
+m/lmbx12.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/lm/lmmi7.pf
+b></usr/local/texlive/2012/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/loc
+al/texlive/2012/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2
+012/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2012/texmf-di
+st/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2012/texmf-dist/fonts/typ
+e1/public/lm/lmri10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/
+lm/lmsy10.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/public/lm/lmtt10.
+pfb>
+Output written on intro.pdf (7 pages, 333484 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
- 19994 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 134 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 18962 words of extra memory for PDF output out of 20736 (max. 10000000)
 
