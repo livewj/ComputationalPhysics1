@@ -2,36 +2,32 @@
 %% Automatically generated file from DocOnce source
 %% (https://github.com/hplgit/doconce/)
 %%
-%%
 
 
 %-------------------- begin preamble ----------------------
 
 \documentclass[%
-oneside,                 % oneside: electronic viewing, twoside: printing
+twoside,                 % oneside: electronic viewing, twoside: printing
 final,                   % or draft (marks overfull hboxes, figures with paths)
 10pt]{article}
 
 \listfiles               % print all files needed to compile this document
 
-\usepackage{relsize,makeidx,color,setspace,amsmath,amsfonts,amssymb}
+\usepackage{relsize,epsfig,makeidx,color,setspace,amsmath,amsfonts}
 \usepackage[table]{xcolor}
 \usepackage{bm,microtype}
 
-\usepackage[pdftex]{graphicx}
+\usepackage{fancyvrb} % packages needed for verbatim environments
 
 \usepackage[T1]{fontenc}
 %\usepackage[latin1]{inputenc}
-\usepackage{ucs}
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
 
 \usepackage{lmodern}         % Latin Modern fonts derived from Computer Modern
 
 % Hyperlinks in PDF:
 \definecolor{linkcolor}{rgb}{0,0,0.4}
-\usepackage{hyperref}
-\hypersetup{
-    breaklinks=true,
+\usepackage[%
     colorlinks=true,
     linkcolor=linkcolor,
     urlcolor=linkcolor,
@@ -41,7 +37,7 @@ final,                   % or draft (marks overfull hboxes, figures with paths)
     pdfmenubar=true,
     pdftoolbar=true,
     bookmarksdepth=3   % Uncomment (and tweak) for PDF bookmarks with more levels than the TOC
-    }
+            ]{hyperref}
 %\hyperbaseurl{}   % hyperlinks are relative to this root
 
 \setcounter{tocdepth}{2}  % number chapter, section, subsection
@@ -51,11 +47,10 @@ final,                   % or draft (marks overfull hboxes, figures with paths)
 \setcounter{topnumber}{2}
 \setcounter{bottomnumber}{2}
 \setcounter{totalnumber}{4}
-\renewcommand{\topfraction}{0.95}
-\renewcommand{\bottomfraction}{0.95}
-\renewcommand{\textfraction}{0}
-\renewcommand{\floatpagefraction}{0.75}
-% floatpagefraction must always be less than topfraction!
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.15}
+\renewcommand{\floatpagefraction}{0.7}
 % 2. ensure all figures are flushed before next section
 \usepackage[section]{placeins}
 % 3. enable begin{figure}[H] (often leads to ugly pagebreaks)
@@ -64,6 +59,9 @@ final,                   % or draft (marks overfull hboxes, figures with paths)
 \usepackage[framemethod=TikZ]{mdframed}
 
 % --- begin definitions of admonition environments ---
+
+% Admonition style "paragraph" is just a plain paragraph
+\newenvironment{paragraphadmon}[1][]{\paragraph{#1}}{}
 
 % --- end of definitions of admonition environments ---
 
@@ -83,7 +81,6 @@ final,                   % or draft (marks overfull hboxes, figures with paths)
 
 \begin{document}
 
-% endif for #ifdef PREAMBLE
 
 
 % ------------------- main content ----------------------
@@ -108,19 +105,17 @@ Slides from FYS3150/4150 Lectures, introduction to the course
 {\bf Morten Hjorth-Jensen${}^{1, 2}$} \\ [0mm]
 \end{center}
 
-\begin{center}
+    \begin{center}
 % List of all institutions:
 \centerline{{\small ${}^1$Department of Physics, University of Oslo}}
-\centerline{{\small ${}^2$National Superconducting Cyclotron Laboratory, Michigan State University}}
+\centerline{{\small ${}^2$Department of Physics and Astronomy and National Superconducting Cyclotron Laboratory, Michigan State University}}
 \end{center}
-    
+
 % ----------------- end author(s) -------------------------
 
-% --- begin date ---
 \begin{center}
-Fall 2014
+Fall 2015
 \end{center}
-% --- end date ---
 
 \vspace{1cm}
 
@@ -129,8 +124,7 @@ Fall 2014
 \subsection{Overview of week 34}
 
 
-% --- begin paragraph admon ---
-\paragraph{}
+\begin{paragraphadmon}[]
 \begin{itemize}
   \item Monday: First lecture: Presentation of the course, aims and content
 
@@ -144,7 +138,7 @@ Fall 2014
 \end{itemize}
 
 \noindent
-% --- end paragraph admon ---
+\end{paragraphadmon}
 
 
 
@@ -152,26 +146,25 @@ Fall 2014
 \subsection{Lectures and ComputerLab}
 
 
-% --- begin paragraph admon ---
-\paragraph{}
+\begin{paragraphadmon}[]
 \begin{itemize}
-  \item Lectures: Monday (4.15pm-6pm) and Tuesday (12.15pm-2pm) only this and next week. Thereafter weeks 38 and 39, and weeks 43 and 44 and finally weeks 47 and 48.
+  \item Lectures: Thursday (8.15am-10am) and Friday (8.15am-10am).
 
   \item Weekly reading assignments needed to solve projects.
 
-  \item First hour of each lab session used to discuss technicalities, address questions etc linked with projects.
+  \item First hour of each lab session may be used to discuss technicalities, address questions etc linked with projects.
 
   \item Detailed lecture notes, exercises, all programs presented, projects etc can be found at the homepage of the course.
 
-  \item Computerlab: Thursday (9am-7pm) and Friday (9am-7pm) room FV329.
+  \item Computerlab: Thursday (10am-6pm) and Friday (10am-6pm) room FV329.
 
   \item Weekly plans and all other information are on the official webpage.
 
-  \item Final written exam December 12, 9am (four hours).
+  \item Final written exam December 14, 2.30pm (four hours).
 \end{itemize}
 
 \noindent
-% --- end paragraph admon ---
+\end{paragraphadmon}
 
 
 
@@ -179,18 +172,17 @@ Fall 2014
 \subsection{Course Format}
 
 
-% --- begin paragraph admon ---
-\paragraph{}
+\begin{paragraphadmon}[]
 \begin{itemize}
   \item Several computer exercises, 5 compulsory projects. Electronic reports only.
 
-  \item Evaluation and grading: The last project (50% of final grade) and a  final written exam (50% of final grade). Final written exam December 12.
+  \item Evaluation and grading: The last project (50% of final grade) and a  final written exam (50% of final grade). Final written exam December 14.
 
   \item The computer lab (room FV329)consists of 16 Linux PCs, but many prefer own laptops. C/C++ is the default programming language, but Fortran2008 and Python are also used. All source codes discussed during the lectures can be found at the webpage of the course. We recommend either C/C++, Fortran2008 or Python as languages.
 \end{itemize}
 
 \noindent
-% --- end paragraph admon ---
+\end{paragraphadmon}
 
 
 
@@ -198,8 +190,7 @@ Fall 2014
 \subsection{ComputerLab}
 
 
-% --- begin paragraph admon ---
-\paragraph{}
+\begin{paragraphadmon}[]
 
 
 \begin{quote}
@@ -207,16 +198,16 @@ Fall 2014
 \hline
 \multicolumn{1}{c}{ day } & \multicolumn{1}{c}{ teacher } \\
 \hline
-Thursday 9am-1pm & Anders, Morten L., Håvard, MHJ \\
-Thursday 1pm-5pm & Anders, Morten L., Håvard, MHJ \\
-Friday 9am-1pm   & Anders, Morten L., Håvard, MHJ \\
-Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
+Thursday 10am-2pm               & Anders, Morten L., Håvard, MHJ \\
+Thursday 2pm-6pm                & Anders, Morten L., Håvard, MHJ \\
+Friday 10am-2pm                 & Anders, Morten L., Håvard, MHJ \\
+Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \hline
 \end{tabular}
 \end{quote}
 
 \noindent
-% --- end paragraph admon ---
+\end{paragraphadmon}
 
 
 
@@ -224,8 +215,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \subsection{Topics covered in this course}
 
 
-% --- begin paragraph admon ---
-\paragraph{}
+\begin{paragraphadmon}[]
 \begin{itemize}
   \item Numerical precision and intro to C++ programming
 
@@ -251,7 +241,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-% --- end paragraph admon ---
+\end{paragraphadmon}
 
 
 
@@ -260,8 +250,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \subsection{Syllabus FYS3150}
 
 
-% --- begin paragraph admon ---
-\paragraph{Linear algebra and eigenvalue problems, chapters 6 and 7.}
+\begin{paragraphadmon}[Linear algebra and eigenvalue problems, chapters 6 and 7.]
 \begin{itemize}
   \item Know Gaussian elimination and LU decomposition
 
@@ -273,7 +262,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-% --- end paragraph admon ---
+\end{paragraphadmon}
 
 
 
@@ -282,8 +271,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \subsection{Syllabus FYS3150}
 
 
-% --- begin paragraph admon ---
-\paragraph{Linear algebra and eigenvalue problems, chapters 6 and 7.}
+\begin{paragraphadmon}[Linear algebra and eigenvalue problems, chapters 6 and 7.]
 \begin{itemize}
   \item Householder's tridiagonalization technique and finding eigenvalues based on this
 
@@ -295,7 +283,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-% --- end paragraph admon ---
+\end{paragraphadmon}
 
 
 
@@ -304,8 +292,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \subsection{Syllabus FYS3150}
 
 
-% --- begin paragraph admon ---
-\paragraph{Numerical integration, standard methods and Monte Carlo methods (chapters 4 and 11).}
+\begin{paragraphadmon}[Numerical integration, standard methods and Monte Carlo methods (chapters 4 and 11).]
 \begin{itemize}
   \item Trapezoidal, rectangle and Simpson's rules
 
@@ -319,7 +306,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-% --- end paragraph admon ---
+\end{paragraphadmon}
 
 
 
@@ -328,8 +315,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \subsection{Syllabus FYS3150}
 
 
-% --- begin paragraph admon ---
-\paragraph{Monte Carlo methods in physics (chapters 12, 13, and 14).}
+\begin{paragraphadmon}[Monte Carlo methods in physics (chapters 12, 13, and 14).]
 \begin{itemize}
   \item Random walks and Markov chains and relation with diffusion equation
 
@@ -343,7 +329,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-% --- end paragraph admon ---
+\end{paragraphadmon}
 
 
 
@@ -352,8 +338,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \subsection{Syllabus FYS3150}
 
 
-% --- begin paragraph admon ---
-\paragraph{Ordinary differential equations (chapters 8 and 9).}
+\begin{paragraphadmon}[Ordinary differential equations (chapters 8 and 9).]
 \begin{itemize}
   \item Euler's method and improved Euler's method, truncation errors
 
@@ -365,7 +350,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-% --- end paragraph admon ---
+\end{paragraphadmon}
 
 
 
@@ -374,8 +359,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \subsection{Syllabus FYS3150}
 
 
-% --- begin paragraph admon ---
-\paragraph{Partial differential equations, chapter 10.}
+\begin{paragraphadmon}[Partial differential equations, chapter 10.]
 \begin{itemize}
   \item Set up diffusion, Poisson and wave equations up to 2 spatial dimensions and time
 
@@ -389,7 +373,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-% --- end paragraph admon ---
+\end{paragraphadmon}
 
 
 
@@ -416,7 +400,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 
 
 % inline figure
-\centerline{\includegraphics[width=0.6\linewidth]{fig-slides/Nebbdyr2.pdf}}
+\centerline{\includegraphics[width=0.6\linewidth]{fig-intro/Nebbdyr2.pdf}}
 
 
 
@@ -437,8 +421,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \subsection{Other courses in Computational Science at UiO}
 
 
-% --- begin paragraph admon ---
-\paragraph{Bachelor/Master/PhD Courses.}
+\begin{paragraphadmon}[Bachelor/Master/PhD Courses.]
 \begin{itemize}
   \item INF-MAT4350 Numerical linear algebra
 
@@ -458,7 +441,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-% --- end paragraph admon ---
+\end{paragraphadmon}
 
 
 
@@ -467,8 +450,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \subsection{Extremely useful tools, strongly recommended}
 
 
-% --- begin paragraph admon ---
-\paragraph{and discussed at the lab sessions the first week.}
+\begin{paragraphadmon}[and discussed at the lab sessions the first week.]
 \begin{itemize}
   \item GIT for version control (see webpage)
 
@@ -484,7 +466,7 @@ Friday 1pm-5pm   & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-% --- end paragraph admon ---
+\end{paragraphadmon}
 
 
 
