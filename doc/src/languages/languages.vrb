@@ -1,0 +1,13 @@
+\frametitle{The report}
+
+\begin{block_mdfboxadmon}[What should I focus on? References.]
+\begin{itemize}
+ \item Give always references to material you base your work on, either  scientific articles/reports or books.
+
+ \item Refer to articles as: name(s) of author(s), journal, volume (boldfaced), page and year in parenthesis.
+
+ \item Refer to books as: name(s) of author(s), title of book, publisher, place and year, eventual page numbers
+\end{itemize}
+
+\noindent
+\end{block_mdfboxadmon}
