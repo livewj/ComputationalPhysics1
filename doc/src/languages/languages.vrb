@@ -1,6 +1,6 @@
 \frametitle{The report}
 
-\begin{block_mdfboxadmon}[What should I focus on? References.]
+\begin{block}{What should I focus on? References }
 \begin{itemize}
  \item Give always references to material you base your work on, either  scientific articles/reports or books.
 
@@ -10,4 +10,4 @@
 \end{itemize}
 
 \noindent
-\end{block_mdfboxadmon}
+\end{block}
