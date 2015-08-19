@@ -8,7 +8,7 @@ DATE: Fall 2015
 
 !bblock
   * Thursday: First lecture: Presentation of the course, aims and content
-  * Thursday: Second Lecture: Introduction to C++ programming and numerical precision.
+  * Thursday: Second Lecture: Introduction to C++ programming and numerical precision. Exercises for first week. 
   * Friday: Numerical precision and C++ programming, continued and exercises for first week
   * Numerical differentiation and loss of numerical precision (chapter 3 lecture notes)
   * Computer lab: Thursday and Friday. First time: Thursday and Friday this week, Presentation of hardware and software at room FV329 first hour of every labgroup and solution of first simple exercises. The first two weeks we focus on simple programming exercises and to set up github and QTcreator.
