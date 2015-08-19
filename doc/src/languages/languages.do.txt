@@ -1501,6 +1501,7 @@ Why object orientation?
   * The aim here is to be to be able to write a more general code which can easily be tailored to new situations.
   * {\bf Polymorphism} is a term used in software development to describe a variety of techniques employed by programmers to create flexible and reusable software components. The term is Greek and it loosely translates to "many forms". Strategy: try to single out the variables needed to describe a given system and those needed to describe a given solver. !split
 
+!split
 ===== Object orientation =====
 
 In programming languages, a polymorphic object is an entity, such as a variable or a procedure, that can hold or operate on values of differing types during the program's execution. Because a polymorphic object can operate on a variety of values and types, it can also be used in a variety of programs, sometimes with little or no change by the programmer. The idea of write once, run many, also known as code reusability, is an important characteristic to the programming paradigm known as Object-Oriented Programming (OOP).
@@ -2169,7 +2170,7 @@ software for unit testing.
 !eblock
 
 
-
+!split
 ===== The report: how to write a good scienfitic/technical report =====
 !bblock What should it contain? A typical structure
  * An introduction where you explain the aims and rationale for the physics case and  what you have done. At the end of the introduction you should give a brief summary of the structure of the report
@@ -2181,7 +2182,7 @@ software for unit testing.
 Keep always a good log of what you do.
 !eblock
 
-
+!split
 ===== The report =====
 !bblock What should I focus on? Introduction
 You don't need to answer all questions in a chronological order.  When you write the introduction you could focus on the following aspects

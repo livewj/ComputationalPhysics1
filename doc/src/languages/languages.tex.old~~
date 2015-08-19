@@ -110,7 +110,7 @@ Fall 2015
 
 
 % !split
-\subsection*{Extremely useful tools, strongly recommended}
+\subsection{Extremely useful tools, strongly recommended}
 
 
 \begin{paragraphadmon}[and discussed at the lab sessions the first two weeks.]
@@ -134,7 +134,7 @@ Fall 2015
 
 
 % !split
-\subsection*{A structured programming approach}
+\subsection{A structured programming approach}
 
 \begin{paragraphadmon}[]
 
@@ -152,7 +152,7 @@ Fall 2015
 
 
 % !split
-\subsection*{A structured programming approach}
+\subsection{A structured programming approach}
 
 \begin{paragraphadmon}[]
 
@@ -168,7 +168,7 @@ Fall 2015
 
 
 % !split
-\subsection*{Getting Started}
+\subsection{Getting Started}
 
 
 \begin{paragraphadmon}[Compiling and linking, without QTcreator.]
@@ -197,7 +197,7 @@ c++ -O3 -c -Wall myprogram.cpp
 
 
 % !split
-\subsection*{Makefiles and simple scripts}
+\subsection{Makefiles and simple scripts}
 
 Under Linux/Unix it is often convenient to create a
 so-called makefile, which is a script which includes possible
@@ -223,7 +223,7 @@ If you name your file for \Verb!makefile!, simply type the command
 makefile. Note that C++ files have the extension \Verb!.cpp!.
 
 % !split
-\subsection*{Hello world}
+\subsection{Hello world}
 
 
 \begin{paragraphadmon}[The C encounter.]
@@ -248,7 +248,7 @@ int main (int argc, char* argv[])
 
 
 % !split
-\subsection*{Hello World}
+\subsection{Hello World}
 
 
 \begin{paragraphadmon}[Dissection I.]
@@ -277,7 +277,7 @@ The command-line arguments are transferred to the main function through
 
 
 % !split
-\subsection*{Hello World}
+\subsection{Hello World}
 
 
 \begin{paragraphadmon}[Dissection II.]
@@ -308,7 +308,7 @@ in many C-inspired languages (Perl, Python, Awk, partly C++).
 
 
 % !split
-\subsection*{Hello World}
+\subsection{Hello World}
 
 
 \begin{paragraphadmon}[Now in C++.]
@@ -334,7 +334,7 @@ int main (int argc, char* argv[])
 
 
 % !split
-\subsection*{C++ Hello World}
+\subsection{C++ Hello World}
 
 
 \begin{paragraphadmon}[Dissection I.]
@@ -350,7 +350,7 @@ gives \emph{me} a feeling of greater readability.
 
 
 % !split
-\subsection*{Brief summary}
+\subsection{Brief summary}
 
 
 \begin{paragraphadmon}[C/C++ program.]
@@ -372,7 +372,7 @@ gives \emph{me} a feeling of greater readability.
 
 
 % !split
-\subsection*{Brief summary}
+\subsection{Brief summary}
 
 
 \begin{paragraphadmon}[Arrays.]
@@ -390,7 +390,7 @@ gives \emph{me} a feeling of greater readability.
 
 
 % !split
-\subsection*{Serious problems and representation of numbers}
+\subsection{Serious problems and representation of numbers}
 
 
 \begin{paragraphadmon}[Integer and Real Numbers.]
@@ -411,7 +411,7 @@ gives \emph{me} a feeling of greater readability.
 
 
 % !split
-\subsection*{Limits, you must declare variables}
+\subsection{Limits, you must declare variables}
 
 
 
@@ -445,7 +445,7 @@ gives \emph{me} a feeling of greater readability.
 
 
 % !split
-\subsection*{From decimal to binary representation}
+\subsection{From decimal to binary representation}
 
 
 \begin{paragraphadmon}[How to do it.]
@@ -489,7 +489,7 @@ To see this, we have performed the following divisions by 2
 
 
 % !split
-\subsection*{From decimal to binary representation}
+\subsection{From decimal to binary representation}
 
 
 \begin{paragraphadmon}[Integer numbers.]
@@ -521,7 +521,7 @@ int main (int argc, char* argv[])
 
 
 % !split
-\subsection*{From decimal to binary representation}
+\subsection{From decimal to binary representation}
 
 
 \begin{paragraphadmon}[Integer numbers, Fortran.]
@@ -552,7 +552,7 @@ END PROGRAM binary_integer
 
 
 % !split
-\subsection*{Integer Numbers}
+\subsection{Integer Numbers}
 
 
 \begin{paragraphadmon}[Possible Overflow for Integers.]
@@ -584,7 +584,7 @@ int main()
 
 
 % !split
-\subsection*{Loss of Precision}
+\subsection{Loss of Precision}
 
 
 \begin{paragraphadmon}[Machine Numbers.]
@@ -619,7 +619,7 @@ the general formula
 
 
 % !split
-\subsection*{Loss of Precision}
+\subsection{Loss of Precision}
 
 
 \begin{paragraphadmon}[Machine Numbers.]
@@ -641,7 +641,7 @@ for the exponent,  1 bit for the sign and 23 for the mantissa.
 
 
 % !split
-\subsection*{Loss of Precision}
+\subsection{Loss of Precision}
 
 
 \begin{paragraphadmon}[Machine Numbers.]
@@ -671,7 +671,7 @@ $01111101$ resulting in 125 in the decimal system.
 
 
 % !split
-\subsection*{Loss of Precision}
+\subsection{Loss of Precision}
 
 
 \begin{paragraphadmon}[Machine Numbers.]
@@ -702,7 +702,7 @@ a machine number.
 
 
 % !split
-\subsection*{Loss of Precision}
+\subsection{Loss of Precision}
 
 
 \begin{paragraphadmon}[Machine Numbers.]
@@ -730,7 +730,7 @@ as $2^{-23}$ and $2^{-52}$ for single and double precision, respectively.
 
 
 % !split
-\subsection*{Loss of Precision}
+\subsection{Loss of Precision}
 
 
 \begin{paragraphadmon}[Machine Numbers.]
@@ -768,7 +768,7 @@ error in $fl(a)$.
 
 
 % !split
-\subsection*{Loss of Precision}
+\subsection{Loss of Precision}
 
 
 \begin{paragraphadmon}[Machine Numbers.]
@@ -802,7 +802,7 @@ of the quantity being measured.
 
 
 % !split
-\subsection*{Loss of numerical precision}
+\subsection{Loss of numerical precision}
 
 Suppose we wish to evaluate the function
 
@@ -828,7 +828,7 @@ and
 \]
 
 % !split
-\subsection*{Loss of numerical precision}
+\subsection{Loss of numerical precision}
 
 The first expression for $f(x)$ results in
 
@@ -850,7 +850,7 @@ If we had chosen a precision of six leading digits, both expressions
 yield the same answer.
 
 % !split
-\subsection*{Loss of numerical precision}
+\subsection{Loss of numerical precision}
 
 If we were to evaluate $x\sim \pi$, then the second expression for $f(x)$
 can lead to potential losses of precision due to cancellations of nearly
@@ -866,7 +866,7 @@ is an understanding of the fact that a machine cannot represent
 correctly \emph{all} numbers.
 
 % !split
-\subsection*{Loss of precision can cuae serious problems}
+\subsection{Loss of precision can cuae serious problems}
 
 
 \begin{paragraphadmon}[Real Numbers.]
@@ -883,7 +883,7 @@ correctly \emph{all} numbers.
 
 
 % !split
-\subsection*{Loss of precision, real numbers}
+\subsection{Loss of precision, real numbers}
 
 
 
@@ -906,7 +906,7 @@ to roundoff errors, since not all relevant digits are kept.
 This leads eventually to the next problem, namely
 
 % !split
-\subsection*{More on loss of precision}
+\subsection{More on loss of precision}
 
 
 \begin{paragraphadmon}[Real Numbers.]
@@ -921,7 +921,7 @@ This leads eventually to the next problem, namely
 
 
 % !split
-\subsection*{A problematic case}
+\subsection{A problematic case}
 
 
 \begin{paragraphadmon}[Three ways of computing $e^{-x}$.]
@@ -943,7 +943,7 @@ Recursion relation for
 
 
 % !split
-\subsection*{Program to compute $\exp{(-x)}$}
+\subsection{Program to compute $\exp{(-x)}$}
 
 
 \begin{paragraphadmon}[Brute Force.]
@@ -966,7 +966,7 @@ TYPE factorial(int);
 
 
 % !split
-\subsection*{Program to compute $\exp{(-x)}$}
+\subsection{Program to compute $\exp{(-x)}$}
 
 
 \begin{paragraphadmon}[Still Brute Force.]
@@ -991,7 +991,7 @@ int main()
 
 
 % !split
-\subsection*{Program to compute $\exp{(-x)}$}
+\subsection{Program to compute $\exp{(-x)}$}
 
 
 \begin{paragraphadmon}[Oh, it never ends!]
@@ -1021,7 +1021,7 @@ TYPE factorial(int n)
 
 
 % !split
-\subsection*{Results $\exp{(-x)}$}
+\subsection{Results $\exp{(-x)}$}
 
 
 \begin{paragraphadmon}[What is going on?]
@@ -1054,7 +1054,7 @@ TYPE factorial(int n)
 
 
 % !split
-\subsection*{Program to compute $\exp{(-x)}$}
+\subsection{Program to compute $\exp{(-x)}$}
 
 
 \begin{paragraphadmon}[]
@@ -1081,7 +1081,7 @@ int main()
 
 
 % !split
-\subsection*{Program to compute $\exp{(-x)}$}
+\subsection{Program to compute $\exp{(-x)}$}
 
 
 \begin{paragraphadmon}[Last statements.]
@@ -1106,7 +1106,7 @@ int main()
 
 
 % !split
-\subsection*{Results $\exp{(-x)}$}
+\subsection{Results $\exp{(-x)}$}
 
 
 \begin{paragraphadmon}[More Problems.]
@@ -1138,7 +1138,7 @@ int main()
 
 
 % !split
-\subsection*{Most used formula for derivatives}
+\subsection{Most used formula for derivatives}
 
 
 \begin{paragraphadmon}[3 point formulae.]
@@ -1157,7 +1157,7 @@ Second derivative
 
 
 % !split
-\subsection*{Error Analysis}
+\subsection{Error Analysis}
 
 
 \begin{paragraphadmon}[]
@@ -1185,7 +1185,7 @@ and the truncation or approximation error goes like
 
 
 % !split
-\subsection*{Error Analysis}
+\subsection{Error Analysis}
 
 
 \begin{paragraphadmon}[]
@@ -1214,7 +1214,7 @@ We have then
 
 
 % !split
-\subsection*{Error Analysis}
+\subsection{Error Analysis}
 
 
 \begin{paragraphadmon}[]
@@ -1244,7 +1244,7 @@ which takes over.
 
 
 % !split
-\subsection*{Error Analysis}
+\subsection{Error Analysis}
 
 
 \begin{paragraphadmon}[]
@@ -1270,7 +1270,7 @@ the loss of precision.
 
 
 % !split
-\subsection*{Error Analysis}
+\subsection{Error Analysis}
 
 
 \begin{paragraphadmon}[]
@@ -1297,7 +1297,7 @@ the loss of precision.
 
 
 % !split
-\subsection*{Error Analysis}
+\subsection{Error Analysis}
 
 
 \begin{paragraphadmon}[]
@@ -1329,10 +1329,10 @@ $10^{-10}$                          & 2.0000000000000000                  & $0.0
 
 
 
-\section*{Week 35}
+\section{Week 35}
 
 % !split
-\subsection*{Overview of week 35}
+\subsection{Overview of week 35}
 
 
 \begin{paragraphadmon}[]
@@ -1358,7 +1358,7 @@ $10^{-10}$                          & 2.0000000000000000                  & $0.0
 
 
 % !split
-\subsection*{Technical Matter in C/C++: Pointers}
+\subsection{Technical Matter in C/C++: Pointers}
 
 
 \begin{paragraphadmon}[]
@@ -1386,7 +1386,7 @@ Simple example declarations:
 
 
 % !split
-\subsection*{Technical Matter in C/C++: Pointer example I}
+\subsection{Technical Matter in C/C++: Pointer example I}
 
 
 \begin{paragraphadmon}[]
@@ -1411,7 +1411,7 @@ int main()
 
 
 % !split
-\subsection*{Dissection: Pointer example I}
+\subsection{Dissection: Pointer example I}
 
 
 \begin{paragraphadmon}[Discussion.]
@@ -1438,7 +1438,7 @@ int main()
 
 
 % !split
-\subsection*{Pointer example II}
+\subsection{Pointer example II}
 
 
 \begin{paragraphadmon}[]
@@ -1462,7 +1462,7 @@ printf("\nAddress of pointer p : %p\n",&p);
 
 
 % !split
-\subsection*{Dissection: Pointer example II}
+\subsection{Dissection: Pointer example II}
 
 
 \begin{paragraphadmon}[]
@@ -1487,7 +1487,7 @@ printf("\nAddress of pointer p : %p\n", &p);
 
 
 % !split
-\subsection*{Output of Pointer example II}
+\subsection{Output of Pointer example II}
 
 
 \begin{paragraphadmon}[]
@@ -1506,7 +1506,7 @@ Address of the pointer variable : 0xbfffef6c
 
 
 % !split
-\subsection*{File handling; C-way}
+\subsection{File handling; C-way}
 
 \begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 using namespace std;
@@ -1526,7 +1526,7 @@ int main(int argc, char *argv[])
 \end{minted}
 
 % !split
-\subsection*{File handling; C way cont.}
+\subsection{File handling; C way cont.}
 
 \begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
  out_file = fopen( argv[2], "w"); // returns a pointer to the output file
@@ -1540,7 +1540,7 @@ int main(int argc, char *argv[])
 \end{minted}
 
 % !split
-\subsection*{File handling, C++-way}
+\subsection{File handling, C++-way}
 
 \begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 #include <fstream>
@@ -1551,7 +1551,7 @@ ifstream ifile;
 \end{minted}
 
 % !split
-\subsection*{File handling, C++-way}
+\subsection{File handling, C++-way}
 
 \begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 int main(int argc, char* argv[])
@@ -1573,7 +1573,7 @@ int main(int argc, char* argv[])
 \end{minted}
 
 % !split
-\subsection*{File handling, C++-way}
+\subsection{File handling, C++-way}
 
 \begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 void output(double r_min , double r_max, int max_step,
@@ -1593,7 +1593,7 @@ for(i = 0; i < 5; i++) {
 \end{minted}
 
 % !split
-\subsection*{File handling, C++-way}
+\subsection{File handling, C++-way}
 
 \begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 int main(int argc, char* argv[])
@@ -1615,7 +1615,7 @@ int main(int argc, char* argv[])
 \end{minted}
 
 % !split
-\subsection*{File handling, C++-way}
+\subsection{File handling, C++-way}
 
 \begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 const char* filename1 = "myfile";
@@ -1635,7 +1635,7 @@ if (!(ifile >> a >> b >> c)) ok = 0;
 \end{minted}
 
 % !split
-\subsection*{Call by value and reference}
+\subsection{Call by value and reference}
 
 \begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 int main(int argc, char argv[]) {
@@ -1653,13 +1653,13 @@ return 0;
 \end{minted}
 
 % !split
-\subsection*{Call by value and reference}
+\subsection{Call by value and reference}
 
 Morten: Too complicated {\LaTeX} code for computer code to be
 decoded....
 
 % !split
-\subsection*{Call by value and reference}
+\subsection{Call by value and reference}
 
 \begin{itemize}
   \item Lines 1,2: Declaration of two variables \Verb!a! and \Verb!b!. The compiler reserves two locations in memory. The size of the location depends on the type of variable. Two properties are important for these locations: the address in memory and the content in the location. The value of \Verb!a! is \Verb!a!. The address of \Verb!a! is \Verb!&a!. The value of \Verb!b! is \Verb!*b!. The address of \Verb!b! is \Verb!&b!.
@@ -1675,7 +1675,7 @@ decoded....
 
 \noindent
 % !split
-\subsection*{Call by value and reference}
+\subsection{Call by value and reference}
 
 \begin{itemize}
   \item Line 6: The \Verb!main()! function calls the function \Verb!func()! and the program counter transfers to the first statement in \Verb!func()!. With respect to data the following happens. The content of \Verb!a! (= 10) and the content of \Verb!b! (a memory address) are copied to a stack (new memory location) associated with the function \Verb!func()!
@@ -1687,7 +1687,7 @@ decoded....
 
 \noindent
 % !split
-\subsection*{Call by value and reference}
+\subsection{Call by value and reference}
 
 \begin{itemize}
   \item Line 9: The value of y is an address and the symbol \Verb!*y! means the position in memory which has this address. The value in this location is now increased by 10. This means that the value of \Verb!b[0]! in the main program is equal to 10. Thus func() has modified a value in \Verb!main()!.
@@ -1699,7 +1699,7 @@ decoded....
 
 \noindent
 % !split
-\subsection*{Call by value and reference}
+\subsection{Call by value and reference}
 
 \begin{itemize}
   \item The value of a is transferred to \Verb!func()! and stored in a new memory location called \Verb!x!. Any modification of \Verb!x! in \Verb!func()! does not affect in any way the value of \Verb!a! in \Verb!main()!. This is called \emph{transfer of data by value}.
@@ -1709,7 +1709,7 @@ decoded....
 
 \noindent
 % !split
-\subsection*{Call by value and reference}
+\subsection{Call by value and reference}
 
 C++ allows however the programmer to use solely call by reference
 (note that call by reference is implemented as pointers).
@@ -1746,7 +1746,7 @@ reduces the readability of the code.
 
 
 % !split
-\subsection*{Call by value and reference, F90/95}
+\subsection{Call by value and reference, F90/95}
 
 In Fortran we can use \Verb!INTENT(IN)!, \Verb!INTENT(OUT)!, \Verb!INTENT(INOUT)! to let the
 program know which values should or should not be changed.
@@ -1768,7 +1768,7 @@ This hinders unwanted changes and increases readability.
 
 
 % !split
-\subsection*{Object orientation}
+\subsection{Object orientation}
 
 Why object orientation?
 
@@ -1782,14 +1782,14 @@ Why object orientation?
 
 \noindent
 % !split
-\subsection*{Object orientation}
+\subsection{Object orientation}
 
 In programming languages, a polymorphic object is an entity, such as a variable or a procedure, that can hold or operate on values of differing types during the program's execution. Because a polymorphic object can operate on a variety of values and types, it can also be used in a variety of programs, sometimes with little or no change by the programmer. The idea of write once, run many, also known as code reusability, is an important characteristic to the programming paradigm known as Object-Oriented Programming (OOP).
 
 OOP describes an approach to programming where a program is viewed as a collection of interacting, but mostly independent software components. These software components are known as objects in OOP and they are typically implemented in a programming language as an entity that encapsulates both data and procedures.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 In Fortran a vector or matrix start with $1$, but it is easy
 to change a vector so that it starts with zero or even a negative number.
@@ -1801,7 +1801,7 @@ We have also seen that Fortran  allows us to write a matrix addition ${\bf A} = 
 two loops and an addition of two matrix elements $a_{ij} = b_{ij}+c_{ij}$.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 The way the matrix addition is written is very close to the way we express this relation mathematically. The benefit for the
 programmer is that our code is easier to read. Furthermore, such a way of coding makes it  more likely  to spot eventual
@@ -1818,7 +1818,7 @@ the two loops as
 \end{minted}
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 However,
 the strength of C++ is the possibility
@@ -1831,7 +1831,7 @@ to say $a(i,j)$, as we would do in Fortran. Similarly, we could also change the 
 To achieve this we need to introduce two important entities in C++ programming, classes and templates.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 The function and class declarations are fundamental concepts within C++.  Functions are abstractions
 which encapsulate an algorithm or parts of it and perform specific tasks in a program.
@@ -1845,7 +1845,7 @@ type are the class data members, and the procedures are the class
 member functions.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 Classes are user-defined tools used to create multi-purpose software which can be reused by other classes or functions.
 These user-defined data types contain data (variables) and
@@ -1856,7 +1856,7 @@ The data could be the $x$ and $y$ coordinates of a given  point. The functions
 we define could be simple read and write functions or the possibility to compute the distance between two points.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 C++ has a class complex in its standard
 template library (STL). The standard usage in a given function could then look like
@@ -1879,7 +1879,7 @@ where we add and multiply two complex numbers $x=6.1+\imath 8.2$ and $y=0.5+\ima
 $z=x+y=6.6+\imath 9.5$ and $z=x\cdot y= -7.61+\imath 12.03$.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 We proceed by  splitting our task in three files.
 
@@ -1906,7 +1906,7 @@ definition of variables and their character
 \end{minted}
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 Next we provide a file complex.cpp where the code and algorithms of
 different functions (except inlined functions) declared within the
@@ -1922,7 +1922,7 @@ imaginary part and performing algebraic operations such as adding or
 multiplying two complex numbers.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 \begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 #include "Complex.h"
@@ -1939,7 +1939,7 @@ int main ()
 \end{minted}
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 We include the header file complex.h and define four different complex variables. These
 are $a=0.1+\imath 1.3$, $b=3.0+\imath 0$ (note that if you don't define a value for the imaginary part  this is set to
@@ -1947,7 +1947,7 @@ zero), $c=5.0-\imath 2.3$ and $d=b$.  Thereafter we have defined standard algebr
 of the class which allows us to print out the real and imaginary part of a given variable.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 \begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 class Complex
@@ -1964,7 +1964,7 @@ public:
 \end{minted}
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 \begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
   ~Complex () {}                        // destructor
@@ -1979,21 +1979,21 @@ public:
 \end{minted}
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 The class is defined via the statement \Verb!class Complex!. We must first use the key word
 \Verb!class!, which in turn is followed by the user-defined variable name  \Verb!Complex!.
 The body of the class, data and functions, is encapsulated  within the parentheses \Verb!{...}!.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 Data and specific functions can be private, which means that they cannot be accessed from outside the class.
 This means also that access cannot be inherited by other functions outside the class. If we use \Verb!protected!
 instead of \Verb!private!, then data and functions can be inherited outside the class.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 The key word \Verb!public! means  that data and functions can be accessed from outside the class.
 Here we have defined several functions  which can be accessed by functions outside the class.
@@ -2001,7 +2001,7 @@ The declaration \Verb!friend! means that stand-alone functions can work on priva
 \Verb!(re, im)!.  Data members of a class should be declared as private variables.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 The first public function we encounter is a so-called
 constructor, which  tells how we declare a variable of type \Verb!Complex!
@@ -2018,7 +2018,7 @@ way a member function is defined. The constructor is the first
 function that is called when an object is instantiated.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 Another possibility is
 
@@ -2035,7 +2035,7 @@ Complex:: Complex (double re_a, double im_a) {
 \end{minted}
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 The simplest member function are those we defined to extract
 the real and imaginary part of a variable. Here you have to recall that these are private data,
@@ -2050,7 +2050,7 @@ Note that we have introduced   the declaration  \Verb!const!.  What does it mean
 This declaration means that a variabale cannot be changed within  a called function.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 If we define a variable as
 \Verb!const double p = 3;! and then try to change its value, we will get an error when we
@@ -2065,7 +2065,7 @@ If we declare the function and try to change the value to $0.2$, the compiler wi
 an error message.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 If we define a function to compute the absolute value of complex variable like
 
@@ -2083,7 +2083,7 @@ the compiler would not allow the c.abs() call in myabs
 since \Verb!Complex::abs! is not a constant member function.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 Constant functions cannot change the object's state.
 To avoid this we declare the function \Verb!abs! as
@@ -2093,7 +2093,7 @@ double Complex:: abs () const { return sqrt(re*re + im*im); }
 \end{minted}
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 C++ (and Fortran) allow for overloading of operators. That means we
 can define algebraic operations on for example vectors or any
@@ -2105,7 +2105,7 @@ more readable and close to eventual equations we want to code.  To
 achieve this we need to extend the definition of operators.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 Let us study the declarations in our complex class.
 In our main function we have a statement like \Verb!d = b;!, which means
@@ -2122,7 +2122,7 @@ Complex& Complex:: operator= (const Complex& c)
 \end{minted}
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 With this function, statements like
 \Verb!Complex d = b;! or \Verb!Complex d(b);!
@@ -2138,7 +2138,7 @@ so \Verb!*this = c;! means setting the present object equal to $c$, that is
 \Verb!this->operator= (c);!.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 The meaning of the addition operator $+$ for Complex objects is defined in the
 function
@@ -2149,7 +2149,7 @@ is crucial and this function call is performed inside a loop, then it is more di
 given compiler to perform optimizations of a loop.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 The solution to this is to inline functions.   We discussed inlining in chapter
 2 of the lecture notes.
@@ -2164,7 +2164,7 @@ inline Complex operator+ (const Complex& a, const Complex& b)
 Inline functions, with complete bodies must be written in the header file  complex.h.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 Consider  the case \Verb!c = a + b;!
 that is,  \Verb!c.operator= (operator+ (a,b));!
@@ -2178,7 +2178,7 @@ c.im = a.im + b.im;
 by the compiler, i.e., no function calls
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 The stand-alone function \Verb!operator+! is a friend of the Complex  class
 
@@ -2199,7 +2199,7 @@ inline Complex operator+ (const Complex& a, const Complex& b)
 \end{minted}
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 Since we do not need to alter the re and im variables, we can
 get the values by Re() and Im(), and there is no need to be a
@@ -2211,7 +2211,7 @@ inline Complex operator+ (const Complex& a, const Complex& b)
 \end{minted}
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 The multiplication functionality can now be extended to imaginary numbers by the following code
 
@@ -2224,7 +2224,7 @@ inline Complex operator* (const Complex& a, const Complex& b)
 It will be convenient to inline all functions used by this operator.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 To inline the complete expression \Verb!a*b;!, the constructors and
 \Verb!operator=!  must also be inlined.  This can be achieved via the following piece of code
@@ -2240,7 +2240,7 @@ inline Complex:: operator= (const Complex& c)
 \end{minted}
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 \begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 // e, c, d are complex
@@ -2255,7 +2255,7 @@ e.im = c.im*d.re + c.re*d.im;
 The definitions \Verb!operator-! and \Verb!operator/! follow the same set up.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 Finally, if we wish to write to file or another device a complex number using the simple syntax
 \Verb!cout << c;!, we obtain this by defining
@@ -2267,7 +2267,7 @@ ostream& operator<< (ostream& o, const Complex& c)
 \end{minted}
 
 % !split
-\subsection*{Programming classes, templates}
+\subsection{Programming classes, templates}
 
 What if we wanted to make a class which takes integers
 or floating point numbers with single precision?
@@ -2280,7 +2280,7 @@ classes. Class templates  is a template for producing classes. The declaration c
 of the keyword \Verb!template! followed by a list of template arguments enclosed in brackets.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 We can therefore make a more general class by rewriting our original example as
 
@@ -2299,7 +2299,7 @@ public:
 \end{minted}
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 We can therefore make a more general class by rewriting our original example as
 
@@ -2316,7 +2316,7 @@ We can therefore make a more general class by rewriting our original example as
 \end{minted}
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 What it says is that \Verb!Complex! is a parameterized type with $T$ as a parameter and $T$ has to be a type such as double
 or float.
@@ -2329,7 +2329,7 @@ Complex<int> b(1,0);
 \end{minted}
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 Member functions of our class are defined by preceding the name of the function with the \Verb!template! keyword.
 Consider the function we defined as \Verb!Complex:: Complex (double re_a, double im_a)!.
@@ -2343,7 +2343,7 @@ Complex<T>:: Complex (T re_a, T im_a)
 The member functions  are otherwise defined following ordinary member function definitions.
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 Here follows a very simple first class in the file squared.h
 
@@ -2363,7 +2363,7 @@ class Squared{
 \end{minted}
 
 % !split
-\subsection*{Programming classes}
+\subsection{Programming classes}
 
 and we would use it as
 
@@ -2380,7 +2380,7 @@ int main(){
 
 
 % !split
-\subsection*{Unit Testing}
+\subsection{Unit Testing}
 
 \begin{paragraphadmon}[]
 Unit Testing is the practice of testing the smallest testable parts,
@@ -2414,7 +2414,7 @@ easier. There are many benefits associated with Unit Testing, such as
 
 
 % !split
-\subsection*{Simple example of unit test}
+\subsection{Simple example of unit test}
 
 \begin{paragraphadmon}[]
 Look up the guide on how to install unit tests for c++ at course webpage. This is the version with classes.
@@ -2443,7 +2443,7 @@ int main()
 
 
 % !split
-\subsection*{Simple example of unit test}
+\subsection{Simple example of unit test}
 
 \begin{paragraphadmon}[]
 And without classes
@@ -2472,7 +2472,7 @@ software for unit testing.
 
 
 % !split
-\subsection*{The report: how to write a good scienfitic/technical report}
+\subsection{The report: how to write a good scienfitic/technical report}
 
 \begin{paragraphadmon}[What should it contain? A typical structure.]
 \begin{itemize}
@@ -2496,7 +2496,7 @@ Keep always a good log of what you do.
 
 
 % !split
-\subsection*{The report}
+\subsection{The report}
 
 \begin{paragraphadmon}[What should I focus on? Introduction.]
 You don't need to answer all questions in a chronological order.  When you write the introduction you could focus on the following aspects
@@ -2515,7 +2515,7 @@ You don't need to answer all questions in a chronological order.  When you write
 
 
 % !split
-\subsection*{The report}
+\subsection{The report}
 
 \begin{paragraphadmon}[What should I focus on? Methods sections.]
 \begin{itemize}
@@ -2533,7 +2533,7 @@ You don't need to answer all questions in a chronological order.  When you write
 
 
 % !split
-\subsection*{The report}
+\subsection{The report}
 
 \begin{paragraphadmon}[What should I focus on? Results.]
 \begin{itemize}
@@ -2555,7 +2555,7 @@ You don't need to answer all questions in a chronological order.  When you write
 
 
 % !split
-\subsection*{The report}
+\subsection{The report}
 
 \begin{paragraphadmon}[What should I focus on? Conclusions.]
 \begin{itemize}
@@ -2572,7 +2572,7 @@ You don't need to answer all questions in a chronological order.  When you write
 
 
 % !split
-\subsection*{The report}
+\subsection{The report}
 
 \begin{paragraphadmon}[What should I focus on? additional material.]
 \begin{itemize}
@@ -2590,7 +2590,7 @@ You can consider moving parts of the material from the methods section to the ap
 
 
 % !split
-\subsection*{The report}
+\subsection{The report}
 
 \begin{paragraphadmon}[What should I focus on? References.]
 \begin{itemize}

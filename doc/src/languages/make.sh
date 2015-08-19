@@ -62,7 +62,7 @@ cp $name.tex ${name}-beamer.tex
 
 # Handouts
 system doconce format pdflatex $name --latex_title_layout=beamer --latex_table_format=footnotesize $opt
-system doconce ptex2tex $name envir=print
+system doconce ptex2tex $name envir=minted
 # Add special packages
 doconce subst "% Add user's preamble" "\g<1>\n\\usepackage{simplewick}" $name.tex
 system doconce slides_beamer $name --beamer_slide_theme=red_shadow --handout
@@ -75,7 +75,7 @@ rm -f ${name}.pdf
 # Ordinary plain LaTeX document
 rm -f *.aux  # important after beamer
 system doconce format pdflatex $name --minted_latex_style=trac --latex_admon=paragraph $opt
-system doconce ptex2tex $name envir=print
+system doconce ptex2tex $name envir=minted
 # Add special packages
 doconce subst "% Add user's preamble" "\g<1>\n\\usepackage{simplewick}" $name.tex
 doconce replace 'section{' 'section*{' $name.tex
