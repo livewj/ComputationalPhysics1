@@ -115,6 +115,7 @@ The teaching material is produced in various formats for printing and on-screen 
 <p>
 <!-- !split -->
 <div class="alert alert-block alert-warning alert-text-normal">
+<b>Warning.</b>
 <p>
 The PDF files are based on LaTeX and have seldom technical
 failures that cannot be easily corrected.
@@ -155,7 +156,6 @@ formulas in HTML or ipython notebook files.
 <ul>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/html/intro.html" target="_self">Plain html</a></li>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/html/intro-reveal.html" target="_self">reveal.js beige slide style</a></li>
-  <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/html/intro-bs.html" target="_self">Bootstrap style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
@@ -191,7 +191,6 @@ formulas in HTML or ipython notebook files.
 <ul>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/languages/html/languages.html" target="_self">Plain html</a></li>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/languages/html/languages-reveal.html" target="_self">reveal.js beige slide style</a></li>
-  <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/html/languages-bs.html" target="_self">Bootstrap style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
@@ -227,7 +226,6 @@ formulas in HTML or ipython notebook files.
 <ul>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/linalg/html/linalg.html" target="_self">Plain html</a></li>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/linalg/html/linalg-reveal.html" target="_self">reveal.js beige slide style</a></li>
-  <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/html/linalg-bs.html" target="_self">Bootstrap style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
@@ -263,7 +261,6 @@ formulas in HTML or ipython notebook files.
 <ul>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/eigvalues/html/eigvalues.html" target="_self">Plain html</a></li>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/eigvalues/html/eigvalues-reveal.html" target="_self">reveal.js beige slide style</a></li>
-  <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/html/eigvalues-bs.html" target="_self">Bootstrap style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
@@ -299,7 +296,6 @@ formulas in HTML or ipython notebook files.
 <ul>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/ode/html/ode.html" target="_self">Plain html</a></li>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/ode/html/ode-reveal.html" target="_self">reveal.js beige slide style</a></li>
-  <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/html/ode-bs.html" target="_self">Bootstrap style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
@@ -335,7 +331,6 @@ formulas in HTML or ipython notebook files.
 <ul>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/pde/html/pde.html" target="_self">Plain html</a></li>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/pde/html/pde-reveal.html" target="_self">reveal.js beige slide style</a></li>
-  <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/html/pde-bs.html" target="_self">Bootstrap style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
@@ -371,7 +366,6 @@ formulas in HTML or ipython notebook files.
 <ul>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/integrate/html/integrate.html" target="_self">Plain html</a></li>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/integrate/html/integrate-reveal.html" target="_self">reveal.js beige slide style</a></li>
-  <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/html/integrate-bs.html" target="_self">Bootstrap style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
@@ -407,7 +401,6 @@ formulas in HTML or ipython notebook files.
 <ul>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/mcint/html/mcint.html" target="_self">Plain html</a></li>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/mcint/html/mcint-reveal.html" target="_self">reveal.js beige slide style</a></li>
-  <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/html/mcint-bs.html" target="_self">Bootstrap style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
@@ -443,7 +436,6 @@ formulas in HTML or ipython notebook files.
 <ul>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/rw/html/rw.html" target="_self">Plain html</a></li>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/rw/html/rw-reveal.html" target="_self">reveal.js beige slide style</a></li>
-  <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/html/rw-bs.html" target="_self">Bootstrap style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
@@ -479,7 +471,6 @@ formulas in HTML or ipython notebook files.
 <ul>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/statphys/html/statphys.html" target="_self">Plain html</a></li>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/statphys/html/statphys-reveal.html" target="_self">reveal.js beige slide style</a></li>
-  <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/html/statphys-bs.html" target="_self">Bootstrap style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
@@ -515,7 +506,6 @@ formulas in HTML or ipython notebook files.
 <ul>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/vmc/html/vmc.html" target="_self">Plain html</a></li>
    <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/vmc/html/vmc-reveal.html" target="_self">reveal.js beige slide style</a></li>
-  <li> <a href="http://compphysics.github.io/ComputationalPhysics1/doc/pub/intro/html/vmc-bs.html" target="_self">Bootstrap style</a></li>
 </ul>
 
  <li> iPython notebook:</li>
