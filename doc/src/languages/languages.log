@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.10.30)  19 AUG 2015 07:29
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  19 AUG 2015 08:13
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -808,17 +808,30 @@ Examine \scriptsize starts \@setfontsize size may be \@viiipt.
 Examine \tiny starts \@setfontsize size may be \@vipt. 
 Examine \huge starts \@setfontsize size may be \@xxpt. 
 Examine \Huge starts \@setfontsize size may be \@xxvpt. )
-(/usr/local/texlive/2012/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+(/usr/local/texlive/2012/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box54
+\shadowsize=\dimen193
+\@Sbox=\box55
+\do@VerbBox=\toks40
+\the@fancyput=\toks41
+\this@fancyput=\toks42
+\EndVerbatimTokens=\toks43
+\Verbatim@Outfile=\write5
+\Verbatim@Infile=\read2
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
 \FV@CodeLineNo=\count153
-\FV@InFile=\read2
-\FV@TabBox=\box54
+\FV@InFile=\read3
+\FV@TabBox=\box56
 \c@FancyVerbLine=\count154
 \FV@StepNumber=\count155
-\FV@OutFile=\write5
+\FV@OutFile=\write6
 ) (/usr/local/texlive/2012/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
@@ -826,10 +839,17 @@ Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldsymbols=\mathgroup8
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
 LaTeX Info: Redefining \bm on input line 204.
-) (/usr/local/texlive/2012/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks40
-\inpenc@posthook=\toks41
+\inpenc@prehook=\toks44
+\inpenc@posthook=\toks45
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -1050,13 +1070,13 @@ Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen193
-\extrarowheight=\dimen194
-\NC@list=\toks42
+\col@sep=\dimen194
+\extrarowheight=\dimen195
+\NC@list=\toks46
 \extratabsurround=\skip57
 \backup@length=\skip58
 )
-\everycr=\toks43
+\everycr=\toks47
 \minrowclearance=\skip59
 )
 (/usr/local/texlive/2012/texmf-dist/tex/generic/babel/babel.sty
@@ -1069,7 +1089,7 @@ Language: english 2005/03/30 v3.3o English support from the babel system
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 LaTeX Info: Redefining \textlatin on input line 82.
 \babel@savecnt=\count156
-\U@D=\dimen195
+\U@D=\dimen196
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
@@ -1081,10 +1101,10 @@ LaTeX Info: Redefining \textlatin on input line 82.
 (/usr/local/texlive/2012/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
 ) (/usr/local/texlive/2012/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
-\pgffor@iter=\dimen196
-\pgffor@skip=\dimen197
-\pgffor@stack=\toks44
-\pgffor@toks=\toks45
+\pgffor@iter=\dimen197
+\pgffor@skip=\dimen198
+\pgffor@stack=\toks48
+\pgffor@toks=\toks49
 ))
 (/usr/local/texlive/2012/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -1094,16 +1114,16 @@ Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
 \pgf@plot@mark@count=\count157
-\pgfplotmarksize=\dimen198
+\pgfplotmarksize=\dimen199
 )
-\tikz@lastx=\dimen199
-\tikz@lasty=\dimen200
-\tikz@lastxsaved=\dimen201
-\tikz@lastysaved=\dimen202
-\tikzleveldistance=\dimen203
-\tikzsiblingdistance=\dimen204
-\tikz@figbox=\box55
-\tikz@tempbox=\box56
+\tikz@lastx=\dimen200
+\tikz@lasty=\dimen201
+\tikz@lastxsaved=\dimen202
+\tikz@lastysaved=\dimen203
+\tikzleveldistance=\dimen204
+\tikzsiblingdistance=\dimen205
+\tikz@figbox=\box57
+\tikz@tempbox=\box58
 \tikztreelevel=\count158
 \tikznumberofchildren=\count159
 \tikznumberofcurrentchild=\count160
@@ -1125,45 +1145,38 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 (/usr/local/texlive/2012/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip60
-\fb@frw=\dimen205
-\fb@frh=\dimen206
-\FrameRule=\dimen207
-\FrameSep=\dimen208
+\fb@frw=\dimen206
+\fb@frh=\dimen207
+\FrameRule=\dimen208
+\FrameSep=\dimen209
 )
-
-! LaTeX Error: File `anslistings.sty' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
-
-Enter file name: 
 Package hyperref Info: Option `colorlinks' set `true' on input line 87.
 Package hyperref Info: Option `pdfmenubar' set `true' on input line 87.
 Package hyperref Info: Option `pdftoolbar' set `true' on input line 87.
 \c@doconceexercisecounter=\count166
-\c@doconce:exercise:counter=\count167
-\c@doconce:movie:counter=\count168
-\@indexfile=\write6
-\openout6 = `languages.idx'.
+\c@doconce:movie:counter=\count167
+\@indexfile=\write7
+\openout7 = `languages.idx'.
+
 
 Writing index file languages.idx
 (./languages.aux)
 \openout1 = `languages.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 141.
-LaTeX Font Info:    ... okay on input line 141.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1201,17 +1214,17 @@ LaTeX Font Info:    ... okay on input line 141.
 
 (/usr/local/texlive/2012/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count169
-\scratchdimen=\dimen209
-\scratchbox=\box57
-\nofMPsegments=\count170
-\nofMParguments=\count171
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count172
-\MPscratchDim=\dimen210
-\MPnumerator=\count173
-\makeMPintoPDFobject=\count174
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count168
+\scratchdimen=\dimen210
+\scratchbox=\box59
+\nofMPsegments=\count169
+\nofMParguments=\count170
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count171
+\MPscratchDim=\dimen211
+\MPnumerator=\count172
+\makeMPintoPDFobject=\count173
+\everyMPtoPDFconversion=\toks51
 ) (/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1228,8 +1241,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring ON on input line 141.
+\AtBeginShipoutBox=\box60
+Package hyperref Info: Link coloring ON on input line 111.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -1237,61 +1250,67 @@ Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 (/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count175
+\c@section@level=\count174
 )
-LaTeX Info: Redefining \ref on input line 141.
-LaTeX Info: Redefining \pageref on input line 141.
-LaTeX Info: Redefining \nameref on input line 141.
+LaTeX Info: Redefining \ref on input line 111.
+LaTeX Info: Redefining \pageref on input line 111.
+LaTeX Info: Redefining \nameref on input line 111.
 
 (./languages.out) (./languages.out)
-\@outlinefile=\write7
-\openout7 = `languages.out'.
+\@outlinefile=\write8
+\openout8 = `languages.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 141.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 111.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 141.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 111.
 \symnumbers=\mathgroup9
 \sympureletters=\mathgroup10
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 141.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 141.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 111.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 111.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 141.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 141.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 141.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 111.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 141.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 141.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 141.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 111.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 141.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 141.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 111.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 141.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 111.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 141.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 141.
+(Font)                  OT1/cmss/bx/n --> T1/cmr/bx/n on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 141.
+(Font)                  T1/cmss/bx/n --> T1/cmss/bx/n on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 141.
+(Font)                  T1/cmss/m/n --> T1/cmss/bx/n on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 141.
+(Font)                  T1/cmss/m/it --> T1/cmss/bx/it on input line 111.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 141.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 141.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/bx/n on input line 111.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 111.
+LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
+(Font)              `pureletters' in the math version `normal' on input line 11
+1.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
-41.
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 11
+1.
+LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
+(Font)              `pureletters' in the math version `bold' on input line 111.
+
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-141.
+(Font)                  T1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 1
+11.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -1317,12 +1336,12 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 141.
+LaTeX Info: Redefining \includegraphics on input line 111.
 
 (./languages.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 156.
+(hyperref)                setting the option has no effect on input line 127.
 
 \openout4 = `languages.vrb'.
 
@@ -1372,7 +1391,8 @@ Type  H <return>  for immediate help.
                                                   
 l.7 \begin{print}
                  
-? 
+? s
+OK, entering \scrollmode...
 
 ! LaTeX Error: \begin{minipage} on input line 3 ended by \end{print}.
 
@@ -1382,8 +1402,14 @@ Type  H <return>  for immediate help.
                                                   
 l.10 \end{print}
                 
-? s
-OK, entering \scrollmode...
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 13.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
 
 ! LaTeX Error: Environment print undefined.
 
@@ -1478,7 +1504,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 276 ended by \end{print
+! LaTeX Error: \begin{beamer@framepauses} on input line 247 ended by \end{print
 }.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -1731,33 +1757,29 @@ or  <return>  to continue without it.
 ]
 \openout4 = `languages.vrb'.
 
- (./languages.vrb
-Overfull \hbox (72.8736pt too wide) in paragraph at lines 7--24
-[]  
- []
-
-) [15
+ (./languages.vrb) [15
 
 ]
 \openout4 = `languages.vrb'.
 
  (./languages.vrb
-Overfull \hbox (91.71143pt too wide) detected at line 14
-\OT1/cmss/m/n/10.95 (110100001)[] = 1 \OMS/cmsy/m/n/10.95 ^^B \OT1/cmss/m/n/10.
-95 2[] + 1 \OMS/cmsy/m/n/10.95 ^^B \OT1/cmss/m/n/10.95 2[] + 0 \OMS/cmsy/m/n/10
-.95 ^^B \OT1/cmss/m/n/10.95 2[] + 1 \OMS/cmsy/m/n/10.95 ^^B \OT1/cmss/m/n/10.95
- 2[] + 0 \OMS/cmsy/m/n/10.95 ^^B \OT1/cmss/m/n/10.95 2[] + 0 \OMS/cmsy/m/n/10.9
-5 ^^B \OT1/cmss/m/n/10.95 2[] + 0 \OMS/cmsy/m/n/10.95 ^^B \OT1/cmss/m/n/10.95 2
-[] + 0 \OMS/cmsy/m/n/10.95 ^^B \OT1/cmss/m/n/10.95 2[] + 0 \OMS/cmsy/m/n/10.95 
-^^B \OT1/cmss/m/n/10.95 2[] + 1 \OMS/cmsy/m/n/10.95 ^^B \OT1/cmss/m/n/10.95 2[]
-\OML/cmm/m/it/10.95 :
+Overfull \hbox (90.68423pt too wide) detected at line 14
+\OT1/cmss/m/n/10.95 (\T1/cmss/m/n/10.95 110100001\OT1/cmss/m/n/10.95 )[] = \T1/
+cmss/m/n/10.95 1 \OMS/cmsy/m/n/10.95 ^^B \T1/cmss/m/n/10.95 2[] \OT1/cmss/m/n/1
+0.95 + \T1/cmss/m/n/10.95 1 \OMS/cmsy/m/n/10.95 ^^B \T1/cmss/m/n/10.95 2[] \OT1
+/cmss/m/n/10.95 + \T1/cmss/m/n/10.95 0 \OMS/cmsy/m/n/10.95 ^^B \T1/cmss/m/n/10.
+95 2[] \OT1/cmss/m/n/10.95 + \T1/cmss/m/n/10.95 1 \OMS/cmsy/m/n/10.95 ^^B \T1/c
+mss/m/n/10.95 2[] \OT1/cmss/m/n/10.95 + \T1/cmss/m/n/10.95 0 \OMS/cmsy/m/n/10.9
+5 ^^B \T1/cmss/m/n/10.95 2[] \OT1/cmss/m/n/10.95 + \T1/cmss/m/n/10.95 0 \OMS/cm
+sy/m/n/10.95 ^^B \T1/cmss/m/n/10.95 2[] \OT1/cmss/m/n/10.95 + \T1/cmss/m/n/10.9
+5 0 \OMS/cmsy/m/n/10.95 ^^B \T1/cmss/m/n/10.95 2[] \OT1/cmss/m/n/10.95 + \T1/cm
+ss/m/n/10.95 0 \OMS/cmsy/m/n/10.95 ^^B \T1/cmss/m/n/10.95 2[] \OT1/cmss/m/n/10.
+95 + \T1/cmss/m/n/10.95 0 \OMS/cmsy/m/n/10.95 ^^B \T1/cmss/m/n/10.95 2[] \OT1/c
+mss/m/n/10.95 + \T1/cmss/m/n/10.95 1 \OMS/cmsy/m/n/10.95 ^^B \T1/cmss/m/n/10.95
+ 2[]\OML/cmm/m/it/10.95 :
  []
 
-)
-Overfull \vbox (35.55421pt too high) detected at line 520
- []
-
-[16
+) [16
 
 ]
 \openout4 = `languages.vrb'.
@@ -2014,7 +2036,7 @@ my insertion and my current dilemma will both disappear.
 \openout4 = `languages.vrb'.
 
  (./languages.vrb)
-Overfull \vbox (17.96686pt too high) detected at line 642
+Overfull \vbox (18.84314pt too high) detected at line 613
  []
 
 [20
@@ -2028,17 +2050,18 @@ Overfull \vbox (17.96686pt too high) detected at line 642
 \openout4 = `languages.vrb'.
 
  (./languages.vrb
-Overfull \hbox (16.6845pt too wide) detected at line 16
-\OT1/cmss/m/n/10.95 (1\OML/cmm/m/it/10.95 :\OT1/mathkerncmss/m/sl/10.95 a[]a[] 
-[] a[]\OT1/cmss/m/n/10.95 )[] = 1 \OMS/cmsy/m/n/10.95 ^^B \OT1/cmss/m/n/10.95 2
-[] + \OT1/mathkerncmss/m/sl/10.95 a[] \OMS/cmsy/m/n/10.95 ^^B \OT1/cmss/m/n/10.
-95 2[] + +\OT1/mathkerncmss/m/sl/10.95 a[] \OMS/cmsy/m/n/10.95 ^^B \OT1/cmss/m/
-n/10.95 2[] + [] + \OT1/mathkerncmss/m/sl/10.95 a[] \OMS/cmsy/m/n/10.95 ^^B \OT
-1/cmss/m/n/10.95 2[]\OML/cmm/m/it/10.95 :
+Overfull \hbox (16.45909pt too wide) detected at line 16
+\OT1/cmss/m/n/10.95 (\T1/cmss/m/n/10.95 1\OML/cmm/m/it/10.95 :\OT1/mathkerncmss
+/m/sl/10.95 a[]a[] [] a[]\OT1/cmss/m/n/10.95 )[] = \T1/cmss/m/n/10.95 1 \OMS/cm
+sy/m/n/10.95 ^^B \T1/cmss/m/n/10.95 2[] \OT1/cmss/m/n/10.95 + \OT1/mathkerncmss
+/m/sl/10.95 a[] \OMS/cmsy/m/n/10.95 ^^B \T1/cmss/m/n/10.95 2[] \OT1/cmss/m/n/10
+.95 + +\OT1/mathkerncmss/m/sl/10.95 a[] \OMS/cmsy/m/n/10.95 ^^B \T1/cmss/m/n/10
+.95 2[] \OT1/cmss/m/n/10.95 + [] + \OT1/mathkerncmss/m/sl/10.95 a[] \OMS/cmsy/m
+/n/10.95 ^^B \T1/cmss/m/n/10.95 2[]\OML/cmm/m/it/10.95 :
  []
 
 )
-Overfull \vbox (31.55855pt too high) detected at line 690
+Overfull \vbox (32.4343pt too high) detected at line 661
  []
 
 [22
@@ -2047,12 +2070,12 @@ Overfull \vbox (31.55855pt too high) detected at line 690
 \openout4 = `languages.vrb'.
 
  (./languages.vrb
-Overfull \hbox (15.95634pt too wide) detected at line 12
-\OMS/cmsy/m/n/10.95 ^^@\OT1/cmss/m/n/10.95 2[] [] =
+Overfull \hbox (15.4936pt too wide) detected at line 12
+\OMS/cmsy/m/n/10.95 ^^@\T1/cmss/m/n/10.95 2[] [] \OT1/cmss/m/n/10.95 =
  []
 
 )
-Overfull \vbox (28.95854pt too high) detected at line 719
+Overfull \vbox (29.83429pt too high) detected at line 690
  []
 
 [23
@@ -2061,7 +2084,7 @@ Overfull \vbox (28.95854pt too high) detected at line 719
 \openout4 = `languages.vrb'.
 
  (./languages.vrb)
-Overfull \vbox (0.46687pt too high) detected at line 745
+Overfull \vbox (0.95549pt too high) detected at line 716
  []
 
 [24
@@ -2070,7 +2093,7 @@ Overfull \vbox (0.46687pt too high) detected at line 745
 \openout4 = `languages.vrb'.
 
  (./languages.vrb)
-Overfull \vbox (18.39406pt too high) detected at line 781
+Overfull \vbox (19.65747pt too high) detected at line 752
  []
 
 [25
@@ -2079,7 +2102,7 @@ Overfull \vbox (18.39406pt too high) detected at line 781
 \openout4 = `languages.vrb'.
 
  (./languages.vrb)
-Overfull \vbox (15.86514pt too high) detected at line 813
+Overfull \vbox (17.90228pt too high) detected at line 784
  []
 
 [26
@@ -2088,7 +2111,7 @@ Overfull \vbox (15.86514pt too high) detected at line 813
 \openout4 = `languages.vrb'.
 
  (./languages.vrb)
-Overfull \vbox (16.88708pt too high) detected at line 840
+Overfull \vbox (17.72389pt too high) detected at line 811
  []
 
 [27
@@ -2118,7 +2141,7 @@ Overfull \vbox (16.88708pt too high) detected at line 840
 \openout4 = `languages.vrb'.
 
  (./languages.vrb)
-Overfull \vbox (6.45854pt too high) detected at line 930
+Overfull \vbox (7.33429pt too high) detected at line 901
  []
 
 [32
@@ -2126,7 +2149,11 @@ Overfull \vbox (6.45854pt too high) detected at line 930
 ]
 \openout4 = `languages.vrb'.
 
- (./languages.vrb) [33
+ (./languages.vrb)
+Overfull \vbox (0.50995pt too high) detected at line 921
+ []
+
+[33
 
 ]
 \openout4 = `languages.vrb'.
@@ -2336,12 +2363,7 @@ my insertion and my current dilemma will both disappear.
 ]
 \openout4 = `languages.vrb'.
 
- (./languages.vrb
-Overfull \hbox (66.16896pt too wide) in paragraph at lines 7--24
-[]  
- []
-
-) [37
+ (./languages.vrb) [37
 
 ]
 \openout4 = `languages.vrb'.
@@ -2493,8 +2515,8 @@ or  <return>  to continue without it.
 \openout4 = `languages.vrb'.
 
  (./languages.vrb
-Overfull \hbox (115.44402pt too wide) in paragraph at lines 7--24
-[]  
+Overfull \hbox (20.23764pt too wide) in paragraph at lines 7--25
+[][] 
  []
 
 ) [40
@@ -2529,26 +2551,30 @@ Overfull \hbox (115.44402pt too wide) in paragraph at lines 7--24
 \openout4 = `languages.vrb'.
 
  (./languages.vrb
-Overfull \hbox (99.06265pt too wide) in paragraph at lines 7--19
-[]  
+Overfull \hbox (10.09517pt too wide) in paragraph at lines 7--20
+[][] 
  []
 
 ) [46
 
-]
+] (./languages.toc)
 \openout4 = `languages.vrb'.
 
- (./languages.vrb
-Overfull \hbox (31.24974pt too wide) in paragraph at lines 8--24
-[]  
- []
-
-) [47
+ (./languages.vrb) [47
 
 ]
+
+LaTeX Font Warning: Font shape `T1/cmss/bx/n' in size <4> not available
+(Font)              size <5> substituted on input line 1283.
+
+
+LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 1283.
+
+[48]
 \openout4 = `languages.vrb'.
 
- (./languages.vrb) [48
+ (./languages.vrb) [49
 
 ]
 \openout4 = `languages.vrb'.
@@ -2580,7 +2606,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [49
+) [50
 
 ]
 \openout4 = `languages.vrb'.
@@ -2622,7 +2648,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [50
+) [51
 
 ]
 \openout4 = `languages.vrb'.
@@ -2664,7 +2690,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [51
+) [52
 
 ]
 \openout4 = `languages.vrb'.
@@ -2778,7 +2804,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [52
+) [53
 
 ]
 \openout4 = `languages.vrb'.
@@ -2892,7 +2918,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [53
+) [54
 
 ]
 \openout4 = `languages.vrb'.
@@ -2924,7 +2950,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [54
+) [55
 
 ]
 \openout4 = `languages.vrb'.
@@ -2978,7 +3004,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1491 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1463 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3025,17 +3051,17 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 )
-Overfull \hbox (237.59946pt too wide) in paragraph at lines 4--1491
-\OT1/cmss/m/n/10.95 3)[]\OT1/mathkerncmss/m/sl/10.95 in[]ile \OT1/cmss/m/n/10.9
-5 = 
+Overfull \hbox (237.52945pt too wide) in paragraph at lines 4--1463
+\T1/cmss/m/n/10.95 3\OT1/cmss/m/n/10.95 )[]\OT1/mathkerncmss/m/sl/10.95 in[]ile
+ \OT1/cmss/m/n/10.95 = 
  []
 
 
-Overfull \hbox (42.34375pt too wide) in paragraph at lines 4--1491
+Overfull \hbox (42.30875pt too wide) in paragraph at lines 4--1463
 \OT1/mathkerncmss/m/sl/10.95 NULL\OT1/cmss/m/n/10.95 )[]$  
  []
 
-[55
+[56
 
 ]
 \openout4 = `languages.vrb'.
@@ -3063,7 +3089,7 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1506 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1478 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3088,15 +3114,15 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 )
-Overfull \hbox (144.24722pt too wide) in paragraph at lines 4--1506
+Overfull \hbox (144.17722pt too wide) in paragraph at lines 4--1478
 \OT1/mathkerncmss/m/sl/10.95 NULL\OT1/cmss/m/n/10.95 )[]\OT1/mathkerncmss/m/sl/
 10.95 fclose\OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 in[]ile\OT1/cmss/
 m/n/10.95 ); \OT1/mathkerncmss/m/sl/10.95 fclose\OT1/cmss/m/n/10.95 (\OT1/mathk
 erncmss/m/sl/10.95 out[]ile\OT1/cmss/m/n/10.95 ); \OT1/mathkerncmss/m/sl/10.95 
-return\OT1/cmss/m/n/10.95 0;$  
+return\T1/cmss/m/n/10.95 0\OT1/cmss/m/n/10.95 ;$  
  []
 
-[56
+[57
 
 ]
 \openout4 = `languages.vrb'.
@@ -3124,7 +3150,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1518 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1490 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3137,7 +3163,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [57
+) [58
 
 ]
 \openout4 = `languages.vrb'.
@@ -3157,7 +3183,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1541 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1513 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3181,7 +3207,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [58
+) [59
 
 ]
 \openout4 = `languages.vrb'.
@@ -3239,7 +3265,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (1691.51587pt too wide) in paragraph at lines 4--16
+Overfull \hbox (1691.06082pt too wide) in paragraph at lines 4--16
 \OT1/mathkerncmss/m/sl/10.95 d\OT1/cmss/m/n/10.95 )[]$  
  []
 
@@ -3253,7 +3279,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1562 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1534 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3266,7 +3292,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [59
+) [60
 
 ]
 \openout4 = `languages.vrb'.
@@ -3286,7 +3312,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1585 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1557 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3310,7 +3336,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [60
+) [61
 
 ]
 \openout4 = `languages.vrb'.
@@ -3346,7 +3372,7 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1606 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1578 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3359,7 +3385,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [61
+) [62
 
 ]
 \openout4 = `languages.vrb'.
@@ -3379,7 +3405,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1625 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1597 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3392,12 +3418,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [62
-
-]
-\openout4 = `languages.vrb'.
-
- (./languages.vrb) [63
+) [63
 
 ]
 \openout4 = `languages.vrb'.
@@ -3412,13 +3433,18 @@ or  <return>  to continue without it.
 ]
 \openout4 = `languages.vrb'.
 
-
-(./languages.vrb) [66
+ (./languages.vrb) [66
 
 ]
 \openout4 = `languages.vrb'.
 
- (./languages.vrb) [67
+
+(./languages.vrb) [67
+
+]
+\openout4 = `languages.vrb'.
+
+ (./languages.vrb) [68
 
 ]
 \openout4 = `languages.vrb'.
@@ -3458,7 +3484,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1727 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1699 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3495,7 +3521,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1727 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1699 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3508,7 +3534,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [68
+) [69
 
 ]
 \openout4 = `languages.vrb'.
@@ -3536,7 +3562,7 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1748 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1720 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3561,24 +3587,15 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 )
-Overfull \hbox (370.4063pt too wide) in paragraph at lines 7--1748
-\OT1/cmss/m/n/10.95 coulomb$[]\OT1/mathkerncmss/m/sl/10.95 ntegral\OT1/cmss/m/n
-/10.95 (\OT1/mathkerncmss/m/sl/10.95 np\OML/cmm/m/it/10.95 ; \OT1/mathkerncmss/
-m/sl/10.95 lp\OML/cmm/m/it/10.95 ; \OT1/mathkerncmss/m/sl/10.95 n\OML/cmm/m/it/
-10.95 ; \OT1/mathkerncmss/m/sl/10.95 l\OML/cmm/m/it/10.95 ; \OT1/mathkerncmss/m
-/sl/10.95 coulomb\OT1/cmss/m/n/10.95 )\OT1/mathkerncmss/m/sl/10.95 USEeective[
-]nteraction[]eclarUSEenergy[]ariablesUSEwave[]unctionsIMPLICITNONEINTEGER\OML/c
-mm/m/it/10.95 ; \OT1/mathkerncmss/m/sl/10.95 INTENT\OT1/cmss/m/n/10.95 (\OT1/ma
-thkerncmss/m/sl/10.95 IN\OT1/cmss/m/n/10.95 ) :: 
- []
-
-[69
-
-]
-\openout4 = `languages.vrb'.
-
- (./languages.vrb)
-Overfull \vbox (146.32445pt too high) detected at line 1769
+Overfull \hbox (370.03925pt too wide) in paragraph at lines 7--1720
+\T1/cmss/m/n/10.95 coulomb$[]\OT1/mathkerncmss/m/sl/10.95 ntegral\OT1/cmss/m/n/
+10.95 (\OT1/mathkerncmss/m/sl/10.95 np\OML/cmm/m/it/10.95 ; \OT1/mathkerncmss/m
+/sl/10.95 lp\OML/cmm/m/it/10.95 ; \OT1/mathkerncmss/m/sl/10.95 n\OML/cmm/m/it/1
+0.95 ; \OT1/mathkerncmss/m/sl/10.95 l\OML/cmm/m/it/10.95 ; \OT1/mathkerncmss/m/
+sl/10.95 coulomb\OT1/cmss/m/n/10.95 )\OT1/mathkerncmss/m/sl/10.95 USEeective[]
+nteraction[]eclarUSEenergy[]ariablesUSEwave[]unctionsIMPLICITNONEINTEGER\OML/cm
+m/m/it/10.95 ; \OT1/mathkerncmss/m/sl/10.95 INTENT\OT1/cmss/m/n/10.95 (\OT1/mat
+hkerncmss/m/sl/10.95 IN\OT1/cmss/m/n/10.95 ) :: 
  []
 
 [70
@@ -3591,7 +3608,18 @@ Overfull \vbox (146.32445pt too high) detected at line 1769
 ]
 \openout4 = `languages.vrb'.
 
- (./languages.vrb
+ (./languages.vrb) [72
+
+]
+\openout4 = `languages.vrb'.
+
+ (./languages.vrb) [73
+
+]
+\openout4 = `languages.vrb'.
+
+
+(./languages.vrb
 
 ! LaTeX Error: Environment print undefined.
 
@@ -3606,7 +3634,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1800 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1775 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3641,22 +3669,22 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [72
-
-]
-\openout4 = `languages.vrb'.
-
- (./languages.vrb) [73
-
-]
-\openout4 = `languages.vrb'.
-
- (./languages.vrb) [74
+) [74
 
 ]
 \openout4 = `languages.vrb'.
 
  (./languages.vrb) [75
+
+]
+\openout4 = `languages.vrb'.
+
+ (./languages.vrb) [76
+
+]
+\openout4 = `languages.vrb'.
+
+ (./languages.vrb) [77
 
 ]
 \openout4 = `languages.vrb'.
@@ -3701,7 +3729,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1865 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1840 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3725,7 +3753,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [76
+) [78
 
 ]
 \openout4 = `languages.vrb'.
@@ -3801,10 +3829,10 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (44.20042pt too wide) in paragraph at lines 11--17
-\OT1/cmss/m/n/10.95 Complex$[]\OT1/mathkerncmss/m/sl/10.95 de^^LneComplex[]\OML
-/cmm/m/it/10.95 ==\OT1/mathkerncmss/m/sl/10.95 variousincludestatementsandde^^L
-nitionsinclude \OML/cmm/m/it/10.95 < 
+Overfull \hbox (43.82755pt too wide) in paragraph at lines 11--17
+\T1/cmss/m/n/10.95 Complex$[]\OT1/mathkerncmss/m/sl/10.95 de^^LneComplex[]\OML/
+cmm/m/it/10.95 ==\OT1/mathkerncmss/m/sl/10.95 variousincludestatementsandde^^Ln
+itionsinclude \OML/cmm/m/it/10.95 < 
  []
 
 ! You can't use `macro parameter character #' in horizontal mode.
@@ -3816,7 +3844,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1893 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1868 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3829,12 +3857,12 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [77
+) [79
 
 ]
 \openout4 = `languages.vrb'.
 
- (./languages.vrb) [78
+ (./languages.vrb) [80
 
 ]
 \openout4 = `languages.vrb'.
@@ -3862,7 +3890,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1928 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1903 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3886,12 +3914,12 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [79
+) [81
 
 ]
 \openout4 = `languages.vrb'.
 
- (./languages.vrb) [80
+ (./languages.vrb) [82
 
 ]
 \openout4 = `languages.vrb'.
@@ -3941,7 +3969,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1955 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1930 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -3965,7 +3993,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [81
+) [83
 
 ]
 \openout4 = `languages.vrb'.
@@ -4082,7 +4110,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 1971 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1946 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4107,7 +4135,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 )
-Overfull \hbox (119.09389pt too wide) in paragraph at lines 4--1971
+Overfull \hbox (119.09389pt too wide) in paragraph at lines 4--1946
 \OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 constComplexa\OML/cmm/m/it/10
 .95 ; \OT1/mathkerncmss/m/sl/10.95 constComplexb\OT1/cmss/m/n/10.95 ); \OT1/mat
 hkerncmss/m/sl/10.95 friendComplexoperator\OML/cmm/m/it/10.95 =\OT1/cmss/m/n/10
@@ -4115,22 +4143,22 @@ hkerncmss/m/sl/10.95 friendComplexoperator\OML/cmm/m/it/10.95 =\OT1/cmss/m/n/10
 erncmss/m/sl/10.95 constComplexb\OT1/cmss/m/n/10.95 ); ;$  
  []
 
-[82
-
-]
-\openout4 = `languages.vrb'.
-
- (./languages.vrb) [83
-
-]
-\openout4 = `languages.vrb'.
-
- (./languages.vrb) [84
+[84
 
 ]
 \openout4 = `languages.vrb'.
 
  (./languages.vrb) [85
+
+]
+\openout4 = `languages.vrb'.
+
+ (./languages.vrb) [86
+
+]
+\openout4 = `languages.vrb'.
+
+ (./languages.vrb) [87
 
 ]
 \openout4 = `languages.vrb'.
@@ -4151,7 +4179,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2014 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 1989 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4164,7 +4192,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [86
+) [88
 
 ]
 \openout4 = `languages.vrb'.
@@ -4184,7 +4212,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2032 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2007 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4219,7 +4247,7 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2032 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2007 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4243,7 +4271,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [87
+) [89
 
 ]
 \openout4 = `languages.vrb'.
@@ -4272,7 +4300,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2048 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2023 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4285,7 +4313,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [88
+) [90
 
 ]
 \openout4 = `languages.vrb'.
@@ -4315,7 +4343,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2064 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2039 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4328,7 +4356,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [89
+) [91
 
 ]
 \openout4 = `languages.vrb'.
@@ -4348,7 +4376,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2083 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2058 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4385,7 +4413,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2083 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2058 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4398,7 +4426,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [90
+) [92
 
 ]
 \openout4 = `languages.vrb'.
@@ -4418,7 +4446,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2094 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2069 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4431,12 +4459,12 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [91
+) [93
 
 ]
 \openout4 = `languages.vrb'.
 
- (./languages.vrb) [92
+ (./languages.vrb) [94
 
 ]
 \openout4 = `languages.vrb'.
@@ -4476,7 +4504,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2125 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2100 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4489,7 +4517,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [93
+) [95
 
 ]
 \openout4 = `languages.vrb'.
@@ -4519,7 +4547,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2142 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2117 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4532,17 +4560,17 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [94
+) [96
 
 ]
 \openout4 = `languages.vrb'.
 
  (./languages.vrb)
-Overfull \hbox (49.12877pt too wide) in paragraph at lines 3--2154
+Overfull \hbox (43.52913pt too wide) in paragraph at lines 3--2129
 [] 
  []
 
-[95
+[97
 
 ]
 \openout4 = `languages.vrb'.
@@ -4582,7 +4610,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2170 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2145 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4595,7 +4623,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [96
+) [98
 
 ]
 \openout4 = `languages.vrb'.
@@ -4615,7 +4643,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2185 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2160 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4628,7 +4656,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [97
+) [99
 
 ]
 \openout4 = `languages.vrb'.
@@ -4668,7 +4696,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2207 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2182 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4715,7 +4743,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2207 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2182 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4728,7 +4756,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [98
+) [100
 
 ]
 \openout4 = `languages.vrb'.
@@ -4768,7 +4796,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2220 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2195 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4781,7 +4809,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [99
+) [101
 
 ]
 \openout4 = `languages.vrb'.
@@ -4821,7 +4849,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2234 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2209 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4845,7 +4873,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [100
+) [102
 
 ]
 \openout4 = `languages.vrb'.
@@ -4893,7 +4921,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2251 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2226 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4917,7 +4945,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [101
+) [103
 
 ]
 \openout4 = `languages.vrb'.
@@ -4937,7 +4965,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2267 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2242 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -4950,7 +4978,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [102
+) [104
 
 ]
 \openout4 = `languages.vrb'.
@@ -5000,7 +5028,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2280 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2255 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -5013,12 +5041,12 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [103
+) [105
 
 ]
 \openout4 = `languages.vrb'.
 
- (./languages.vrb) [104
+ (./languages.vrb) [106
 
 ]
 \openout4 = `languages.vrb'.
@@ -5068,7 +5096,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2314 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2289 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -5092,7 +5120,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [105
+) [107
 
 ]
 \openout4 = `languages.vrb'.
@@ -5209,7 +5237,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2332 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2307 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -5234,7 +5262,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 )
-Overfull \hbox (119.09389pt too wide) in paragraph at lines 6--2332
+Overfull \hbox (119.09389pt too wide) in paragraph at lines 6--2307
 \OT1/cmss/m/n/10.95 (\OT1/mathkerncmss/m/sl/10.95 constComplexa\OML/cmm/m/it/10
 .95 ; \OT1/mathkerncmss/m/sl/10.95 constComplexb\OT1/cmss/m/n/10.95 ); \OT1/mat
 hkerncmss/m/sl/10.95 friendComplexoperator\OML/cmm/m/it/10.95 =\OT1/cmss/m/n/10
@@ -5242,7 +5270,7 @@ hkerncmss/m/sl/10.95 friendComplexoperator\OML/cmm/m/it/10.95 =\OT1/cmss/m/n/10
 erncmss/m/sl/10.95 constComplexb\OT1/cmss/m/n/10.95 ); ;$  
  []
 
-[106
+[108
 
 ]
 \openout4 = `languages.vrb'.
@@ -5262,7 +5290,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2346 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2321 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -5275,7 +5303,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [107
+) [109
 
 ]
 \openout4 = `languages.vrb'.
@@ -5303,7 +5331,7 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2361 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2336 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -5327,7 +5355,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [108
+) [110
 
 ]
 \openout4 = `languages.vrb'.
@@ -5347,7 +5375,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2382 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2357 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -5360,7 +5388,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [109
+) [111
 
 ]
 \openout4 = `languages.vrb'.
@@ -5396,7 +5424,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-! LaTeX Error: \begin{beamer@framepauses} on input line 2399 ended by \end{prin
+! LaTeX Error: \begin{beamer@framepauses} on input line 2374 ended by \end{prin
 t}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -5420,16 +5448,16 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [110
+) [112
 
 ]
 \openout4 = `languages.vrb'.
 
  (./languages.vrb)
-Overfull \vbox (52.22522pt too high) detected at line 2431
+Overfull \vbox (52.71437pt too high) detected at line 2406
  []
 
-[111
+[113
 
 ]
 \openout4 = `languages.vrb'.
@@ -5505,7 +5533,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [112
+) [114
 
 ]
 \openout4 = `languages.vrb'.
@@ -5581,27 +5609,12 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-)
-Overfull \vbox (230.79355pt too high) detected at line 2529
- []
-
-[113
+) [115
 
 ]
 \openout4 = `languages.vrb'.
 
- (./languages.vrb) [114
-
-]
-\openout4 = `languages.vrb'.
-
- (./languages.vrb) [115
-
-]
-\openout4 = `languages.vrb'.
-
- (./languages.vrb)
-[116
+ (./languages.vrb) [116
 
 ]
 \openout4 = `languages.vrb'.
@@ -5611,54 +5624,95 @@ Overfull \vbox (230.79355pt too high) detected at line 2529
 ]
 \openout4 = `languages.vrb'.
 
- (./languages.vrb) [118
+ (./languages.vrb)
+[118
 
 ]
-\tf@nav=\write8
-\openout8 = `languages.nav'.
+\openout4 = `languages.vrb'.
 
-\tf@toc=\write9
-\openout9 = `languages.toc'.
+ (./languages.vrb) [119
 
-\tf@snm=\write10
-\openout10 = `languages.snm'.
+]
+\openout4 = `languages.vrb'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2616.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2616.
+ (./languages.vrb) [120
+
+]
+\openout4 = `languages.vrb'.
+
+ (./languages.vrb)
+[121
+
+]
+\openout4 = `languages.vrb'.
+
+ (./languages.vrb) [122
+
+]
+\tf@nav=\write9
+\openout9 = `languages.nav'.
+
+\tf@toc=\write10
+\openout10 = `languages.toc'.
+
+\tf@snm=\write11
+\openout11 = `languages.snm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2588.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2588.
  (./languages.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2616.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2616.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2588.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2588.
 
 Package rerunfilecheck Info: File `languages.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2616.
+(rerunfilecheck)             Checksum: 8D82FD9EA907E7BA1D06200808C24723;42.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.0pt have occurred.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2588.
  ) 
 Here is how much of TeX's memory you used:
- 19758 strings out of 493488
- 371689 string characters out of 3141325
- 453516 words of memory out of 3000000
- 22182 multiletter control sequences out of 15000+200000
- 24143 words of font info for 86 fonts, out of 3000000 for 9000
+ 20134 strings out of 493488
+ 375640 string characters out of 3141326
+ 449703 words of memory out of 3000000
+ 22514 multiletter control sequences out of 15000+200000
+ 35541 words of font info for 103 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,15n,60p,1134b,820s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb
-></usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
-usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></u
-sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></us
-r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/
-local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr
-/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr
-/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr
-/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/
-local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
-ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
-al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on languages.pdf (118 pages, 297530 bytes).
+ 49i,16n,60p,1134b,807s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/
+local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/l
+ocal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/lo
+cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/loca
+l/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/
+texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/
+texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/
+texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/t
+exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/te
+xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texli
+ve/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive
+/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2
+012/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/201
+2/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2012/
+texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2012/te
+xmf-dist/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texlive/2012/texm
+f-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2012/texmf-
+dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2012/texmf-di
+st/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2012/texmf-dist
+/fonts/type1/public/cm-super/sfsx0600.pfb></usr/local/texlive/2012/texmf-dist/f
+onts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2012/texmf-dist/fon
+ts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2012/texmf-dist/fonts
+/type1/public/cm-super/sftt1095.pfb>
+Output written on languages.pdf (122 pages, 456980 bytes).
 PDF statistics:
- 624 PDF objects out of 1000 (max. 8388607)
- 466 compressed objects within 5 object streams
- 120 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 705 PDF objects out of 1000 (max. 8388607)
+ 526 compressed objects within 6 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
