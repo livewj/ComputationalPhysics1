@@ -5,8 +5,8 @@ DATE: Fall 2015
 !split
 ===== Extremely useful tools, strongly recommended =====
 
-!bblock and discussed at the lab sessions the first two weeks
-  * GIT for version control (see webpage), discussed at the lab this week (and next week as well)
+!bblock and discussed at the lab sessions the first two weeks (see guides at the "website of the course":"http://www.uio.no/studier/emner/matnat/fys/FYS3150/h15/index.html")
+  * GIT for version control, discussed at the lab this week (and next week as well)
   * ipython notebook, mentioned this week 
   * QTcreator for editing and mastering computational projects (for C++ codes, see webpage of course)
   * Armadillo as a useful numerical library for C++, highly recommended

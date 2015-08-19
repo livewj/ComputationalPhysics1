@@ -9,7 +9,7 @@ DATE: Fall 2015
 !bblock
   * Thursday: First lecture: Presentation of the course, aims and content
   * Thursday: Second Lecture: Introduction to C++ programming and numerical precision. Exercises for first week. 
-  * Friday: Numerical precision and C++ programming, continued and exercises for first week
+  * Friday: Numerical precision and C++ programming, continued and exercises for first week (chapter 2 of lecture notes)
   * Numerical differentiation and loss of numerical precision (chapter 3 lecture notes)
   * Computer lab: Thursday and Friday. First time: Thursday and Friday this week, Presentation of hardware and software at room FV329 first hour of every labgroup and solution of first simple exercises. The first two weeks we focus on simple programming exercises and to set up github and QTcreator.
 !eblock
@@ -31,9 +31,9 @@ DATE: Fall 2015
 ===== Course Format =====
 
 !bblock
-  * Several computer exercises, 5 compulsory projects. Electronic reports only.
-  * Evaluation and grading: The last project (50% of final grade) and a  final written exam (50% of final grade). Final written exam December 14.
-  * The computer lab (room FV329)consists of 16 Linux PCs, but many prefer own laptops. C/C++ is the default programming language, but Fortran2008 and Python are also used. All source codes discussed during the lectures can be found at the webpage of the course. We recommend either C/C++, Fortran2008 or Python as languages.
+  * Several computer exercises, 5 compulsory projects. Electronic reports only using "devilry":"https://devilry.ifi.uio.no/" to hand in projects and "Git":"https://github.com/" for repository and all your material.
+  * Evaluation and grading: The last two projects (4 and 5) count 1/3 of the final mark each  and the  final written exam counts another 1/3 of the final grade. Final written exam December 14.
+  * The computer lab (room FV329)consists of 16 Linux PCs, but many prefer own laptops. C/C++ is the default programming language, but Fortran2008 and Python are also used. All source codes discussed during the lectures can be found at the webpage and "github address":"https://github.com/CompPhysics/ComputationalPhysics1" of the course. We recommend either C/C++, Fortran2008 or Python as languages.
 !eblock
 
 !split
@@ -44,10 +44,10 @@ DATE: Fall 2015
 |------------------------------------------------------|
 |      day         |            teacher                |
 |---------l-----------------------l--------------------|
-| Thursday 10am-2pm | Anders, Morten L., Håvard, MHJ |
-| Thursday 2pm-6pm | Anders, Morten L., Håvard, MHJ |
-| Friday 10am-2pm   | Anders, Morten L., Håvard, MHJ |
-| Friday 2pm-6pm   | Anders, Morten L., Håvard, MHJ |
+| Thursday 10am-2pm | Anders, Morten L., Haavard, MHJ |
+| Thursday 2pm-6pm | Anders, Morten L., Haavard, MHJ |
+| Friday 10am-2pm   | Anders, Morten L., Haavard, MHJ |
+| Friday 2pm-6pm   | Anders, Morten L., Haavard, MHJ |
 |------------------------------------------------------|
 
 !eblock
@@ -66,7 +66,7 @@ DATE: Fall 2015
   * Ordinary differential equations
   * Partial differential equations
   * Parallelization of codes
-  * Programming av GPUs (optional)
+  * High-performance computing aspects
 !eblock
 
 
@@ -185,17 +185,4 @@ FIGURE: [fig-intro/Nebbdyr2.pdf, width=500 frac=0.6]
   * Unit tests, week 37 and later
   * Devilry for handing in projects, next week
 !eblock
-
-!split
-===== A structured programming approach =====
-
-  * Before writing a single line, have the algorithm clarified and understood. It is crucial to have a logical structure of e.g., the flow and organization of data before one starts writing.
-  * Always try to choose the simplest algorithm. Computational speed can be improved upon later.
-  * Try to write a as clear program as possible. Such programs are easier to debug, and although it may take more time, in the long run it may save you time. If you collaborate with other people, it reduces spending time on debuging and trying to understand what the codes do. A clear program will also allow you to remember better what the program really does!
-
-!split
-===== A structured programming approach =====
-
-  * The planning of the program should be from top down to bottom, trying to keep the flow as linear as possible. Avoid jumping back and forth in the program. First you need to arrange the major tasks to be achieved. Then try to break the major tasks into subtasks. These can be represented by functions or subprograms. They should accomplish limited tasks and as far as possible be independent of each other. That will allow you to use them in other programs as well.
-  * Try always to find some cases where an analytical solution exists or where simple test cases can be applied. If possible, devise different algorithms for solving the same problem. If you get the same answers, you may have coded things correctly or made the same error twice or more.
 
