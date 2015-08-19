@@ -34,39 +34,39 @@
 \usepackage{epsfig}
 \usepackage{relsize}
 
-\usepackage{fancybox}  % make sure fancybox is loaded before fancyvrb
-
 \usepackage{fancyvrb}
 \usepackage{minted} % requires pygments and latex -shell-escape filename
 %\usepackage{anslistings}
-%\usepackage{listingsutf8}
 
 \usepackage{amsmath,amssymb,bm}
 %\usepackage[latin1]{inputenc}
-\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{colortbl}
 \usepackage[english]{babel}
 \usepackage{tikz}
-\usepackage{framed}
+\usepackage{framed,anslistings}
 % Use some nice templates
 \beamertemplatetransparentcovereddynamic
 
-% --- begin table of contents based on sections ---
 % Delete this, if you do not want the table of contents to pop up at
 % the beginning of each section:
-% (Only section headings can enter the table of contents in Beamer
-% slides generated from DocOnce source, while subsections are used
-% for the title in ordinary slides.)
 \AtBeginSection[]
 {
-  \begin{frame}<beamer>[plain]
-  \frametitle{}
-  %\frametitle{Outline}
-  \tableofcontents[currentsection]
-  \end{frame}
+    \begin{frame}<beamer>[plain]
+    \frametitle{}
+    \tableofcontents[currentsection]
+    \end{frame}
 }
-% --- end table of contents based on sections ---
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each section:
+\AtBeginSection[]
+{
+    \begin{frame}<beamer>[plain]
+    \frametitle{}
+    \tableofcontents[currentsection]
+    \end{frame}
+}
 
 % If you wish to uncover everything in a step-wise fashion, uncomment
 % the following command:
@@ -85,14 +85,44 @@
     pdftoolbar=true,
     bookmarksdepth=3
     }
-\setlength{\parskip}{0pt}  % {1em}
-
+\setlength{\parskip}{7pt}  % {1em}
 \newenvironment{doconceexercise}{}{}
 \newcounter{doconceexercisecounter}
+\newcommand{\subex}[1]{\noindent\textbf{#1}}  % for subexercises: a), b), etc
+
+\newenvironment{notice_colors1admon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{notice_colors2admon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{notice_grayiconadmon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{notice_yellowiconadmon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{notice_mdfboxadmon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{summary_colors1admon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{summary_colors2admon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{summary_grayiconadmon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{summary_yellowiconadmon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{summary_mdfboxadmon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{warning_colors1admon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{warning_colors2admon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{warning_grayiconadmon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{warning_yellowiconadmon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{warning_mdfboxadmon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{question_colors1admon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{question_colors2admon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{question_grayiconadmon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{question_yellowiconadmon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{question_mdfboxadmon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{block_colors1admon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{block_colors2admon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{block_grayiconadmon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{block_yellowiconadmon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{block_mdfboxadmon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{paragraphadmon}[1][]{\begin{block}{#1}}{\end{block}}
+\newenvironment{graybox2admon}[1][]{\begin{block}{#1}}{\end{block}}
+\newcommand{\grayboxhrules}[1]{\begin{block}{}#1\end{block}}
+
+\newenvironment{doconce:exercise}{}{}
+\newcounter{doconce:exercise:counter}
 \newenvironment{doconce:movie}{}{}
 \newcounter{doconce:movie:counter}
-
-\newcommand{\subex}[1]{\noindent\textbf{#1}}  % for subexercises: a), b), etc
 
 %-------------------- end beamer-specific preamble ----------------------
 
@@ -110,7 +140,6 @@
 
 \begin{document}
 
-% endif for #ifdef PREAMBLE
 
 
 
@@ -141,7 +170,7 @@ Department of Physics and Astronomy and National Superconducting Cyclotron Labor
 \begin{frame}[plain,fragile]
 \frametitle{Extremely useful tools, strongly recommended}
 
-\begin{block}{and discussed at the lab sessions the first two weeks }
+\begin{block_mdfboxadmon}[and discussed at the lab sessions the first two weeks.]
 \begin{itemize}
   \item GIT for version control (see webpage)
 
@@ -157,13 +186,13 @@ Department of Physics and Astronomy and National Superconducting Cyclotron Labor
 \end{itemize}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{A structured programming approach}
 
-\begin{block}{}
+\begin{block_mdfboxadmon}[]
 
 \begin{itemize}
   \item Before writing a single line, have the algorithm clarified and understood. It is crucial to have a logical structure of e.g., the flow and organization of data before one starts writing.
@@ -174,13 +203,13 @@ Department of Physics and Astronomy and National Superconducting Cyclotron Labor
 \end{itemize}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{A structured programming approach}
 
-\begin{block}{}
+\begin{block_mdfboxadmon}[]
 
 \begin{itemize}
   \item The planning of the program should be from top down to bottom, trying to keep the flow as linear as possible. Avoid jumping back and forth in the program. First you need to arrange the major tasks to be achieved. Then try to break the major tasks into subtasks. These can be represented by functions or subprograms. They should accomplish limited tasks and as far as possible be independent of each other. That will allow you to use them in other programs as well.
@@ -189,17 +218,17 @@ Department of Physics and Astronomy and National Superconducting Cyclotron Labor
 \end{itemize}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Getting Started}
 
-\begin{block}{Compiling and linking, without QTcreator }
+\begin{block_mdfboxadmon}[Compiling and linking without QTcreator.]
 In order to obtain an executable file for a C++ program, the following
 instructions under Linux/Unix can be used
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{console}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{console}
 c++ -c -Wall myprogram.cpp
 c++ -o myprogram myprogram.o
 \end{minted}
@@ -213,10 +242,10 @@ and produces the executable \Verb!myprogram! .
 For Fortran2008 we use the Intel compiler, replace \Verb!c++! with \Verb!ifort!.
 Also, to speed up the code use compile options like
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{console}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{console}
 c++ -O3 -c -Wall myprogram.cpp
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
@@ -226,7 +255,7 @@ Under Linux/Unix it is often convenient to create a
 so-called makefile, which is a script which includes possible
 compiling commands.
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 # Comment lines
 # General makefile for c - choose PROG =   name of given program
 # Here we define compiler option, libraries and the  target
@@ -249,10 +278,10 @@ makefile. Note that C++ files have the extension \Verb!.cpp!.
 \begin{frame}[plain,fragile]
 \frametitle{Hello world}
 
-\begin{block}{The C encounter }
+\begin{block_mdfboxadmon}[The C encounter.]
 Here we present first the C version.
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 /* comments in C begin like this and end with */
 #include <stdlib.h> /* atof function */
 #include <math.h>   /* sine function */
@@ -266,19 +295,19 @@ int main (int argc, char* argv[])
   return 0;           /* success execution of the program */
 
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Hello World}
 
-\begin{block}{Dissection I }
+\begin{block_mdfboxadmon}[Dissection I.]
 The compiler must see a declaration of a function before you can
 call it (the compiler checks the argument and return types).
 The declaration of library functions appears
 in so-called ``header files'' that must be included in the program, e.g.,
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
    #include <stdlib.h> /* atof function */
 \end{minted}
 We call three functions (atof, sin, printf)
@@ -290,19 +319,19 @@ and other programs/utilities can check whether
 the execution was successful or not.
 The command-line arguments are transferred to the main function through
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
    int main (int argc, char* argv[])
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Hello World}
 
-\begin{block}{Dissection II }
+\begin{block_mdfboxadmon}[Dissection II.]
 The command-line arguments are transferred to the main function through
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
    int main (int argc, char* argv[])
 \end{minted}
 The integer \Verb!argc! is the no of command-line arguments, set to
@@ -322,16 +351,16 @@ an executable file.
 With the command \Verb!printf! we obtain a formatted printout.
 The \Verb!printf! syntax is used for formatting output
 in many C-inspired languages (Perl, Python, Awk, partly C++).
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Hello World}
 
-\begin{block}{Now in C++ }
+\begin{block_mdfboxadmon}[Now in C++.]
 Here we present first the C++ version.
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 // A comment line begins like this in C++ programs
 // Standard ANSI-C++ include files
 using namespace std
@@ -346,13 +375,13 @@ int main (int argc, char* argv[])
   return 0;
 }
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{C++ Hello World}
 
-\begin{block}{Dissection I }
+\begin{block_mdfboxadmon}[Dissection I.]
 We have replaced the call to \Verb!printf! with the standard C++ function
 \Verb!cout!. The header file \Verb!<iostream.h>! is then needed.
 In addition, we don't need to
@@ -360,13 +389,13 @@ declare variables like \Verb!r! and \Verb!s!  at the beginning of the program.
 I personally prefer
 however to declare all variables at the beginning of a function, as this
 gives \emph{me} a feeling of greater readability.
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Brief summary}
 
-\begin{block}{C/C++ program }
+\begin{block_mdfboxadmon}[C/C++ program.]
 \begin{itemize}
   \item A C/C++ program begins with include statements of header files (libraries,intrinsic functions etc)
 
@@ -380,13 +409,13 @@ gives \emph{me} a feeling of greater readability.
 \end{itemize}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Brief summary}
 
-\begin{block}{Arrays }
+\begin{block_mdfboxadmon}[Arrays.]
 \begin{itemize}
   \item A C/C++ array begins by indexing at 0!
 
@@ -396,13 +425,13 @@ gives \emph{me} a feeling of greater readability.
 \end{itemize}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Serious problems and representation of numbers}
 
-\begin{block}{Integer and Real Numbers }
+\begin{block_mdfboxadmon}[Integer and Real Numbers.]
 
 \begin{itemize}
   \item Overflow
@@ -415,43 +444,43 @@ gives \emph{me} a feeling of greater readability.
 \end{itemize}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Limits, you must declare variables}
 
-\begin{block}{C++ and Fortran declarations }
+\begin{block_mdfboxadmon}[C++ and Fortran declarations.]
 
 
-{\footnotesize
+\begin{quote}
 \begin{tabular}{lcl}
 \hline
 \multicolumn{1}{c}{ type in C/C++ and Fortran2008 } & \multicolumn{1}{c}{ bits } & \multicolumn{1}{c}{ range } \\
 \hline
-\Verb!int/INTEGER! (2)          & 16   & -32768 to 32767                                \\
-\Verb!unsigned int!             & 16   & 0 to 65535                                     \\
-\Verb!signed int!               & 16   & -32768 to 32767                                \\
-\Verb!short int!                & 16   & -32768 to 32767                                \\
-\Verb!unsigned short int!       & 16   & 0 to 65535                                     \\
-\Verb!signed short int!         & 16   & $-32768$ to 32767                              \\
-\Verb!int/long int/INTEGER! (4) & 32   & -2147483648 to 2147483647                      \\
-\Verb!signed long int!          & 32   & -2147483648 to 2147483647                      \\
-\Verb!float/REAL(4)!            & 32   & $3.4\times 10^{-44}$ to $3.4\times 10^{+38}$   \\
-\Verb!double/REAL(8)!           & 64   & $1.7\times 10^{-322}$ to $1.7\times 10^{+308}$ \\
-\Verb!long double!              & 64   & $1.7\times 10^{-322}$ to $1.7\times 10^{+308}$ \\
+\Verb!int/INTEGER! (2)                         & 16                                             & -32768 to 32767                                \\
+\Verb!unsigned int!                            & 16                                             & 0 to 65535                                     \\
+\Verb!signed int!                              & 16                                             & -32768 to 32767                                \\
+\Verb!short int!                               & 16                                             & -32768 to 32767                                \\
+\Verb!unsigned short int!                      & 16                                             & 0 to 65535                                     \\
+\Verb!signed short int!                        & 16                                             & $-32768$ to 32767                              \\
+\Verb!int/long int/INTEGER! (4)                & 32                                             & -2147483648 to 2147483647                      \\
+\Verb!signed long int!                         & 32                                             & -2147483648 to 2147483647                      \\
+\Verb!float/REAL(4)!                           & 32                                             & $3.4\times 10^{-44}$ to $3.4\times 10^{+38}$   \\
+\Verb!double/REAL(8)!                          & 64                                             & $1.7\times 10^{-322}$ to $1.7\times 10^{+308}$ \\
+\Verb!long double!                             & 64                                             & $1.7\times 10^{-322}$ to $1.7\times 10^{+308}$ \\
 \hline
 \end{tabular}
-}
+\end{quote}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{From decimal to binary representation}
 
-\begin{block}{How to do it }
+\begin{block_mdfboxadmon}[How to do it.]
 \[
   a_n2^n+a_{n-1}2^{n-1}  +a_{n-2}2^{n-2}  +\dots +a_{0}2^{0}.
 \]
@@ -468,33 +497,33 @@ To see this, we have performed the following divisions by 2
 
 
 
-{\footnotesize
+\begin{quote}
 \begin{tabular}{ccc}
 \hline
  \\
 \hline
-417/2=208 & remainder 1 & coefficient of $2^{0}$ is 1 \\
-208/2=104 & remainder 0 & coefficient of $2^{1}$ is 0 \\
-104/2=52  & remainder 0 & coefficient of $2^{2}$ is 0 \\
-52/2=26   & remainder 0 & coefficient of $2^{3}$ is 0 \\
-26/2=13   & remainder 1 & coefficient of $2^{4}$ is 0 \\
-13/2= 6   & remainder 1 & coefficient of $2^{5}$ is 1 \\
-6/2= 3    & remainder 0 & coefficient of $2^{6}$ is 0 \\
-3/2= 1    & remainder 1 & coefficient of $2^{7}$ is 1 \\
-1/2= 0    & remainder 1 & coefficient of $2^{8}$ is 1 \\
+417/2=208                   & remainder 1                 & coefficient of $2^{0}$ is 1 \\
+208/2=104                   & remainder 0                 & coefficient of $2^{1}$ is 0 \\
+104/2=52                    & remainder 0                 & coefficient of $2^{2}$ is 0 \\
+52/2=26                     & remainder 0                 & coefficient of $2^{3}$ is 0 \\
+26/2=13                     & remainder 1                 & coefficient of $2^{4}$ is 0 \\
+13/2= 6                     & remainder 1                 & coefficient of $2^{5}$ is 1 \\
+6/2= 3                      & remainder 0                 & coefficient of $2^{6}$ is 0 \\
+3/2= 1                      & remainder 1                 & coefficient of $2^{7}$ is 1 \\
+1/2= 0                      & remainder 1                 & coefficient of $2^{8}$ is 1 \\
 \hline
 \end{tabular}
-}
+\end{quote}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{From decimal to binary representation}
 
-\begin{block}{Integer numbers }
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{block_mdfboxadmon}[Integer numbers.]
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 using namespace std;
 #include <iostream>
 int main (int argc, char* argv[])
@@ -517,14 +546,14 @@ int main (int argc, char* argv[])
   return 0;
 
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{From decimal to binary representation}
 
-\begin{block}{Integer numbers, Fortran }
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{fortran}
+\begin{block_mdfboxadmon}[Integer numbers Fortran.]
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{fortran}
 PROGRAM binary_integer
 IMPLICIT NONE
   INTEGER  i, number, terms(0:31) ! storage of a0, a1, etc, up to 32 bits
@@ -546,14 +575,14 @@ IMPLICIT NONE
 
 END PROGRAM binary_integer
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Integer Numbers}
 
-\begin{block}{Possible Overflow for Integers }
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{block_mdfboxadmon}[Possible Overflow for Integers.]
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 // A comment line begins like this in C++ programs
 // Program to calculate 2**n
 // Standard ANSI-C++ include files */
@@ -576,13 +605,13 @@ int main()
 
 // End: program main()
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Loss of Precision}
 
-\begin{block}{Machine Numbers }
+\begin{block_mdfboxadmon}[Machine Numbers.]
 In the decimal system we would write a number like $9.90625$
 in what is called the normalized scientific notation.
 
@@ -609,13 +638,13 @@ the general formula
 (0.a_{-1}a_{-2}\dots a_{-n})_2=a_{-1}\times 2^{-1}
 +a_{-2}\times 2^{-2}+\dots+a_{-n}\times 2^{-n}.
 \end{equation}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Loss of Precision}
 
-\begin{block}{Machine Numbers }
+\begin{block_mdfboxadmon}[Machine Numbers.]
 In a typical computer, floating-point numbers are represented
 in the way described above, but with certain restrictions
 on $q$ and $m$ imposed by the available word length.
@@ -629,13 +658,13 @@ number $x$ is represented as
 where $s$ is the sign bit, and the exponent gives the available range.
 With a single-precision word, 32 bits, 8 bits would typically be reserved
 for the exponent,  1 bit for the sign and 23 for the mantissa.
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Loss of Precision}
 
-\begin{block}{Machine Numbers }
+\begin{block_mdfboxadmon}[Machine Numbers.]
 A modification of the scientific notation for binary numbers is to
 require that the leading binary digit 1 appears to the left of the binary point.
 In this case the representation of the mantissa $q$ would be
@@ -657,13 +686,13 @@ As an example, consider the 32 bits binary number
 where the first bit is reserved for the sign, 1 in this case yielding a
 negative sign. The exponent $m$ is given by the next 8 binary numbers
 $01111101$ resulting in 125 in the decimal system.
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Loss of Precision}
 
-\begin{block}{Machine Numbers }
+\begin{block_mdfboxadmon}[Machine Numbers.]
 However, since the
 exponent has eight bits, this means it has  $2^8-1=255$ possible numbers in the interval
 $-128 \le m \le 127$, our final
@@ -686,13 +715,13 @@ only approximated in the machine. When such a number occurs as the result
 of reading some input data or of a computation, an inevitable error
 will arise in representing it as accurately as possible by
 a machine number.
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Loss of Precision}
 
-\begin{block}{Machine Numbers }
+\begin{block_mdfboxadmon}[Machine Numbers.]
 A floating number x, labelled $fl(x)$ will therefore always be represented as
 
 \begin{equation}
@@ -712,13 +741,13 @@ For a 32 bit words this number is approximately
 $ \epsilon_M \sim 10^{-7}$ and for double precision (64 bits) we have
 $ \epsilon_M \sim 10^{-16}$, or in terms of a binary base
 as $2^{-23}$ and $2^{-52}$ for single and double precision, respectively.
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Loss of Precision}
 
-\begin{block}{Machine Numbers }
+\begin{block_mdfboxadmon}[Machine Numbers.]
 In the machine a number is represented as
 
 \begin{equation}
@@ -748,13 +777,13 @@ meaning that
 
 and if $b\approx c$ we see that there is a potential for an increased
 error in $fl(a)$.
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Loss of Precision}
 
-\begin{block}{Machine Numbers }
+\begin{block_mdfboxadmon}[Machine Numbers.]
 Define
 the absolute error as
 
@@ -780,7 +809,7 @@ The relative error
 is the quantity of interest in scientific work. Information about the
 absolute error is normally of little use in the absence of the magnitude
 of the quantity being measured.
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
@@ -853,7 +882,7 @@ correctly \emph{all} numbers.
 \begin{frame}[plain,fragile]
 \frametitle{Loss of precision can cuae serious problems}
 
-\begin{block}{Real Numbers }
+\begin{block_mdfboxadmon}[Real Numbers.]
 
 \begin{itemize}
   \item \textbf{Overflow}: When the positive exponent exceeds the max value, e.g., 308 for \Verb!DOUBLE PRECISION! (64 bits). Under such circumstances the program will terminate and some compilers may give you the warning \Verb!OVERFLOW!.
@@ -862,7 +891,7 @@ correctly \emph{all} numbers.
 \end{itemize}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
@@ -890,20 +919,20 @@ This leads eventually to the next problem, namely
 \begin{frame}[plain,fragile]
 \frametitle{More on loss of precision}
 
-\begin{block}{Real Numbers }
+\begin{block_mdfboxadmon}[Real Numbers.]
 
 \begin{itemize}
   \item \textbf{Loss of precision}: When one has to e.g., multiply two large numbers where one suspects that the outcome may be beyond the bonds imposed by the variable declaration, one could represent the numbers by logarithms, or rewrite the equations to be solved in terms of dimensionless variables. When dealing with problems in e.g., particle physics or nuclear physics where distance is measured in fm ($10^{-15}$ m), it can be quite convenient to redefine the variables for distance in terms of a dimensionless variable of the order of unity. To give an example, suppose you work with single precision and wish to perform the addition $1+10^{-8}$. In this case, the information containing in $10^{-8}$ is simply lost in the addition. Typically, when performing the addition, the computer equates first the exponents of the two numbers to be added. For $10^{-8}$ this has however catastrophic consequences since in order to obtain an exponent equal to $10^0$, bits in the mantissa are shifted to the right. At the end, all bits in the mantissa are zeros.
 \end{itemize}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{A problematic case}
 
-\begin{block}{Three ways of computing $e^{-x}$ }
+\begin{block_mdfboxadmon}[Three ways of computing $e^{-x}$.]
 Brute force:
 
 \[\exp{(-x)}=\sum_{n=0}^{\infty}(-1)^n\frac{x^n}{n!}\]
@@ -917,14 +946,14 @@ Recursion relation for
 \[ \exp{(x)}=\sum_{n=0}^{\infty}s_n \]
 
 \[ \exp{(-x)}=\frac{1}{\exp{(x)}} \]
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Program to compute $\exp{(-x)}$}
 
-\begin{block}{Brute Force }
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{block_mdfboxadmon}[Brute Force.]
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 // Program to calculate function exp(-x)
 // using straightforward summation with differing  precision
 using namespace std
@@ -938,14 +967,14 @@ using namespace std
 // function declaration
 TYPE factorial(int);
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Program to compute $\exp{(-x)}$}
 
-\begin{block}{Still Brute Force }
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{block_mdfboxadmon}[Still Brute Force.]
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 int main()
 {
    int   n;
@@ -961,14 +990,14 @@ int main()
          n++;
      }  // end of while() loop
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Program to compute $\exp{(-x)}$}
 
-\begin{block}{Oh, it never ends! }
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{block_mdfboxadmon}[Oh it never ends!]
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
       printf("\nx = %4.1f   exp = %12.5E  series = %12.5E
               number of terms = %d",
               x, exp(-x), sum, n);
@@ -989,44 +1018,44 @@ TYPE factorial(int n)
    return fac;
 } // End: function factorial()
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Results $\exp{(-x)}$}
 
-\begin{block}{What is going on? }
+\begin{block_mdfboxadmon}[What is going on?]
 
 
-{\footnotesize
+\begin{quote}
 \begin{tabular}{cccc}
 \hline
 \multicolumn{1}{c}{ $x$ } & \multicolumn{1}{c}{ $\exp{(-x)}$ } & \multicolumn{1}{c}{ Series } & \multicolumn{1}{c}{ Number of terms in series } \\
 \hline
-0.0   & 0.100000E+01 & 0.100000E+01  & 1                         \\
-10.0  & 0.453999E-04 & 0.453999E-04  & 44                        \\
-20.0  & 0.206115E-08 & 0.487460E-08  & 72                        \\
-30.0  & 0.935762E-13 & -0.342134E-04 & 100                       \\
-40.0  & 0.424835E-17 & -0.221033E+01 & 127                       \\
-50.0  & 0.192875E-21 & -0.833851E+05 & 155                       \\
-60.0  & 0.875651E-26 & -0.850381E+09 & 171                       \\
-70.0  & 0.397545E-30 & NaN           & 171                       \\
-80.0  & 0.180485E-34 & NaN           & 171                       \\
-90.0  & 0.819401E-39 & NaN           & 171                       \\
-100.0 & 0.372008E-43 & NaN           & 171                       \\
+0.0                       & 0.100000E+01              & 0.100000E+01              & 1                         \\
+10.0                      & 0.453999E-04              & 0.453999E-04              & 44                        \\
+20.0                      & 0.206115E-08              & 0.487460E-08              & 72                        \\
+30.0                      & 0.935762E-13              & -0.342134E-04             & 100                       \\
+40.0                      & 0.424835E-17              & -0.221033E+01             & 127                       \\
+50.0                      & 0.192875E-21              & -0.833851E+05             & 155                       \\
+60.0                      & 0.875651E-26              & -0.850381E+09             & 171                       \\
+70.0                      & 0.397545E-30              & NaN                       & 171                       \\
+80.0                      & 0.180485E-34              & NaN                       & 171                       \\
+90.0                      & 0.819401E-39              & NaN                       & 171                       \\
+100.0                     & 0.372008E-43              & NaN                       & 171                       \\
 \hline
 \end{tabular}
-}
+\end{quote}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Program to compute $\exp{(-x)}$}
 
-\begin{block}{}
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{block_mdfboxadmon}[]
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 // program to compute exp(-x) without exponentials
 using namespace std
 #include <iostream>
@@ -1044,14 +1073,14 @@ int main()
      term = 1;
      n    = 1;
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Program to compute $\exp{(-x)}$}
 
-\begin{block}{Last statements }
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{block_mdfboxadmon}[Last statements.]
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
      while(fabs(term) > TRUNCATION)
        {
 	 term *= -x/((double) n);
@@ -1066,43 +1095,43 @@ int main()
 
 }  /*    End: function main() */
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Results $\exp{(-x)}$}
 
-\begin{block}{More Problems }
+\begin{block_mdfboxadmon}[More Problems.]
 
 
-{\footnotesize
+\begin{quote}
 \begin{tabular}{cccc}
 \hline
 \multicolumn{1}{c}{ $x$ } & \multicolumn{1}{c}{ $\exp{(-x)}$ } & \multicolumn{1}{c}{ Series } & \multicolumn{1}{c}{ Number of terms in series } \\
 \hline
-0.000000   & 0.10000000E+01 & 0.10000000E+01  & 1                         \\
-10.000000  & 0.45399900E-04 & 0.45399900E-04  & 44                        \\
-20.000000  & 0.20611536E-08 & 0.56385075E-08  & 72                        \\
-30.000000  & 0.93576230E-13 & -0.30668111E-04 & 100                       \\
-40.000000  & 0.42483543E-17 & -0.31657319E+01 & 127                       \\
-50.000000  & 0.19287498E-21 & 0.11072933E+05  & 155                       \\
-60.000000  & 0.87565108E-26 & -0.33516811E+09 & 182                       \\
-70.000000  & 0.39754497E-30 & -0.32979605E+14 & 209                       \\
-80.000000  & 0.18048514E-34 & 0.91805682E+17  & 237                       \\
-90.000000  & 0.81940126E-39 & -0.50516254E+22 & 264                       \\
-100.000000 & 0.37200760E-43 & -0.29137556E+26 & 291                       \\
+0.000000                  & 0.10000000E+01            & 0.10000000E+01            & 1                         \\
+10.000000                 & 0.45399900E-04            & 0.45399900E-04            & 44                        \\
+20.000000                 & 0.20611536E-08            & 0.56385075E-08            & 72                        \\
+30.000000                 & 0.93576230E-13            & -0.30668111E-04           & 100                       \\
+40.000000                 & 0.42483543E-17            & -0.31657319E+01           & 127                       \\
+50.000000                 & 0.19287498E-21            & 0.11072933E+05            & 155                       \\
+60.000000                 & 0.87565108E-26            & -0.33516811E+09           & 182                       \\
+70.000000                 & 0.39754497E-30            & -0.32979605E+14           & 209                       \\
+80.000000                 & 0.18048514E-34            & 0.91805682E+17            & 237                       \\
+90.000000                 & 0.81940126E-39            & -0.50516254E+22           & 264                       \\
+100.000000                & 0.37200760E-43            & -0.29137556E+26           & 291                       \\
 \hline
 \end{tabular}
-}
+\end{quote}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Most used formula for derivatives}
 
-\begin{block}{3 point formulae }
+\begin{block_mdfboxadmon}[3 point formulae.]
 First derivative  ($f_0 = f(x_0)$, $f_{-h}=f(x_0-h)$ and $f_{+h}=f(x_0+h)$
 
 \[
@@ -1113,13 +1142,13 @@ Second derivative
 \[
  \frac{ f_h -2f_0 +f_{-h}}{h^2}=f_0''+2\sum_{j=1}^{\infty}\frac{f_0^{(2j+2)}}{(2j+2)!}h^{2j}.
 \]
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Error Analysis}
 
-\begin{block}{}
+\begin{block_mdfboxadmon}[]
 \[
    \epsilon=log_{10}\left(\left|\frac{f''_{\mbox{computed}}-f''_{\mbox{exact}}}
                  {f''_{\mbox{exact}}}\right|\right),
@@ -1139,13 +1168,13 @@ and the truncation or approximation error goes like
 \[
   \epsilon_{\mbox{approx}}\approx \frac{f_0^{(4)}}{12}h^{2}.
 \]
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Error Analysis}
 
-\begin{block}{}
+\begin{block_mdfboxadmon}[]
 If we were not to worry about loss of precision, we could in principle
 make $h$ as small as possible.
 However, due to the computed expression in the above program example
@@ -1166,13 +1195,13 @@ We have then
  \left|f_0''\right|=
  \left|\frac{ (f_h -f_0) +(f_{-h}-f_0)}{h^2}\right|\le \frac{ 2 \epsilon_M}{h^2}.
 \]
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Error Analysis}
 
-\begin{block}{}
+\begin{block_mdfboxadmon}[]
 Our total error becomes
 
 \[
@@ -1194,13 +1223,13 @@ With double precision and $x=10$ we obtain
 \]
 Beyond this value, it is essentially the loss of numerical precision
 which takes over.
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Error Analysis}
 
-\begin{block}{}
+\begin{block_mdfboxadmon}[]
 Due to the subtractive cancellation in the expression
 for $f''$ there is a pronounced detoriation in accuracy as $h$ is made smaller
 and smaller.
@@ -1218,74 +1247,73 @@ as
 \]
 since it is the difference $(e^{h}+e^{-h}-2)$ which causes
 the loss of precision.
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Error Analysis}
 
-\begin{block}{}
+\begin{block_mdfboxadmon}[]
 
 
-{\footnotesize
+\begin{quote}
 \begin{tabular}{cccccc}
 \hline
 \multicolumn{1}{c}{ $x$ } & \multicolumn{1}{c}{ $h=0.01$ } & \multicolumn{1}{c}{ $h=0.001$ } & \multicolumn{1}{c}{ $h=0.0001$ } & \multicolumn{1}{c}{ $h=0.0000001$ } & \multicolumn{1}{c}{ Exact } \\
 \hline
-0.0 & 1.000008   & 1.000000   & 1.000000   & 1.010303      & 1.000000   \\
-1.0 & 2.718304   & 2.718282   & 2.718282   & 2.753353      & 2.718282   \\
-2.0 & 7.389118   & 7.389057   & 7.389056   & 7.283063      & 7.389056   \\
-3.0 & 20.085704  & 20.085539  & 20.085537  & 20.250467     & 20.085537  \\
-4.0 & 54.598605  & 54.598155  & 54.598151  & 54.711789     & 54.598150  \\
-5.0 & 148.414396 & 148.413172 & 148.413161 & 150.635056    & 148.413159 \\
+0.0           & 1.000008      & 1.000000      & 1.000000      & 1.010303      & 1.000000      \\
+1.0           & 2.718304      & 2.718282      & 2.718282      & 2.753353      & 2.718282      \\
+2.0           & 7.389118      & 7.389057      & 7.389056      & 7.283063      & 7.389056      \\
+3.0           & 20.085704     & 20.085539     & 20.085537     & 20.250467     & 20.085537     \\
+4.0           & 54.598605     & 54.598155     & 54.598151     & 54.711789     & 54.598150     \\
+5.0           & 148.414396    & 148.413172    & 148.413161    & 150.635056    & 148.413159    \\
 \hline
 \end{tabular}
-}
+\end{quote}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
-\begin{block}{}
+\begin{frame}[plain,fragile]
+\frametitle{Error Analysis}
+
+\begin{block_mdfboxadmon}[]
 The results for $x=10$ are shown in the Table
 
 
-{\footnotesize
+\begin{quote}
 \begin{tabular}{ccc}
 \hline
 \multicolumn{1}{c}{ $h$ } & \multicolumn{1}{c}{ $e^{h}+e^{-h}$ } & \multicolumn{1}{c}{ $e^{h}+e^{-h}-2$ } \\
 \hline
-$10^{-1}$  & 2.0100083361116070 & $1.0008336111607230\times 10^{-2}$  \\
-$10^{-2}$  & 2.0001000008333358 & $1.0000083333605581\times 10^{-4}$  \\
-$10^{-3}$  & 2.0000010000000836 & $1.0000000834065048\times 10^{-6}$  \\
-$10^{-5}$  & 2.0000000099999999 & $1.0000000050247593\times 10^{-8}$  \\
-$10^{-5}$  & 2.0000000001000000 & $9.9999897251734637\times 10^{-11}$ \\
-$10^{-6}$  & 2.0000000000010001 & $9.9997787827987850\times 10^{-13}$ \\
-$10^{-7}$  & 2.0000000000000098 & $9.9920072216264089\times 10^{-15}$ \\
-$10^{-8}$  & 2.0000000000000000 & $0.0000000000000000\times 10^{0}$   \\
-$10^{-9}$  & 2.0000000000000000 & $1.1102230246251565\times 10^{-16}$ \\
-$10^{-10}$ & 2.0000000000000000 & $0.0000000000000000\times 10^{0}$   \\
+$10^{-1}$                           & 2.0100083361116070                  & $1.0008336111607230\times 10^{-2}$  \\
+$10^{-2}$                           & 2.0001000008333358                  & $1.0000083333605581\times 10^{-4}$  \\
+$10^{-3}$                           & 2.0000010000000836                  & $1.0000000834065048\times 10^{-6}$  \\
+$10^{-5}$                           & 2.0000000099999999                  & $1.0000000050247593\times 10^{-8}$  \\
+$10^{-5}$                           & 2.0000000001000000                  & $9.9999897251734637\times 10^{-11}$ \\
+$10^{-6}$                           & 2.0000000000010001                  & $9.9997787827987850\times 10^{-13}$ \\
+$10^{-7}$                           & 2.0000000000000098                  & $9.9920072216264089\times 10^{-15}$ \\
+$10^{-8}$                           & 2.0000000000000000                  & $0.0000000000000000\times 10^{0}$   \\
+$10^{-9}$                           & 2.0000000000000000                  & $1.1102230246251565\times 10^{-16}$ \\
+$10^{-10}$                          & 2.0000000000000000                  & $0.0000000000000000\times 10^{0}$   \\
 \hline
 \end{tabular}
-}
+\end{quote}
 
 \noindent
-\end{block}
-
-
-\section{Week 35}
-
-\begin{frame}[plain,fragile]
-\frametitle{Week 35}
+\end{block_mdfboxadmon}
 
 
 
+
+\noindent\textbf{\Large Week 35}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Overview of week 35}
 
-\begin{block}{}
+\begin{block_mdfboxadmon}[]
 \begin{itemize}
   \item Monday: Repetition from last week
 
@@ -1303,20 +1331,20 @@ $10^{-10}$ & 2.0000000000000000 & $0.0000000000000000\times 10^{0}$   \\
 \end{itemize}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Technical Matter in C/C++: Pointers}
 
-\begin{block}{}
+\begin{block_mdfboxadmon}[]
 A pointer specifies where a value resides in the computer's memory (like a house number specifies where a particular family resides on a street).
 
 A pointer points to an address not to a data container of any kind!
 
 Simple example declarations:
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
   using namespace std; // note use of namespace
   int main()
  {
@@ -1329,14 +1357,14 @@ Simple example declarations:
    delete [] a;
 }
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Technical Matter in C/C++: Pointer example I}
 
-\begin{block}{}
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{block_mdfboxadmon}[]
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 using namespace std; // note use of namespace
 int main()
 {
@@ -1352,15 +1380,15 @@ int main()
   return 0;
 }
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Dissection: Pointer example I}
 
-\begin{block}{Discussion }
+\begin{block_mdfboxadmon}[Discussion.]
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 int main()
 {
   int var;     // Define an integer variable var
@@ -1377,14 +1405,14 @@ int main()
   return 0;
 }
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Pointer example II}
 
-\begin{block}{}
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{block_mdfboxadmon}[]
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 int matr[2];
 int *p;
 p = &matr[0];
@@ -1399,14 +1427,14 @@ printf("\nThe value p points to: %d",*p);
 printf("\nThe value that (p+1) points to  %d\n",*(p+1));
 printf("\nAddress of pointer p : %p\n",&p);
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Dissection: Pointer example II}
 
-\begin{block}{}
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{block_mdfboxadmon}[]
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 int matr[2];    // Define integer array with two elements
 int *p;         // Define pointer to integer
 p = &matr[0];   // Point to the address of the first element in matr
@@ -1421,13 +1449,13 @@ printf("\nThe value p points to: %d", *p);
 printf("\nThe value that (p+1) points to  %d\n", *(p+1));
 printf("\nAddress of pointer p : %p\n", &p);
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Output of Pointer example II}
 
-\begin{block}{}
+\begin{block_mdfboxadmon}[]
 \begin{Verbatim}[numbers=none,fontsize=\fontsize{9pt}{9pt},baselinestretch=0.95]
 Address of the matrix element matr[1]: 0xbfffef70
 Value of the  matrix element  matr[1]; 321
@@ -1438,13 +1466,13 @@ The value pointer points at: 321
 The value that (pointer+1) points at:  322
 Address of the pointer variable : 0xbfffef6c
 \end{Verbatim}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{File handling; C-way}
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 using namespace std;
 #include <iostream>
 int main(int argc, char *argv[])
@@ -1465,7 +1493,7 @@ int main(int argc, char *argv[])
 \begin{frame}[plain,fragile]
 \frametitle{File handling; C way cont.}
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
  out_file = fopen( argv[2], "w"); // returns a pointer to the output file
  if( out_file == NULL )  {       // can't find the file
     printf("Can't find the output file%s\n", argv[2]);
@@ -1480,7 +1508,7 @@ int main(int argc, char *argv[])
 \begin{frame}[plain,fragile]
 \frametitle{File handling, C++-way}
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 #include <fstream>
 
 // input and output file as global variable
@@ -1492,7 +1520,7 @@ ifstream ifile;
 \begin{frame}[plain,fragile]
 \frametitle{File handling, C++-way}
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 int main(int argc, char* argv[])
 {
   char *outfilename;
@@ -1515,7 +1543,7 @@ int main(int argc, char* argv[])
 \begin{frame}[plain,fragile]
 \frametitle{File handling, C++-way}
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 void output(double r_min , double r_max, int max_step,
             double *d)
 {
@@ -1536,7 +1564,7 @@ for(i = 0; i < 5; i++) {
 \begin{frame}[plain,fragile]
 \frametitle{File handling, C++-way}
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 int main(int argc, char* argv[])
 {
   char *infilename;
@@ -1559,7 +1587,7 @@ int main(int argc, char* argv[])
 \begin{frame}[plain,fragile]
 \frametitle{File handling, C++-way}
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 const char* filename1 = "myfile";
 ifstream ifile(filename1);
 string filename2 = filename1 + ".out"
@@ -1580,7 +1608,7 @@ if (!(ifile >> a >> b >> c)) ok = 0;
 \begin{frame}[plain,fragile]
 \frametitle{Call by value and reference}
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 int main(int argc, char argv[]) {
 int  a:
 int *b;
@@ -1669,7 +1697,7 @@ C++ allows however the programmer to use solely call by reference
 To see the difference between C and C++, consider the following simple
 examples. In C we would write
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
    int n; n =8;
    func(&n); /* &n is a pointer to n */
    ....
@@ -1682,7 +1710,7 @@ examples. In C we would write
 
 whereas in C++ we would write
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
    int n; n =8;
    func(n); // just transfer n itself
    ....
@@ -1704,7 +1732,7 @@ reduces the readability of the code.
 In Fortran we can use \Verb!INTENT(IN)!, \Verb!INTENT(OUT)!, \Verb!INTENT(INOUT)! to let the
 program know which values should or should not be changed.
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{fortran}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{fortran}
 SUBROUTINE coulomb_integral(np,lp,n,l,coulomb)
   USE effective_interaction_declar
   USE energy_variables
@@ -1766,7 +1794,7 @@ errors as well.
 In Ansi C and C++ arrays start by default from $i=0$.  Moreover, if we  wish to add two matrices we need to explicitely write out
 the two loops as
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
    for(i=0 ; i < n ; i++) {
       for(j=0 ; j < n ; j++) {
          a[i][j]=b[i][j]+c[i][j]
@@ -1821,7 +1849,7 @@ we define could be simple read and write functions or the possibility to compute
 C++ has a class complex in its standard
 template library (STL). The standard usage in a given function could then look like
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 // Program to calculate addition and multiplication of two complex numbers
 using namespace std;
 #include <iostream>
@@ -1849,7 +1877,7 @@ the class. The header file contains the class declaration (data and
 functions), declaration of stand-alone functions, and all inlined
 functions, starting as follows
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 #ifndef Complex_H
 #define Complex_H
 //   various include statements and definitions
@@ -1887,7 +1915,7 @@ multiplying two complex numbers.
 \begin{frame}[plain,fragile]
 \frametitle{Programming classes}
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 #include "Complex.h"
 ...  other include and declarations
 int main ()
@@ -1914,7 +1942,7 @@ of the class which allows us to print out the real and imaginary part of a given
 \begin{frame}[plain,fragile]
 \frametitle{Programming classes}
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 class Complex
 {
 private:
@@ -1932,7 +1960,7 @@ public:
 \begin{frame}[plain,fragile]
 \frametitle{Programming classes}
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
   ~Complex () {}                        // destructor
    double   Re () const;        // double real_part = a.Re();
    double   Im () const;        // double imag_part = a.Im();
@@ -1979,7 +2007,7 @@ and how this variable is initialized. We have chose  three possibilities in the 
 
 A declaration like \Verb!Complex c;! calls the member function \Verb!Complex()! which can have the following implementation
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 Complex:: Complex () { re = im = 0.0; }
 \end{minted}
 
@@ -1993,14 +2021,14 @@ function that is called when an object is instantiated.
 
 Another possibility is
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 Complex:: Complex () {}
 \end{minted}
 which means that there is no initialization of the real and imaginary parts. The drawback is that a given compiler can then assign random values to a given variable.
 
 A call like \Verb!Complex a(0.1,1.3);! means that we could call the member function `Complex(double, double)`as
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 Complex:: Complex (double re_a, double im_a) {
     re = re_a; im = im_a; }
 \end{minted}
@@ -2014,7 +2042,7 @@ the real and imaginary part of a variable. Here you have to recall that these ar
 that is they invisible for users of the class.  We obtain a copy of these variables by defining the
 functions
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 double Complex:: Re () const { return re; }} //  getting the real part
 double Complex:: Im () const { return im; }  //   and the imaginary part
 \end{minted}
@@ -2029,7 +2057,7 @@ If we define a variable as
 \Verb!const double p = 3;! and then try to change its value, we will get an error when we
 compile our program. This means that constant arguments in functions cannot be changed.
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 // const arguments (in functions) cannot be changed:
 void myfunc (const Complex& c)
 { c.re = 0.2; /* ILLEGAL!! compiler error... */  }
@@ -2043,13 +2071,13 @@ an error message.
 
 If we define a function to compute the absolute value of complex variable like
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 double Complex:: abs ()  { return sqrt(re*re + im*im);}
 \end{minted}
 without the constant declaration  and define thereafter a function
 \Verb!myabs! as
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 double myabs (const Complex& c)
 { return c.abs(); }   // Not ok because c.abs() is not a const func.
 \end{minted}
@@ -2063,7 +2091,7 @@ since \Verb!Complex::abs! is not a constant member function.
 Constant functions cannot change the object's state.
 To avoid this we declare the function \Verb!abs! as
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 double Complex:: abs () const { return sqrt(re*re + im*im); }
 \end{minted}
 \end{frame}
@@ -2089,7 +2117,7 @@ In our main function we have a statement like \Verb!d = b;!, which means
 that we call \Verb!d.operator= (b)! and we have defined a so-called assignment operator
 as a part of the class defined as
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 Complex& Complex:: operator= (const Complex& c)
 {
    re = c.re;
@@ -2107,7 +2135,7 @@ With this function, statements like
 make a new object $d$, which becomes a copy of $b$.
 We can make simple implementations in terms of the assignment
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 Complex:: Complex (const Complex& c)
 { *this = c; }
 \end{minted}
@@ -2137,7 +2165,7 @@ Inlining means that the function body is copied directly into
 the calling code, thus avoiding calling the function.
 Inlining is enabled by the inline keyword
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 inline Complex operator+ (const Complex& a, const Complex& b)
 { return Complex (a.re + b.re, a.im + b.im); }
 \end{minted}
@@ -2152,7 +2180,7 @@ that is,  \Verb!c.operator= (operator+ (a,b));!
 If \Verb!operator+!, \Verb!operator=! and the constructor \Verb!Complex(r,i)! all
 are inline functions, this transforms to
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 c.re = a.re + b.re;
 c.im = a.im + b.im;
 \end{minted}
@@ -2164,7 +2192,7 @@ by the compiler, i.e., no function calls
 
 The stand-alone function \Verb!operator+! is a friend of the Complex  class
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 class Complex
 {
    ...
@@ -2175,7 +2203,7 @@ class Complex
 so it can read (and manipulate) the private data parts $re$ and
 $im$ via
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 inline Complex operator+ (const Complex& a, const Complex& b)
 { return Complex (a.re + b.re, a.im + b.im); }
 \end{minted}
@@ -2188,7 +2216,7 @@ Since we do not need to alter the re and im variables, we can
 get the values by Re() and Im(), and there is no need to be a
 friend function
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 inline Complex operator+ (const Complex& a, const Complex& b)
 { return Complex (a.Re() + b.Re(), a.Im() + b.Im()); }
 \end{minted}
@@ -2199,7 +2227,7 @@ inline Complex operator+ (const Complex& a, const Complex& b)
 
 The multiplication functionality can now be extended to imaginary numbers by the following code
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 inline Complex operator* (const Complex& a, const Complex& b)
 {
   return Complex(a.re*b.re - a.im*b.im, a.im*b.re + a.re*b.im);
@@ -2214,7 +2242,7 @@ It will be convenient to inline all functions used by this operator.
 To inline the complete expression \Verb!a*b;!, the constructors and
 \Verb!operator=!  must also be inlined.  This can be achieved via the following piece of code
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 inline Complex:: Complex () { re = im = 0.0; }
 inline Complex:: Complex (double re_, double im_)
 { ... }
@@ -2228,7 +2256,7 @@ inline Complex:: operator= (const Complex& c)
 \begin{frame}[plain,fragile]
 \frametitle{Programming classes}
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 // e, c, d are complex
 e = c*d;
 // first compiler translation:
@@ -2248,7 +2276,7 @@ Finally, if we wish to write to file or another device a complex number using th
 \Verb!cout << c;!, we obtain this by defining
 the effect of $<<$ for a Complex object as
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 ostream& operator<< (ostream& o, const Complex& c)
 { o << "(" << c.Re() << "," << c.Im() << ") "; return o;}
 \end{minted}
@@ -2273,7 +2301,7 @@ of the keyword \Verb!template! followed by a list of template arguments enclosed
 
 We can therefore make a more general class by rewriting our original example as
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 template<class T>
 class Complex
 {
@@ -2293,7 +2321,7 @@ public:
 
 We can therefore make a more general class by rewriting our original example as
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
   ~Complex () {}                        // destructor
    T   Re () const;        // T real_part = a.Re();
    T   Im () const;        // T imag_part = a.Im();
@@ -2314,7 +2342,7 @@ or float.
 The class complex is now a class template
 and we would define variables in a code as
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 Complex<double> a(10.0,5.1);
 Complex<int> b(1,0);
 \end{minted}
@@ -2327,7 +2355,7 @@ Member functions of our class are defined by preceding the name of the function 
 Consider the function we defined as \Verb!Complex:: Complex (double re_a, double im_a)!.
 We would rewrite this function as
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 template<class T>
 Complex<T>:: Complex (T re_a, T im_a)
 { re = re_a; im = im_a; }
@@ -2340,7 +2368,7 @@ The member functions  are otherwise defined following ordinary member function d
 
 Here follows a very simple first class in the file squared.h
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 // Not all declarations here
 // Class to compute the square of a number
 template<class T>
@@ -2361,7 +2389,7 @@ class Squared{
 
 and we would use it as
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 #include <iostream>
 #include "squared.h"
 using namespace std;
@@ -2376,7 +2404,7 @@ int main(){
 \begin{frame}[plain,fragile]
 \frametitle{Unit Testing}
 
-\begin{block}{}
+\begin{block_mdfboxadmon}[]
 Unit Testing is the practice of testing the smallest testable parts,
 called units, of an application individually and independently to
 determine if they behave exactly as expected. Unit tests (short code
@@ -2402,15 +2430,15 @@ easier. There are many benefits associated with Unit Testing, such as
 \end{itemize}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Simple example of unit test}
 
-\begin{block}{}
+\begin{block_mdfboxadmon}[]
 Look up the guide on how to install unit tests for c++ at course webpage. This is the version with classes.
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 #include <unittest++/UnitTest++.h>
 
 class MyMultiplyClass{
@@ -2430,15 +2458,15 @@ int main()
     return UnitTest::RunAllTests();
 }
 \end{minted}
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{Simple example of unit test}
 
-\begin{block}{}
+\begin{block_mdfboxadmon}[]
 And without classes
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
+\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=7mm]{c++}
 #include <unittest++/UnitTest++.h>
 
 
@@ -2456,14 +2484,14 @@ int main()
 } 
 \end{minted}
 For Fortran users, the link at \href{{http://sourceforge.net/projects/fortranxunit/}}{\nolinkurl{http://sourceforge.net/projects/fortranxunit/}} contains a similar
-software for unit testing. 
-\end{block}
+software for unit testing.
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{The report: how to write a good scienfitic/technical report}
 
-\begin{block}{What should it contain? A typical structure }
+\begin{block_mdfboxadmon}[What should it contain? A typical structure.]
 \begin{itemize}
  \item An introduction where you explain the aims and rationale for the physics case and  what you have done. At the end of the introduction you should give a brief summary of the structure of the report
 
@@ -2480,13 +2508,13 @@ software for unit testing.
 
 \noindent
 Keep always a good log of what you do.
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{The report}
 
-\begin{block}{What should I focus on? Introduction }
+\begin{block_mdfboxadmon}[What should I focus on? Introduction.]
 You don't need to answer all questions in a chronological order.  When you write the introduction you could focus on the following aspects
 \begin{itemize}
  \item Motivate the reader, the first part of the introduction gives always a motivation and tries to give the overarching ideas
@@ -2497,13 +2525,13 @@ You don't need to answer all questions in a chronological order.  When you write
 \end{itemize}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{The report}
 
-\begin{block}{What should I focus on? Methods sections }
+\begin{block_mdfboxadmon}[What should I focus on? Methods sections.]
 \begin{itemize}
  \item Describe the methods and algorithms
 
@@ -2513,13 +2541,13 @@ You don't need to answer all questions in a chronological order.  When you write
 \end{itemize}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{The report}
 
-\begin{block}{What should I focus on? Results }
+\begin{block_mdfboxadmon}[What should I focus on? Results.]
 \begin{itemize}
  \item Present your results
 
@@ -2533,13 +2561,13 @@ You don't need to answer all questions in a chronological order.  When you write
 \end{itemize}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{The report}
 
-\begin{block}{What should I focus on? Conclusions }
+\begin{block_mdfboxadmon}[What should I focus on? Conclusions.]
 \begin{itemize}
  \item State your main findings and interpretations
 
@@ -2549,13 +2577,13 @@ You don't need to answer all questions in a chronological order.  When you write
 \end{itemize}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{The report}
 
-\begin{block}{What should I focus on? additional material  }
+\begin{block_mdfboxadmon}[What should I focus on? additional material.]
 \begin{itemize}
  \item Additional calculations used to validate the codes
 
@@ -2565,14 +2593,14 @@ You don't need to answer all questions in a chronological order.  When you write
 \end{itemize}
 
 \noindent
-You can consider moving parts of the material from the methods section to the appendix. You can also place additional material on your webpage. 
-\end{block}
+You can consider moving parts of the material from the methods section to the appendix. You can also place additional material on your webpage.
+\end{block_mdfboxadmon}
 \end{frame}
 
 \begin{frame}[plain,fragile]
 \frametitle{The report}
 
-\begin{block}{What should I focus on? References }
+\begin{block_mdfboxadmon}[What should I focus on? References.]
 \begin{itemize}
  \item Give always references to material you base your work on, either  scientific articles/reports or books.
 
@@ -2582,7 +2610,7 @@ You can consider moving parts of the material from the methods section to the ap
 \end{itemize}
 
 \noindent
-\end{block}
+\end{block_mdfboxadmon}
 \end{frame}
 
 \end{document}
