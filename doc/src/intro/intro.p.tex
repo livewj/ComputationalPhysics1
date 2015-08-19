@@ -85,8 +85,145 @@ final,                   % or draft (marks overfull hboxes, figures with paths)
 
 % --- begin definitions of admonition environments ---
 
-% Admonition style "paragraph" is just a plain paragraph
-\newenvironment{paragraphadmon}[1][]{\paragraph{#1}}{}
+% Admonition style "mdfbox" is an oval colored box based on mdframed
+% "notice" admon
+\colorlet{mdfbox_notice_background}{gray!5}
+\newmdenv[
+  skipabove=15pt,
+  skipbelow=15pt,
+  outerlinewidth=0,
+  backgroundcolor=mdfbox_notice_background,
+  linecolor=black,
+  linewidth=2pt,       % frame thickness
+  frametitlebackgroundcolor=mdfbox_notice_background,
+  frametitlerule=true,
+  frametitlefont=\normalfont\bfseries,
+  shadow=false,        % frame shadow?
+  shadowsize=11pt,
+  leftmargin=0,
+  rightmargin=0,
+  roundcorner=5,
+  needspace=0pt,
+]{notice_mdfboxmdframed}
+
+\newenvironment{notice_mdfboxadmon}[1][]{
+\begin{notice_mdfboxmdframed}[frametitle=#1]
+}
+{
+\end{notice_mdfboxmdframed}
+}
+
+% Admonition style "mdfbox" is an oval colored box based on mdframed
+% "summary" admon
+\colorlet{mdfbox_summary_background}{gray!5}
+\newmdenv[
+  skipabove=15pt,
+  skipbelow=15pt,
+  outerlinewidth=0,
+  backgroundcolor=mdfbox_summary_background,
+  linecolor=black,
+  linewidth=2pt,       % frame thickness
+  frametitlebackgroundcolor=mdfbox_summary_background,
+  frametitlerule=true,
+  frametitlefont=\normalfont\bfseries,
+  shadow=false,        % frame shadow?
+  shadowsize=11pt,
+  leftmargin=0,
+  rightmargin=0,
+  roundcorner=5,
+  needspace=0pt,
+]{summary_mdfboxmdframed}
+
+\newenvironment{summary_mdfboxadmon}[1][]{
+\begin{summary_mdfboxmdframed}[frametitle=#1]
+}
+{
+\end{summary_mdfboxmdframed}
+}
+
+% Admonition style "mdfbox" is an oval colored box based on mdframed
+% "warning" admon
+\colorlet{mdfbox_warning_background}{gray!5}
+\newmdenv[
+  skipabove=15pt,
+  skipbelow=15pt,
+  outerlinewidth=0,
+  backgroundcolor=mdfbox_warning_background,
+  linecolor=black,
+  linewidth=2pt,       % frame thickness
+  frametitlebackgroundcolor=mdfbox_warning_background,
+  frametitlerule=true,
+  frametitlefont=\normalfont\bfseries,
+  shadow=false,        % frame shadow?
+  shadowsize=11pt,
+  leftmargin=0,
+  rightmargin=0,
+  roundcorner=5,
+  needspace=0pt,
+]{warning_mdfboxmdframed}
+
+\newenvironment{warning_mdfboxadmon}[1][]{
+\begin{warning_mdfboxmdframed}[frametitle=#1]
+}
+{
+\end{warning_mdfboxmdframed}
+}
+
+% Admonition style "mdfbox" is an oval colored box based on mdframed
+% "question" admon
+\colorlet{mdfbox_question_background}{gray!5}
+\newmdenv[
+  skipabove=15pt,
+  skipbelow=15pt,
+  outerlinewidth=0,
+  backgroundcolor=mdfbox_question_background,
+  linecolor=black,
+  linewidth=2pt,       % frame thickness
+  frametitlebackgroundcolor=mdfbox_question_background,
+  frametitlerule=true,
+  frametitlefont=\normalfont\bfseries,
+  shadow=false,        % frame shadow?
+  shadowsize=11pt,
+  leftmargin=0,
+  rightmargin=0,
+  roundcorner=5,
+  needspace=0pt,
+]{question_mdfboxmdframed}
+
+\newenvironment{question_mdfboxadmon}[1][]{
+\begin{question_mdfboxmdframed}[frametitle=#1]
+}
+{
+\end{question_mdfboxmdframed}
+}
+
+% Admonition style "mdfbox" is an oval colored box based on mdframed
+% "block" admon
+\colorlet{mdfbox_block_background}{gray!5}
+\newmdenv[
+  skipabove=15pt,
+  skipbelow=15pt,
+  outerlinewidth=0,
+  backgroundcolor=mdfbox_block_background,
+  linecolor=black,
+  linewidth=2pt,       % frame thickness
+  frametitlebackgroundcolor=mdfbox_block_background,
+  frametitlerule=true,
+  frametitlefont=\normalfont\bfseries,
+  shadow=false,        % frame shadow?
+  shadowsize=11pt,
+  leftmargin=0,
+  rightmargin=0,
+  roundcorner=5,
+  needspace=0pt,
+]{block_mdfboxmdframed}
+
+\newenvironment{block_mdfboxadmon}[1][]{
+\begin{block_mdfboxmdframed}[frametitle=#1]
+}
+{
+\end{block_mdfboxmdframed}
+}
 
 % --- end of definitions of admonition environments ---
 
@@ -115,64 +252,43 @@ final,                   % or draft (marks overfull hboxes, figures with paths)
 
 % ----------------- title -------------------------
 
-\thispagestyle{empty}
-
-\begin{center}
-{\LARGE\bf
-\begin{spacing}{1.25}
-Slides from FYS3150/4150 Lectures, introduction to the course
-\end{spacing}
-}
-\end{center}
+\title{Slides from FYS3150/4150 Lectures, introduction to the course}
 
 % ----------------- author(s) -------------------------
 
-\begin{center}
-{\bf Morten Hjorth-Jensen${}^{1, 2}$} \\ [0mm]
-\end{center}
-
-    \begin{center}
-% List of all institutions:
-\centerline{{\small ${}^1$Department of Physics, University of Oslo}}
-\centerline{{\small ${}^2$Department of Physics and Astronomy and National Superconducting Cyclotron Laboratory, Michigan State University}}
-\end{center}
-
+\author{Morten Hjorth-Jensen\inst{1,2}}
+\institute{Department of Physics, University of Oslo\inst{1}
+\and
+Department of Physics and Astronomy and National Superconducting Cyclotron Laboratory, Michigan State University\inst{2}}
 % ----------------- end author(s) -------------------------
 
-\begin{center}
-Fall 2015
-\end{center}
-
-\vspace{1cm}
-
+\date{Fall 2015
+% <optional titlepage figure>
+}
 
 % !split
 \subsection{Overview of week 34}
 
-
-\begin{paragraphadmon}[]
+\begin{block}{}
 \begin{itemize}
-  \item Monday: First lecture: Presentation of the course, aims and content
+  \item Thursday: First lecture: Presentation of the course, aims and content
 
-  \item Monday: Second Lecture: Introduction to C++ programming and numerical precision.
+  \item Thursday: Second Lecture: Introduction to C++ programming and numerical precision.
 
-  \item Tuesday: Numerical precision and C++ programming, continued and exercises for first week
+  \item Friday: Numerical precision and C++ programming, continued and exercises for first week
 
   \item Numerical differentiation and loss of numerical precision (chapter 3 lecture notes)
 
-  \item Computer lab: Thursday and Friday. First time: Thursday and Friday this week, Presentation of hardware and software at room FV329 first hour of every labgroup and solution of first simple exercises.
+  \item Computer lab: Thursday and Friday. First time: Thursday and Friday this week, Presentation of hardware and software at room FV329 first hour of every labgroup and solution of first simple exercises. The first two weeks we focus on simple programming exercises and to set up github and QTcreator.
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
-
-
+\end{block}
 
 % !split
 \subsection{Lectures and ComputerLab}
 
-
-\begin{paragraphadmon}[]
+\begin{block}{}
 \begin{itemize}
   \item Lectures: Thursday (8.15am-10am) and Friday (8.15am-10am).
 
@@ -190,15 +306,12 @@ Fall 2015
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
-
-
+\end{block}
 
 % !split
 \subsection{Course Format}
 
-
-\begin{paragraphadmon}[]
+\begin{block}{}
 \begin{itemize}
   \item Several computer exercises, 5 compulsory projects. Electronic reports only.
 
@@ -208,40 +321,34 @@ Fall 2015
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
-
-
+\end{block}
 
 % !split
 \subsection{ComputerLab}
 
+\begin{block}{}
 
-\begin{paragraphadmon}[]
 
-
-\begin{quote}
+{\footnotesize
 \begin{tabular}{ll}
 \hline
 \multicolumn{1}{c}{ day } & \multicolumn{1}{c}{ teacher } \\
 \hline
-Thursday 10am-2pm               & Anders, Morten L., Håvard, MHJ \\
-Thursday 2pm-6pm                & Anders, Morten L., Håvard, MHJ \\
-Friday 10am-2pm                 & Anders, Morten L., Håvard, MHJ \\
-Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
+Thursday 10am-2pm & Anders, Morten L., Håvard, MHJ \\
+Thursday 2pm-6pm  & Anders, Morten L., Håvard, MHJ \\
+Friday 10am-2pm   & Anders, Morten L., Håvard, MHJ \\
+Friday 2pm-6pm    & Anders, Morten L., Håvard, MHJ \\
 \hline
 \end{tabular}
-\end{quote}
+}
 
 \noindent
-\end{paragraphadmon}
-
-
+\end{block}
 
 % !split
 \subsection{Topics covered in this course}
 
-
-\begin{paragraphadmon}[]
+\begin{block}{}
 \begin{itemize}
   \item Numerical precision and intro to C++ programming
 
@@ -267,16 +374,13 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
-
-
+\end{block}
 
 
 % !split
 \subsection{Syllabus FYS3150}
 
-
-\begin{paragraphadmon}[Linear algebra and eigenvalue problems, chapters 6 and 7.]
+\begin{block}{Linear algebra and eigenvalue problems, chapters 6 and 7 }
 \begin{itemize}
   \item Know Gaussian elimination and LU decomposition
 
@@ -288,16 +392,13 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
-
-
+\end{block}
 
 
 % !split
 \subsection{Syllabus FYS3150}
 
-
-\begin{paragraphadmon}[Linear algebra and eigenvalue problems, chapters 6 and 7.]
+\begin{block}{Linear algebra and eigenvalue problems, chapters 6 and 7 }
 \begin{itemize}
   \item Householder's tridiagonalization technique and finding eigenvalues based on this
 
@@ -309,16 +410,13 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
-
-
+\end{block}
 
 
 % !split
 \subsection{Syllabus FYS3150}
 
-
-\begin{paragraphadmon}[Numerical integration, standard methods and Monte Carlo methods (chapters 4 and 11).]
+\begin{block}{Numerical integration, standard methods and Monte Carlo methods (chapters 4 and 11) }
 \begin{itemize}
   \item Trapezoidal, rectangle and Simpson's rules
 
@@ -332,16 +430,13 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
-
-
+\end{block}
 
 
 % !split
 \subsection{Syllabus FYS3150}
 
-
-\begin{paragraphadmon}[Monte Carlo methods in physics (chapters 12, 13, and 14).]
+\begin{block}{Monte Carlo methods in physics (chapters 12, 13, and 14) }
 \begin{itemize}
   \item Random walks and Markov chains and relation with diffusion equation
 
@@ -355,16 +450,13 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
-
-
+\end{block}
 
 
 % !split
 \subsection{Syllabus FYS3150}
 
-
-\begin{paragraphadmon}[Ordinary differential equations (chapters 8 and 9).]
+\begin{block}{Ordinary differential equations (chapters 8 and 9) }
 \begin{itemize}
   \item Euler's method and improved Euler's method, truncation errors
 
@@ -376,16 +468,13 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
-
-
+\end{block}
 
 
 % !split
 \subsection{Syllabus FYS3150}
 
-
-\begin{paragraphadmon}[Partial differential equations, chapter 10.]
+\begin{block}{Partial differential equations, chapter 10 }
 \begin{itemize}
   \item Set up diffusion, Poisson and wave equations up to 2 spatial dimensions and time
 
@@ -399,9 +488,7 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
-
-
+\end{block}
 
 
 % !split
@@ -446,8 +533,7 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 % !split
 \subsection{Other courses in Computational Science at UiO}
 
-
-\begin{paragraphadmon}[Bachelor/Master/PhD Courses.]
+\begin{block}{Bachelor/Master/PhD Courses }
 \begin{itemize}
   \item INF-MAT4350 Numerical linear algebra
 
@@ -467,16 +553,13 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
-
-
+\end{block}
 
 
 % !split
 \subsection{Extremely useful tools, strongly recommended}
 
-
-\begin{paragraphadmon}[and discussed at the lab sessions the first week.]
+\begin{block}{and discussed at the lab sessions the first week }
 \begin{itemize}
   \item GIT for version control (see webpage)
 
@@ -492,9 +575,7 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
-
-
+\end{block}
 
 % !split
 \subsection{A structured programming approach}

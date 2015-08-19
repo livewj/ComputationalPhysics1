@@ -6,11 +6,11 @@ DATE: Fall 2015
 ===== Extremely useful tools, strongly recommended =====
 
 !bblock and discussed at the lab sessions the first two weeks
-  * GIT for version control (see webpage)
-  * ipython notebook
+  * GIT for version control (see webpage), discussed at the lab this week (and next week as well)
+  * ipython notebook 
   * QTcreator for editing and mastering computational projects (for C++ codes, see webpage of course)
   * Armadillo as a useful numerical library for C++, highly recommended
-  * Unit tests, see also webpage
+  * Unit tests
   * Devilry for handing in projects
 !eblock
 

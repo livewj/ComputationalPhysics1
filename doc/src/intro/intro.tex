@@ -1,75 +1,109 @@
-%%
-%% Automatically generated file from DocOnce source
-%% (https://github.com/hplgit/doconce/)
-%%
 
+% LaTeX Beamer file automatically generated from DocOnce
+% https://github.com/hplgit/doconce
 
-%-------------------- begin preamble ----------------------
+%-------------------- begin beamer-specific preamble ----------------------
 
-\documentclass[%
-twoside,                 % oneside: electronic viewing, twoside: printing
-final,                   % or draft (marks overfull hboxes, figures with paths)
-10pt]{article}
+\documentclass{beamer}
 
-\listfiles               % print all files needed to compile this document
+\usetheme{red_plain}
+\usecolortheme{default}
 
-\usepackage{relsize,epsfig,makeidx,color,setspace,amsmath,amsfonts}
-\usepackage[table]{xcolor}
-\usepackage{bm,microtype}
+% turn off the almost invisible, yet disturbing, navigation symbols:
+\setbeamertemplate{navigation symbols}{}
 
-\usepackage{fancyvrb} % packages needed for verbatim environments
+% Examples on customization:
+%\usecolortheme[named=RawSienna]{structure}
+%\usetheme[height=7mm]{Rochester}
+%\setbeamerfont{frametitle}{family=\rmfamily,shape=\itshape}
+%\setbeamertemplate{items}[ball]
+%\setbeamertemplate{blocks}[rounded][shadow=true]
+%\useoutertheme{infolines}
+%
+%\usefonttheme{}
+%\useinntertheme{}
+%
+%\setbeameroption{show notes}
+%\setbeameroption{show notes on second screen=right}
 
-\usepackage[T1]{fontenc}
+% fine for B/W printing:
+%\usecolortheme{seahorse}
+
+\usepackage{pgf,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{relsize}
+
+\usepackage{fancybox}  % make sure fancybox is loaded before fancyvrb
+
+\usepackage{fancyvrb}
+%\usepackage{minted} % requires pygments and latex -shell-escape filename
+%\usepackage{anslistings}
+
+\usepackage{amsmath,amssymb,bm}
 %\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{colortbl}
+\usepackage[english]{babel}
+\usepackage{tikz}
+\usepackage{framed}
+% Use some nice templates
+\beamertemplatetransparentcovereddynamic
 
-\usepackage{lmodern}         % Latin Modern fonts derived from Computer Modern
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each section:
+\AtBeginSection[]
+{
+    \begin{frame}<beamer>[plain]
+    \frametitle{}
+    \tableofcontents[currentsection]
+    \end{frame}
+}
 
-% Hyperlinks in PDF:
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each section:
+\AtBeginSection[]
+{
+    \begin{frame}<beamer>[plain]
+    \frametitle{}
+    \tableofcontents[currentsection]
+    \end{frame}
+}
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command:
+
+%\beamerdefaultoverlayspecification{<+->}
+
+\newcommand{\shortinlinecomment}[3]{\note{\textbf{#1}: #2}}
+\newcommand{\longinlinecomment}[3]{\shortinlinecomment{#1}{#2}{#3}}
+
 \definecolor{linkcolor}{rgb}{0,0,0.4}
-\usepackage[%
+\hypersetup{
     colorlinks=true,
     linkcolor=linkcolor,
     urlcolor=linkcolor,
-    citecolor=black,
-    filecolor=black,
-    %filecolor=blue,
     pdfmenubar=true,
     pdftoolbar=true,
-    bookmarksdepth=3   % Uncomment (and tweak) for PDF bookmarks with more levels than the TOC
-            ]{hyperref}
-%\hyperbaseurl{}   % hyperlinks are relative to this root
+    bookmarksdepth=3
+    }
+\setlength{\parskip}{7pt}  % {1em}
+\newenvironment{doconceexercise}{}{}
+\newcounter{doconceexercisecounter}
+\newcommand{\subex}[1]{\noindent\textbf{#1}}  % for subexercises: a), b), etc
 
-\setcounter{tocdepth}{2}  % number chapter, section, subsection
 
-% Tricks for having figures close to where they are defined:
-% 1. define less restrictive rules for where to put figures
-\setcounter{topnumber}{2}
-\setcounter{bottomnumber}{2}
-\setcounter{totalnumber}{4}
-\renewcommand{\topfraction}{0.85}
-\renewcommand{\bottomfraction}{0.85}
-\renewcommand{\textfraction}{0.15}
-\renewcommand{\floatpagefraction}{0.7}
-% 2. ensure all figures are flushed before next section
-\usepackage[section]{placeins}
-% 3. enable begin{figure}[H] (often leads to ugly pagebreaks)
-%\usepackage{float}\restylefloat{figure}
+\newenvironment{doconce:exercise}{}{}
+\newcounter{doconce:exercise:counter}
+\newenvironment{doconce:movie}{}{}
+\newcounter{doconce:movie:counter}
 
-\usepackage[framemethod=TikZ]{mdframed}
+%-------------------- end beamer-specific preamble ----------------------
 
-% --- begin definitions of admonition environments ---
+% Add user's preamble
 
-% Admonition style "paragraph" is just a plain paragraph
-\newenvironment{paragraphadmon}[1][]{\paragraph{#1}}{}
 
-% --- end of definitions of admonition environments ---
-
-% prevent orhpans and widows
-\clubpenalty = 10000
-\widowpenalty = 10000
-
-% --- end of standard preamble for documents ---
 
 
 % insert custom LaTeX commands...
@@ -83,70 +117,55 @@ final,                   % or draft (marks overfull hboxes, figures with paths)
 
 
 
+
 % ------------------- main content ----------------------
 
 
 
 % ----------------- title -------------------------
 
-\thispagestyle{empty}
-
-\begin{center}
-{\LARGE\bf
-\begin{spacing}{1.25}
-Slides from FYS3150/4150 Lectures, introduction to the course
-\end{spacing}
-}
-\end{center}
+\title{Slides from FYS3150/4150 Lectures, introduction to the course}
 
 % ----------------- author(s) -------------------------
 
-\begin{center}
-{\bf Morten Hjorth-Jensen${}^{1, 2}$} \\ [0mm]
-\end{center}
-
-    \begin{center}
-% List of all institutions:
-\centerline{{\small ${}^1$Department of Physics, University of Oslo}}
-\centerline{{\small ${}^2$Department of Physics and Astronomy and National Superconducting Cyclotron Laboratory, Michigan State University}}
-\end{center}
-
+\author{Morten Hjorth-Jensen\inst{1,2}}
+\institute{Department of Physics, University of Oslo\inst{1}
+\and
+Department of Physics and Astronomy and National Superconducting Cyclotron Laboratory, Michigan State University\inst{2}}
 % ----------------- end author(s) -------------------------
 
-\begin{center}
-Fall 2015
-\end{center}
+\date{Fall 2015
+% <optional titlepage figure>
+}
 
-\vspace{1cm}
+\begin{frame}[plain,fragile]
+\titlepage
+\end{frame}
 
+\begin{frame}[plain,fragile]
+\frametitle{Overview of week 34}
 
-% !split
-\subsection*{Overview of week 34}
-
-
-\begin{paragraphadmon}[]
+\begin{block}{}
 \begin{itemize}
-  \item Monday: First lecture: Presentation of the course, aims and content
+  \item Thursday: First lecture: Presentation of the course, aims and content
 
-  \item Monday: Second Lecture: Introduction to C++ programming and numerical precision.
+  \item Thursday: Second Lecture: Introduction to C++ programming and numerical precision.
 
-  \item Tuesday: Numerical precision and C++ programming, continued and exercises for first week
+  \item Friday: Numerical precision and C++ programming, continued and exercises for first week
 
   \item Numerical differentiation and loss of numerical precision (chapter 3 lecture notes)
 
-  \item Computer lab: Thursday and Friday. First time: Thursday and Friday this week, Presentation of hardware and software at room FV329 first hour of every labgroup and solution of first simple exercises.
+  \item Computer lab: Thursday and Friday. First time: Thursday and Friday this week, Presentation of hardware and software at room FV329 first hour of every labgroup and solution of first simple exercises. The first two weeks we focus on simple programming exercises and to set up github and QTcreator.
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+\end{block}
+\end{frame}
 
+\begin{frame}[plain,fragile]
+\frametitle{Lectures and ComputerLab}
 
-
-% !split
-\subsection*{Lectures and ComputerLab}
-
-
-\begin{paragraphadmon}[]
+\begin{block}{}
 \begin{itemize}
   \item Lectures: Thursday (8.15am-10am) and Friday (8.15am-10am).
 
@@ -164,15 +183,13 @@ Fall 2015
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+\end{block}
+\end{frame}
 
+\begin{frame}[plain,fragile]
+\frametitle{Course Format}
 
-
-% !split
-\subsection*{Course Format}
-
-
-\begin{paragraphadmon}[]
+\begin{block}{}
 \begin{itemize}
   \item Several computer exercises, 5 compulsory projects. Electronic reports only.
 
@@ -182,40 +199,36 @@ Fall 2015
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+\end{block}
+\end{frame}
+
+\begin{frame}[plain,fragile]
+\frametitle{ComputerLab}
+
+\begin{block}{}
 
 
-
-% !split
-\subsection*{ComputerLab}
-
-
-\begin{paragraphadmon}[]
-
-
-\begin{quote}
+{\footnotesize
 \begin{tabular}{ll}
 \hline
 \multicolumn{1}{c}{ day } & \multicolumn{1}{c}{ teacher } \\
 \hline
-Thursday 10am-2pm               & Anders, Morten L., Håvard, MHJ \\
-Thursday 2pm-6pm                & Anders, Morten L., Håvard, MHJ \\
-Friday 10am-2pm                 & Anders, Morten L., Håvard, MHJ \\
-Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
+Thursday 10am-2pm & Anders, Morten L., Håvard, MHJ \\
+Thursday 2pm-6pm  & Anders, Morten L., Håvard, MHJ \\
+Friday 10am-2pm   & Anders, Morten L., Håvard, MHJ \\
+Friday 2pm-6pm    & Anders, Morten L., Håvard, MHJ \\
 \hline
 \end{tabular}
-\end{quote}
+}
 
 \noindent
-\end{paragraphadmon}
+\end{block}
+\end{frame}
 
+\begin{frame}[plain,fragile]
+\frametitle{Topics covered in this course}
 
-
-% !split
-\subsection*{Topics covered in this course}
-
-
-\begin{paragraphadmon}[]
+\begin{block}{}
 \begin{itemize}
   \item Numerical precision and intro to C++ programming
 
@@ -241,16 +254,13 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+\end{block}
+\end{frame}
 
+\begin{frame}[plain,fragile]
+\frametitle{Syllabus FYS3150}
 
-
-
-% !split
-\subsection*{Syllabus FYS3150}
-
-
-\begin{paragraphadmon}[Linear algebra and eigenvalue problems, chapters 6 and 7.]
+\begin{block}{Linear algebra and eigenvalue problems, chapters 6 and 7 }
 \begin{itemize}
   \item Know Gaussian elimination and LU decomposition
 
@@ -262,16 +272,13 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+\end{block}
+\end{frame}
 
+\begin{frame}[plain,fragile]
+\frametitle{Syllabus FYS3150}
 
-
-
-% !split
-\subsection*{Syllabus FYS3150}
-
-
-\begin{paragraphadmon}[Linear algebra and eigenvalue problems, chapters 6 and 7.]
+\begin{block}{Linear algebra and eigenvalue problems, chapters 6 and 7 }
 \begin{itemize}
   \item Householder's tridiagonalization technique and finding eigenvalues based on this
 
@@ -283,16 +290,13 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+\end{block}
+\end{frame}
 
+\begin{frame}[plain,fragile]
+\frametitle{Syllabus FYS3150}
 
-
-
-% !split
-\subsection*{Syllabus FYS3150}
-
-
-\begin{paragraphadmon}[Numerical integration, standard methods and Monte Carlo methods (chapters 4 and 11).]
+\begin{block}{Numerical integration, standard methods and Monte Carlo methods (chapters 4 and 11) }
 \begin{itemize}
   \item Trapezoidal, rectangle and Simpson's rules
 
@@ -306,16 +310,13 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+\end{block}
+\end{frame}
 
+\begin{frame}[plain,fragile]
+\frametitle{Syllabus FYS3150}
 
-
-
-% !split
-\subsection*{Syllabus FYS3150}
-
-
-\begin{paragraphadmon}[Monte Carlo methods in physics (chapters 12, 13, and 14).]
+\begin{block}{Monte Carlo methods in physics (chapters 12, 13, and 14) }
 \begin{itemize}
   \item Random walks and Markov chains and relation with diffusion equation
 
@@ -329,16 +330,13 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+\end{block}
+\end{frame}
 
+\begin{frame}[plain,fragile]
+\frametitle{Syllabus FYS3150}
 
-
-
-% !split
-\subsection*{Syllabus FYS3150}
-
-
-\begin{paragraphadmon}[Ordinary differential equations (chapters 8 and 9).]
+\begin{block}{Ordinary differential equations (chapters 8 and 9) }
 \begin{itemize}
   \item Euler's method and improved Euler's method, truncation errors
 
@@ -350,16 +348,13 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+\end{block}
+\end{frame}
 
+\begin{frame}[plain,fragile]
+\frametitle{Syllabus FYS3150}
 
-
-
-% !split
-\subsection*{Syllabus FYS3150}
-
-
-\begin{paragraphadmon}[Partial differential equations, chapter 10.]
+\begin{block}{Partial differential equations, chapter 10 }
 \begin{itemize}
   \item Set up diffusion, Poisson and wave equations up to 2 spatial dimensions and time
 
@@ -373,13 +368,11 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+\end{block}
+\end{frame}
 
-
-
-
-% !split
-\subsection*{Overarching aims of this course}
+\begin{frame}[plain,fragile]
+\frametitle{Overarching aims of this course}
 
 \begin{itemize}
   \item Develop a critical approach to all steps in a project, which methods are most relevant, which natural laws and physical processes are important. Sort out initial conditions and boundary conditions etc.
@@ -394,10 +387,10 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-% !split
-\subsection*{And, there is nothing like a code which gives correct results!!}
+\end{frame}
 
-
+\begin{frame}[plain,fragile]
+\frametitle{And, there is nothing like a code which gives correct results!!}
 
 % inline figure
 \centerline{\includegraphics[width=0.6\linewidth]{fig-intro/Nebbdyr2.pdf}}
@@ -417,11 +410,12 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-% !split
-\subsection*{Other courses in Computational Science at UiO}
+\end{frame}
 
+\begin{frame}[plain,fragile]
+\frametitle{Other courses in Computational Science at UiO}
 
-\begin{paragraphadmon}[Bachelor/Master/PhD Courses.]
+\begin{block}{Bachelor/Master/PhD Courses }
 \begin{itemize}
   \item INF-MAT4350 Numerical linear algebra
 
@@ -441,16 +435,13 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+\end{block}
+\end{frame}
 
+\begin{frame}[plain,fragile]
+\frametitle{Extremely useful tools, strongly recommended}
 
-
-
-% !split
-\subsection*{Extremely useful tools, strongly recommended}
-
-
-\begin{paragraphadmon}[and discussed at the lab sessions the first week.]
+\begin{block}{and discussed at the lab sessions the first week }
 \begin{itemize}
   \item GIT for version control (see webpage)
 
@@ -466,12 +457,11 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+\end{block}
+\end{frame}
 
-
-
-% !split
-\subsection*{A structured programming approach}
+\begin{frame}[plain,fragile]
+\frametitle{A structured programming approach}
 
 \begin{itemize}
   \item Before writing a single line, have the algorithm clarified and understood. It is crucial to have a logical structure of e.g., the flow and organization of data before one starts writing.
@@ -482,8 +472,10 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-% !split
-\subsection*{A structured programming approach}
+\end{frame}
+
+\begin{frame}[plain,fragile]
+\frametitle{A structured programming approach}
 
 \begin{itemize}
   \item The planning of the program should be from top down to bottom, trying to keep the flow as linear as possible. Avoid jumping back and forth in the program. First you need to arrange the major tasks to be achieved. Then try to break the major tasks into subtasks. These can be represented by functions or subprograms. They should accomplish limited tasks and as far as possible be independent of each other. That will allow you to use them in other programs as well.
@@ -492,11 +484,6 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-
-% ------------------- end of main content ---------------
-
-
-\printindex
+\end{frame}
 
 \end{document}
-

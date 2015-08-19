@@ -1,4 +1,4 @@
-\frametitle{A structured programming approach}
+\frametitle {A structured programming approach}
 
 \begin{itemize}
   \item The planning of the program should be from top down to bottom, trying to keep the flow as linear as possible. Avoid jumping back and forth in the program. First you need to arrange the major tasks to be achieved. Then try to break the major tasks into subtasks. These can be represented by functions or subprograms. They should accomplish limited tasks and as far as possible be independent of each other. That will allow you to use them in other programs as well.
