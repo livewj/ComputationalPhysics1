@@ -2,32 +2,36 @@
 %% Automatically generated file from DocOnce source
 %% (https://github.com/hplgit/doconce/)
 %%
+%%
 
 
 %-------------------- begin preamble ----------------------
 
 \documentclass[%
-twoside,                 % oneside: electronic viewing, twoside: printing
+oneside,                 % oneside: electronic viewing, twoside: printing
 final,                   % or draft (marks overfull hboxes, figures with paths)
 10pt]{article}
 
 \listfiles               % print all files needed to compile this document
 
-\usepackage{relsize,epsfig,makeidx,color,setspace,amsmath,amsfonts}
+\usepackage{relsize,makeidx,color,setspace,amsmath,amsfonts}
 \usepackage[table]{xcolor}
 \usepackage{bm,microtype}
 
-\usepackage{fancyvrb} % packages needed for verbatim environments
+\usepackage[pdftex]{graphicx}
 
 \usepackage[T1]{fontenc}
 %\usepackage[latin1]{inputenc}
-\usepackage[utf8]{inputenc}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
 
 \usepackage{lmodern}         % Latin Modern fonts derived from Computer Modern
 
 % Hyperlinks in PDF:
 \definecolor{linkcolor}{rgb}{0,0,0.4}
-\usepackage[%
+\usepackage{hyperref}
+\hypersetup{
+    breaklinks=true,
     colorlinks=true,
     linkcolor=linkcolor,
     urlcolor=linkcolor,
@@ -37,7 +41,7 @@ final,                   % or draft (marks overfull hboxes, figures with paths)
     pdfmenubar=true,
     pdftoolbar=true,
     bookmarksdepth=3   % Uncomment (and tweak) for PDF bookmarks with more levels than the TOC
-            ]{hyperref}
+    }
 %\hyperbaseurl{}   % hyperlinks are relative to this root
 
 \setcounter{tocdepth}{2}  % number chapter, section, subsection
@@ -60,9 +64,6 @@ final,                   % or draft (marks overfull hboxes, figures with paths)
 
 % --- begin definitions of admonition environments ---
 
-% Admonition style "paragraph" is just a plain paragraph
-\newenvironment{paragraphadmon}[1][]{\paragraph{#1}}{}
-
 % --- end of definitions of admonition environments ---
 
 % prevent orhpans and widows
@@ -81,6 +82,7 @@ final,                   % or draft (marks overfull hboxes, figures with paths)
 
 \begin{document}
 
+% endif for #ifdef PREAMBLE
 
 
 % ------------------- main content ----------------------
@@ -105,15 +107,15 @@ Slides from FYS3150/4150 Lectures, introduction to the course
 {\bf Morten Hjorth-Jensen${}^{1, 2}$} \\ [0mm]
 \end{center}
 
-    \begin{center}
+\begin{center}
 % List of all institutions:
 \centerline{{\small ${}^1$Department of Physics, University of Oslo}}
 \centerline{{\small ${}^2$Department of Physics and Astronomy and National Superconducting Cyclotron Laboratory, Michigan State University}}
 \end{center}
-
+    
 % ----------------- end author(s) -------------------------
 
-\begin{center}
+\begin{center} % date
 Fall 2015
 \end{center}
 
@@ -124,21 +126,22 @@ Fall 2015
 \subsection{Overview of week 34}
 
 
-\begin{paragraphadmon}[]
+% --- begin paragraph admon ---
+\paragraph{}
 \begin{itemize}
-  \item Monday: First lecture: Presentation of the course, aims and content
+  \item Thursday: First lecture: Presentation of the course, aims and content
 
-  \item Monday: Second Lecture: Introduction to C++ programming and numerical precision.
+  \item Thursday: Second Lecture: Introduction to C++ programming and numerical precision. Exercises for first week. 
 
-  \item Tuesday: Numerical precision and C++ programming, continued and exercises for first week
+  \item Friday: Numerical precision and C++ programming, continued and exercises for first week (chapter 2 of lecture notes)
 
   \item Numerical differentiation and loss of numerical precision (chapter 3 lecture notes)
 
-  \item Computer lab: Thursday and Friday. First time: Thursday and Friday this week, Presentation of hardware and software at room FV329 first hour of every labgroup and solution of first simple exercises.
+  \item Computer lab: Thursday and Friday. First time: Thursday and Friday this week, Presentation of hardware and software at room FV329 first hour of every labgroup and solution of first simple exercises. The first two weeks we focus on simple programming exercises and to set up github and QTcreator.
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+% --- end paragraph admon ---
 
 
 
@@ -146,7 +149,8 @@ Fall 2015
 \subsection{Lectures and ComputerLab}
 
 
-\begin{paragraphadmon}[]
+% --- begin paragraph admon ---
+\paragraph{}
 \begin{itemize}
   \item Lectures: Thursday (8.15am-10am) and Friday (8.15am-10am).
 
@@ -164,7 +168,7 @@ Fall 2015
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+% --- end paragraph admon ---
 
 
 
@@ -172,17 +176,18 @@ Fall 2015
 \subsection{Course Format}
 
 
-\begin{paragraphadmon}[]
+% --- begin paragraph admon ---
+\paragraph{}
 \begin{itemize}
-  \item Several computer exercises, 5 compulsory projects. Electronic reports only.
+  \item Several computer exercises, 5 compulsory projects. Electronic reports only using \href{{https://devilry.ifi.uio.no/}}{devilry} to hand in projects and \href{{https://github.com/}}{Git} for repository and all your material.
 
-  \item Evaluation and grading: The last project (50% of final grade) and a  final written exam (50% of final grade). Final written exam December 14.
+  \item Evaluation and grading: The last two projects (4 and 5) count 1/3 of the final mark each  and the  final written exam counts another 1/3 of the final grade. Final written exam December 14.
 
-  \item The computer lab (room FV329)consists of 16 Linux PCs, but many prefer own laptops. C/C++ is the default programming language, but Fortran2008 and Python are also used. All source codes discussed during the lectures can be found at the webpage of the course. We recommend either C/C++, Fortran2008 or Python as languages.
+  \item The computer lab (room FV329)consists of 16 Linux PCs, but many prefer own laptops. C/C++ is the default programming language, but Fortran2008 and Python are also used. All source codes discussed during the lectures can be found at the webpage and \href{{https://github.com/CompPhysics/ComputationalPhysics1}}{github address} of the course. We recommend either C/C++, Fortran2008 or Python as languages.
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+% --- end paragraph admon ---
 
 
 
@@ -190,7 +195,8 @@ Fall 2015
 \subsection{ComputerLab}
 
 
-\begin{paragraphadmon}[]
+% --- begin paragraph admon ---
+\paragraph{}
 
 
 \begin{quote}
@@ -198,16 +204,16 @@ Fall 2015
 \hline
 \multicolumn{1}{c}{ day } & \multicolumn{1}{c}{ teacher } \\
 \hline
-Thursday 10am-2pm               & Anders, Morten L., Håvard, MHJ \\
-Thursday 2pm-6pm                & Anders, Morten L., Håvard, MHJ \\
-Friday 10am-2pm                 & Anders, Morten L., Håvard, MHJ \\
-Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
+Group 1: Thursday 10am-2pm & Anders, Morten L., Haavard, MHJ \\
+Group 2: Thursday 2pm-6pm  & Anders, Morten L., Haavard, MHJ \\
+Group 3: Friday 10am-2pm   & Anders, Morten L., Haavard, MHJ \\
+Group 4: Friday 2pm-6pm    & Anders, Morten L., Haavard, MHJ \\
 \hline
 \end{tabular}
 \end{quote}
 
 \noindent
-\end{paragraphadmon}
+% --- end paragraph admon ---
 
 
 
@@ -215,7 +221,8 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \subsection{Topics covered in this course}
 
 
-\begin{paragraphadmon}[]
+% --- begin paragraph admon ---
+\paragraph{}
 \begin{itemize}
   \item Numerical precision and intro to C++ programming
 
@@ -237,11 +244,11 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 
   \item Parallelization of codes
 
-  \item Programming av GPUs (optional)
+  \item High-performance computing aspects
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+% --- end paragraph admon ---
 
 
 
@@ -250,7 +257,8 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \subsection{Syllabus FYS3150}
 
 
-\begin{paragraphadmon}[Linear algebra and eigenvalue problems, chapters 6 and 7.]
+% --- begin paragraph admon ---
+\paragraph{Linear algebra and eigenvalue problems, chapters 6 and 7.}
 \begin{itemize}
   \item Know Gaussian elimination and LU decomposition
 
@@ -262,7 +270,7 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+% --- end paragraph admon ---
 
 
 
@@ -271,7 +279,8 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \subsection{Syllabus FYS3150}
 
 
-\begin{paragraphadmon}[Linear algebra and eigenvalue problems, chapters 6 and 7.]
+% --- begin paragraph admon ---
+\paragraph{Linear algebra and eigenvalue problems, chapters 6 and 7.}
 \begin{itemize}
   \item Householder's tridiagonalization technique and finding eigenvalues based on this
 
@@ -283,7 +292,7 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+% --- end paragraph admon ---
 
 
 
@@ -292,7 +301,8 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \subsection{Syllabus FYS3150}
 
 
-\begin{paragraphadmon}[Numerical integration, standard methods and Monte Carlo methods (chapters 4 and 11).]
+% --- begin paragraph admon ---
+\paragraph{Numerical integration, standard methods and Monte Carlo methods (chapters 4 and 11).}
 \begin{itemize}
   \item Trapezoidal, rectangle and Simpson's rules
 
@@ -306,7 +316,7 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+% --- end paragraph admon ---
 
 
 
@@ -315,7 +325,8 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \subsection{Syllabus FYS3150}
 
 
-\begin{paragraphadmon}[Monte Carlo methods in physics (chapters 12, 13, and 14).]
+% --- begin paragraph admon ---
+\paragraph{Monte Carlo methods in physics (chapters 12, 13, and 14).}
 \begin{itemize}
   \item Random walks and Markov chains and relation with diffusion equation
 
@@ -329,7 +340,7 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+% --- end paragraph admon ---
 
 
 
@@ -338,7 +349,8 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \subsection{Syllabus FYS3150}
 
 
-\begin{paragraphadmon}[Ordinary differential equations (chapters 8 and 9).]
+% --- begin paragraph admon ---
+\paragraph{Ordinary differential equations (chapters 8 and 9).}
 \begin{itemize}
   \item Euler's method and improved Euler's method, truncation errors
 
@@ -350,7 +362,7 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+% --- end paragraph admon ---
 
 
 
@@ -359,7 +371,8 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \subsection{Syllabus FYS3150}
 
 
-\begin{paragraphadmon}[Partial differential equations, chapter 10.]
+% --- begin paragraph admon ---
+\paragraph{Partial differential equations, chapter 10.}
 \begin{itemize}
   \item Set up diffusion, Poisson and wave equations up to 2 spatial dimensions and time
 
@@ -373,7 +386,7 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+% --- end paragraph admon ---
 
 
 
@@ -412,8 +425,6 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
  \item H. P. Langtangen INF-VERK3830 \href{{http://heim.ifi.uio.no/~hpl/INF-VERK4830/}}{\nolinkurl{http://heim.ifi.uio.no/~hpl/INF-VERK4830/}}
 
  \item D. Yang, \emph{C++ and Object-oriented Numeric Computing for Scientists and Engineers}, Springer 2000.
-
- \item More books reviewed at \href{{http:://www.accu.org/}}{\nolinkurl{http:://www.accu.org/}} and \href{{http://www.comeaucomputing.com/booklist/}}{\nolinkurl{http://www.comeaucomputing.com/booklist/}}
 \end{itemize}
 
 \noindent
@@ -421,7 +432,8 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \subsection{Other courses in Computational Science at UiO}
 
 
-\begin{paragraphadmon}[Bachelor/Master/PhD Courses.]
+% --- begin paragraph admon ---
+\paragraph{Bachelor/Master/PhD Courses.}
 \begin{itemize}
   \item INF-MAT4350 Numerical linear algebra
 
@@ -441,7 +453,7 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+% --- end paragraph admon ---
 
 
 
@@ -450,48 +462,27 @@ Friday 2pm-6pm                  & Anders, Morten L., Håvard, MHJ \\
 \subsection{Extremely useful tools, strongly recommended}
 
 
-\begin{paragraphadmon}[and discussed at the lab sessions the first week.]
+% --- begin paragraph admon ---
+\paragraph{and discussed at the lab sessions.}
 \begin{itemize}
-  \item GIT for version control (see webpage)
+  \item GIT for version control (see webpage), this week
 
-  \item ipython notebook
+  \item ipython notebook, this week
 
-  \item QTcreator for editing and mastering computational projects (for C++ codes, see webpage of course)
+  \item QTcreator for editing and mastering computational projects (for C++ codes, see webpage of course), next week
 
-  \item Armadillo as a useful numerical library for C++, highly recommended
+  \item Armadillo as a useful numerical library for C++, highly recommended, week 36 and rest of semester
 
-  \item Unit tests, see also webpage
+  \item Unit tests, week 37 and later
 
-  \item Devilry for handing in projects
+  \item Devilry for handing in projects, next week
 \end{itemize}
 
 \noindent
-\end{paragraphadmon}
+% --- end paragraph admon ---
 
 
 
-% !split
-\subsection{A structured programming approach}
-
-\begin{itemize}
-  \item Before writing a single line, have the algorithm clarified and understood. It is crucial to have a logical structure of e.g., the flow and organization of data before one starts writing.
-
-  \item Always try to choose the simplest algorithm. Computational speed can be improved upon later.
-
-  \item Try to write a as clear program as possible. Such programs are easier to debug, and although it may take more time, in the long run it may save you time. If you collaborate with other people, it reduces spending time on debuging and trying to understand what the codes do. A clear program will also allow you to remember better what the program really does!
-\end{itemize}
-
-\noindent
-% !split
-\subsection{A structured programming approach}
-
-\begin{itemize}
-  \item The planning of the program should be from top down to bottom, trying to keep the flow as linear as possible. Avoid jumping back and forth in the program. First you need to arrange the major tasks to be achieved. Then try to break the major tasks into subtasks. These can be represented by functions or subprograms. They should accomplish limited tasks and as far as possible be independent of each other. That will allow you to use them in other programs as well.
-
-  \item Try always to find some cases where an analytical solution exists or where simple test cases can be applied. If possible, devise different algorithms for solving the same problem. If you get the same answers, you may have coded things correctly or made the same error twice or more.
-\end{itemize}
-
-\noindent
 
 % ------------------- end of main content ---------------
 

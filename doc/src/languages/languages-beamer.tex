@@ -141,11 +141,11 @@ Department of Physics and Astronomy and National Superconducting Cyclotron Labor
 \begin{frame}[plain,fragile]
 \frametitle{Extremely useful tools, strongly recommended}
 
-\begin{block}{and discussed at the lab sessions the first two weeks }
+\begin{block}{and discussed at the lab sessions the first two weeks (see guides at the \href{{http://www.uio.no/studier/emner/matnat/fys/FYS3150/h15/index.html}}{website of the course}) }
 \begin{itemize}
-  \item GIT for version control (see webpage), discussed at the lab this week (and next week as well)
+  \item GIT for version control, discussed at the lab this week (and next week as well)
 
-  \item ipython notebook 
+  \item ipython notebook, mentioned this week 
 
   \item QTcreator for editing and mastering computational projects (for C++ codes, see webpage of course)
 
@@ -270,7 +270,7 @@ int main (int argc, char* argv[])
 \end{frame}
 
 \begin{frame}[plain,fragile]
-\frametitle{Hello World}
+\frametitle{Hello World, dissecting the code}
 
 \begin{block}{Dissection I }
 The compiler must see a declaration of a function before you can
@@ -297,7 +297,7 @@ The command-line arguments are transferred to the main function through
 \end{frame}
 
 \begin{frame}[plain,fragile]
-\frametitle{Hello World}
+\frametitle{Hello World, more dissection}
 
 \begin{block}{Dissection II }
 The command-line arguments are transferred to the main function through
@@ -452,6 +452,7 @@ gives \emph{me} a feeling of greater readability.
 \frametitle{From decimal to binary representation}
 
 \begin{block}{How to do it }
+
 \[
   a_n2^n+a_{n-1}2^{n-1}  +a_{n-2}2^{n-2}  +\dots +a_{0}2^{0}.
 \]
@@ -459,13 +460,20 @@ gives \emph{me} a feeling of greater readability.
 In binary notation we have thus $(417)_{10} =(110110001)_2$
 since we have
 
-\[
+\begin{align*}
 (110100001)_2
-=1\times2^8+1\times 2^{7}+0\times 2^{6}+1\times 2^{5}+0\times 2^{4}+0\times 2^{3}+0\times 2^{2}+0\times 2^{2}+0\times 2^{1}+1\times 2^{0}.
-\]
+&=1\times2^8+1\times 2^{7}+0\times 2^{6}+1\times 2^{5}+0\times 2^{4}+0\times 2^{3}\\
+&+0\times 2^{2}+0\times 2^{2}+0\times 2^{1}+1\times 2^{0}.
+\end{align*}
+
+\end{block}
+\end{frame}
+
+\begin{frame}[plain,fragile]
+\frametitle{From decimal to binary representation, the actual operation}
+
+\begin{block}{}
 To see this, we have performed the following divisions by 2
-
-
 
 
 {\footnotesize
@@ -604,7 +612,6 @@ scientific notation as
 with $q$ a number in the range $1/2 \le q < 1$.
 This means that the mantissa of a binary number would be represented by
 the general formula
-
 \begin{equation}
 (0.a_{-1}a_{-2}\dots a_{-n})_2=a_{-1}\times 2^{-1}
 +a_{-2}\times 2^{-2}+\dots+a_{-n}\times 2^{-n}.
@@ -649,8 +656,14 @@ for the mantissa reads
 (1.a_{-1}a_{-2}\dots a_{-23})_2=1\times 2^0+a_{-1}\times 2^{-1}+
 +a_{-2}\times 2^{-2}+\dots+a_{-23}\times 2^{-23}.
 \end{equation}
-As an example, consider the 32 bits binary number
+\end{block}
+\end{frame}
 
+\begin{frame}[plain,fragile]
+\frametitle{Loss of Precision, example}
+
+As an example, consider the 32 bits binary number
+\begin{block}{}
 \[
 (10111110111101000000000000000000)_2,
 \]
@@ -679,7 +692,13 @@ Inserting the sign and the mantissa yields the final number in the decimal repre
 \]
 In this case we have an exact machine representation with 32 bits (actually, we need less than
 23 bits for the mantissa).
+\end{block}
+\end{frame}
 
+\begin{frame}[plain,fragile]
+\frametitle{Loss of Precision, consequences}
+
+\begin{block}{}
 If our number $x$ can be exactly represented in the machine, we call
 $x$ a machine number. Unfortunately, most numbers cannot  and are thereby
 only approximated in the machine. When such a number occurs as the result
@@ -735,13 +754,17 @@ In case of a subtraction $a=b-c$, we have
    fl(a)=fl(b)-fl(c) = a(1+\epsilon_a),
 \end{equation}
 or
-
 \begin{equation}
    fl(a)=b(1+\epsilon_b)-c(1+\epsilon_c),
 \end{equation}
+\end{block}
+\end{frame}
 
-meaning that
+\begin{frame}[plain,fragile]
+\frametitle{Loss of Precision}
 
+\begin{block}{}
+The above means that
 \begin{equation}
    fl(a)/a=1+\epsilon_b\frac{b}{a}- \epsilon_c\frac{c}{a},
 \end{equation}
@@ -757,15 +780,20 @@ error in $fl(a)$.
 \begin{block}{Machine Numbers }
 Define
 the absolute error as
-
 \begin{equation}
    |fl(a)-a|,
 \end{equation}
 whereas the relative error is
-
 \begin{equation}
    \frac{ |fl(a)-a|}{a} \le \epsilon_a.
 \end{equation}
+\end{block}
+\end{frame}
+
+\begin{frame}[plain,fragile]
+\frametitle{Loss of Precision}
+
+\begin{block}{}
 The above subraction is thus
 
 \begin{equation}
@@ -1246,6 +1274,9 @@ the loss of precision.
 \end{block}
 \end{frame}
 
+\begin{frame}[plain,fragile]
+\frametitle{Error Analysis}
+
 \begin{block}{}
 The results for $x=10$ are shown in the Table
 
@@ -1271,15 +1302,6 @@ $10^{-10}$ & 2.0000000000000000 & $0.0000000000000000\times 10^{0}$   \\
 
 \noindent
 \end{block}
-
-
-\section{Week 35}
-
-\begin{frame}[plain,fragile]
-\frametitle{Week 35}
-
-
-
 \end{frame}
 
 \begin{frame}[plain,fragile]
@@ -1287,13 +1309,13 @@ $10^{-10}$ & 2.0000000000000000 & $0.0000000000000000\times 10^{0}$   \\
 
 \begin{block}{}
 \begin{itemize}
-  \item Monday: Repetition from last week
+  \item Thursday: Repetition from last week
 
   \item Numerical differentiation
 
   \item C/C++ programming details, pointers, read/write to/from file
 
-  \item Tuesday: Intro to linear Algebra and presentation of project 1.
+  \item Friday: Intro to linear Algebra and presentation of project 1.
 
   \item Matrices in C++ and Fortran2008
 
@@ -1578,96 +1600,10 @@ if (!(ifile >> a >> b >> c)) ok = 0;
 \end{frame}
 
 \begin{frame}[plain,fragile]
-\frametitle{Call by value and reference}
+\frametitle{Call by value or reference}
 
-\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
-int main(int argc, char argv[]) {
-int  a:
-int *b;
-a = 10;
-b = new int[10];
-for (i = 0; i < 10; i++) {
-  b[i] = i;
-}
-func(a, b);
-delete [] b;
-return 0;
-}
-\end{minted}
-\end{frame}
-
-\begin{frame}[plain,fragile]
-\frametitle{Call by value and reference}
-
-Morten: Too complicated {\LaTeX} code for computer code to be
-decoded....
-\end{frame}
-
-\begin{frame}[plain,fragile]
-\frametitle{Call by value and reference}
-
-\begin{itemize}
-  \item Lines 1,2: Declaration of two variables \Verb!a! and \Verb!b!. The compiler reserves two locations in memory. The size of the location depends on the type of variable. Two properties are important for these locations: the address in memory and the content in the location. The value of \Verb!a! is \Verb!a!. The address of \Verb!a! is \Verb!&a!. The value of \Verb!b! is \Verb!*b!. The address of \Verb!b! is \Verb!&b!.
-
-  \item Line 3: The value of \Verb!a! is now 10.
-
-  \item Line 4: Memory to store 10 integers is reserved. The address to the first location is stored in b. Address to element number 6 is given by the expression (b + 6).
-
-  \item Line 5: All 10 elements of \Verb!b! are given values: \Verb!b[0] = 0!, \Verb!b[1] = 1!, ....., \Verb!b[9] = 9!
-
-  \item line 7: here we deallocate the variable \Verb!b!.
-\end{itemize}
-
-\noindent
-\end{frame}
-
-\begin{frame}[plain,fragile]
-\frametitle{Call by value and reference}
-
-\begin{itemize}
-  \item Line 6: The \Verb!main()! function calls the function \Verb!func()! and the program counter transfers to the first statement in \Verb!func()!. With respect to data the following happens. The content of \Verb!a! (= 10) and the content of \Verb!b! (a memory address) are copied to a stack (new memory location) associated with the function \Verb!func()!
-
-  \item Line 7: The variable \Verb!x! and \Verb!y! are local variables in \Verb!func()!. They have the values  \Verb!x = 10!, \Verb!y! is the address of the first element in \Verb!b! in \Verb!main()!.
-
-  \item Line 8: The local variable \Verb!x! stored in the stack memory is changed to 17. Nothing happens with the value \Verb!a! in \Verb!main()!.
-\end{itemize}
-
-\noindent
-\end{frame}
-
-\begin{frame}[plain,fragile]
-\frametitle{Call by value and reference}
-
-\begin{itemize}
-  \item Line 9: The value of y is an address and the symbol \Verb!*y! means the position in memory which has this address. The value in this location is now increased by 10. This means that the value of \Verb!b[0]! in the main program is equal to 10. Thus func() has modified a value in \Verb!main()!.
-
-  \item Line 10: This statement has the same effect as line 9 except that it modifies the element \Verb!b[6]! in \Verb!main()! by adding a value of 10 to what was there originally, namely 5.
-
-  \item Line 11: The program counter returns to \Verb!main()!, the next expression after \Verb!func(a,b)!. All data on the stack associated with \Verb!func()! are destroyed.
-\end{itemize}
-
-\noindent
-\end{frame}
-
-\begin{frame}[plain,fragile]
-\frametitle{Call by value and reference}
-
-\begin{itemize}
-  \item The value of a is transferred to \Verb!func()! and stored in a new memory location called \Verb!x!. Any modification of \Verb!x! in \Verb!func()! does not affect in any way the value of \Verb!a! in \Verb!main()!. This is called \emph{transfer of data by value}.
-
-  \item On the other hand the next argument in \Verb!func()! is an address which is transferred to \Verb!func()!. This address can be used to modify the corresponding value in \Verb!main()!. In the C language it is expressed as a modification of the value which \Verb!y! points to, namely the first element of \Verb!b!. This is called \emph{transfer of data by reference} and is a method to transfer data back to the calling function, in this case \Verb!main()!.
-\end{itemize}
-
-\noindent
-\end{frame}
-
-\begin{frame}[plain,fragile]
-\frametitle{Call by value and reference}
-
-C++ allows however the programmer to use solely call by reference
-(note that call by reference is implemented as pointers).
-To see the difference between C and C++, consider the following simple
-examples. In C we would write
+C++ allows the programmer to use solely call by reference (note that call by reference is implemented as pointers). To see the difference between C and C++, consider the following simple examples.
+In C we would write
 
 \begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
    int n; n =8;
@@ -1679,9 +1615,7 @@ examples. In C we would write
      ....
    }
 \end{minted}
-
 whereas in C++ we would write
-
 \begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{c++}
    int n; n =8;
    func(n); // just transfer n itself
@@ -1692,6 +1626,11 @@ whereas in C++ we would write
      ....
    }
 \end{minted}
+\end{frame}
+
+\begin{frame}[plain,fragile]
+\frametitle{Call by value or reference}
+
 The reason why we emphasize the difference between call by value and call
 by reference is that it allows the programmer to avoid pitfalls
 like unwanted changes of variables. However, many people feel that this
@@ -2384,7 +2323,15 @@ fragments) are usually written such that they can be preformed at any
 time during the development to continually verify the behavior of the
 code. In this way, possible bugs will be identified early in the
 development cycle, making the debugging at later stage much
-easier. There are many benefits associated with Unit Testing, such as
+easier. 
+\end{block}
+\end{frame}
+
+\begin{frame}[plain,fragile]
+\frametitle{Unit Testing, benefits}
+
+\begin{block}{}
+There are many benefits associated with Unit Testing, such as
 \begin{itemize}
   \item It increases confidence in changing and maintaining code. Big changes can be made to the code quickly, since the tests will ensure that everything still is working properly.
 
