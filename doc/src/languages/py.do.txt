@@ -106,7 +106,7 @@ int main (int argc, char* argv[])
 !eblock
 
 !split
-===== Hello World =====
+===== Hello World, dissecting the code =====
 
 !bblock Dissection I
 The compiler must see a declaration of a function before you can
@@ -132,7 +132,7 @@ The command-line arguments are transferred to the main function through
 !eblock
 
 !split
-===== Hello World =====
+===== Hello World, more dissection =====
 
 !bblock Dissection II
 The command-line arguments are transferred to the main function through
@@ -253,8 +253,8 @@ gives *me* a feeling of greater readability.
 
 !split
 ===== From decimal to binary representation =====
-
 !bblock How to do it
+
 !bt
 \[
   a_n2^n+a_{n-1}2^{n-1}  +a_{n-2}2^{n-2}  +\dots +a_{0}2^{0}.
@@ -265,14 +265,19 @@ In binary notation we have thus $(417)_{10} =(110110001)_2$
 since we have
 
 !bt
-\[
+\begin{align*}
 (110100001)_2
-=1\times2^8+1\times 2^{7}+0\times 2^{6}+1\times 2^{5}+0\times 2^{4}+0\times 2^{3}+0\times 2^{2}+0\times 2^{2}+0\times 2^{1}+1\times 2^{0}.
-\]
+&=1\times2^8+1\times 2^{7}+0\times 2^{6}+1\times 2^{5}+0\times 2^{4}+0\times 2^{3}\\
+&+0\times 2^{2}+0\times 2^{2}+0\times 2^{1}+1\times 2^{0}.
+\end{align*}
 !et
+
+!eblock
+
+!split
+===== From decimal to binary representation, the actual operation =====
+!bblock
 To see this, we have performed the following divisions by 2
-
-
 
 |-----------------------------------------------------------|
 |            |             |                                |
@@ -407,7 +412,6 @@ scientific notation as
 with $q$ a number in the range $1/2 \le q < 1$.
 This means that the mantissa of a binary number would be represented by
 the general formula
-
 !bt
 \begin{equation}
 (0.a_{-1}a_{-2}\dots a_{-n})_2=a_{-1}\times 2^{-1}
@@ -456,8 +460,12 @@ for the mantissa reads
 +a_{-2}\times 2^{-2}+\dots+a_{-23}\times 2^{-23}.
 \end{equation}
 !et
-As an example, consider the 32 bits binary number
+!eblock
 
+!split
+===== Loss of Precision, example =====
+As an example, consider the 32 bits binary number
+!bblock
 !bt
 \[
 (10111110111101000000000000000000)_2,
@@ -491,7 +499,11 @@ Inserting the sign and the mantissa yields the final number in the decimal repre
 !et
 In this case we have an exact machine representation with 32 bits (actually, we need less than
 23 bits for the mantissa).
+!eblock
 
+!split
+===== Loss of Precision, consequences =====
+!bblock
 If our number $x$ can be exactly represented in the machine, we call
 $x$ a machine number. Unfortunately, most numbers cannot  and are thereby
 only approximated in the machine. When such a number occurs as the result
@@ -553,15 +565,16 @@ In case of a subtraction $a=b-c$, we have
 \end{equation}
 !et
 or
-
 !bt
 \begin{equation}
    fl(a)=b(1+\epsilon_b)-c(1+\epsilon_c),
 \end{equation}
 !et
-
-meaning that
-
+!eblock
+!split
+===== Loss of Precision =====
+!bblock
+The above means that
 !bt
 \begin{equation}
    fl(a)/a=1+\epsilon_b\frac{b}{a}- \epsilon_c\frac{c}{a},
@@ -578,19 +591,21 @@ error in $fl(a)$.
 !bblock Machine Numbers
 Define
 the absolute error as
-
 !bt
 \begin{equation}
    |fl(a)-a|,
 \end{equation}
 !et
 whereas the relative error is
-
 !bt
 \begin{equation}
    \frac{ |fl(a)-a|}{a} \le \epsilon_a.
 \end{equation}
 !et
+!eblock
+!split
+===== Loss of Precision =====
+!bblock
 The above subraction is thus
 
 !bt
@@ -776,14 +791,7 @@ using namespace std
 #define   TRUNCATION    1.0E-10
 // function declaration
 TYPE factorial(int);
-!ec
-!eblock
 
-!split
-===== Program to compute $\exp{(-x)}$ =====
-
-!bblock Still Brute Force
-!bc cppcod
 int main()
 {
    int   n;
@@ -798,14 +806,6 @@ int main()
          sum += term;
          n++;
      }  // end of while() loop
-!ec
-!eblock
-
-!split
-===== Program to compute $\exp{(-x)}$ =====
-
-!bblock Oh, it never ends!
-!bc cppcod
       printf("\nx = %4.1f   exp = %12.5E  series = %12.5E
               number of terms = %d",
               x, exp(-x), sum, n);
@@ -873,14 +873,6 @@ int main()
      sum  = 1.0;
      term = 1;
      n    = 1;
-!ec
-!eblock
-
-!split
-===== Program to compute $\exp{(-x)}$ =====
-
-!bblock Last statements
-!bc cppcod
      while(fabs(term) > TRUNCATION)
        {
 	 term *= -x/((double) n);
@@ -895,8 +887,6 @@ int main()
 
 }  /*    End: function main() */
 !ec
-!eblock
-
 
 !split
 ===== Results $\exp{(-x)}$ =====
@@ -1105,17 +1095,14 @@ The results for $x=10$ are shown in the Table
 
 !eblock
 
-
-======= Week 35 =======
-
 !split
 ===== Overview of week 35 =====
 
 !bblock
-  * Monday: Repetition from last week
+  * Thursday: Repetition from last week
   * Numerical differentiation
   * C/C++ programming details, pointers, read/write to/from file
-  * Tuesday: Intro to linear Algebra and presentation of project 1.
+  * Friday: Intro to linear Algebra and presentation of project 1.
   * Matrices in C++ and Fortran2008
   * Gaussian elimination and discussion of project 1.
   * Computer-Lab: start project 1. Reading asssignments and preparation for project 1: sections 2.5 and 3.1 for general C++ and Fortran features. Sections 6.1-6.4 (till page 182) are relevant for project 1.
@@ -1269,12 +1256,6 @@ int main(int argc, char *argv[])
   if( in_file == NULL )  { // NULL means that the file is missing
     printf("Can't find the input file %s\n", argv[1]);
     exit(0);
-!ec
-
-!split
-===== File handling; C way cont. =====
-
-!bc cppcod
  out_file = fopen( argv[2], "w"); // returns a pointer to the output file
  if( out_file == NULL )  {       // can't find the file
     printf("Can't find the output file%s\n", argv[2]);
@@ -1294,12 +1275,7 @@ int main(int argc, char *argv[])
 // input and output file as global variable
 ofstream ofile;
 ifstream ifile;
-!ec
 
-!split
-===== File handling, C++-way =====
-
-!bc cppcod
 int main(int argc, char* argv[])
 {
   char *outfilename;
@@ -1381,65 +1357,9 @@ if (!(ifile >> a >> b >> c)) ok = 0;
 !ec
 
 !split
-===== Call by value and reference =====
-
-!bc cppcod
-int main(int argc, char argv[]) {
-int  a:
-int *b;
-a = 10;
-b = new int[10];
-for (i = 0; i < 10; i++) {
-  b[i] = i;
-}
-func(a, b);
-delete [] b;
-return 0;
-}
-!ec
-
-!split
-===== Call by value and reference =====
-
-Morten: Too complicated LaTeX code for computer code to be
-decoded....
-
-!split
-===== Call by value and reference =====
-
-  * Lines 1,2: Declaration of two variables `a` and `b`. The compiler reserves two locations in memory. The size of the location depends on the type of variable. Two properties are important for these locations: the address in memory and the content in the location. The value of `a` is `a`. The address of `a` is `&a`. The value of `b` is `*b`. The address of `b` is `&b`.
-  * Line 3: The value of `a` is now 10.
-  * Line 4: Memory to store 10 integers is reserved. The address to the first location is stored in b. Address to element number 6 is given by the expression (b + 6).
-  * Line 5: All 10 elements of `b` are given values: `b[0] = 0`, `b[1] = 1`, ....., `b[9] = 9`
-  * line 7: here we deallocate the variable `b`.
-
-!split
-===== Call by value and reference =====
-
-  * Line 6: The `main()` function calls the function `func()` and the program counter transfers to the first statement in `func()`. With respect to data the following happens. The content of `a` (= 10) and the content of `b` (a memory address) are copied to a stack (new memory location) associated with the function `func()`
-  * Line 7: The variable `x` and `y` are local variables in `func()`. They have the values  `x = 10`, `y` is the address of the first element in `b` in `main()`.
-  * Line 8: The local variable `x` stored in the stack memory is changed to 17. Nothing happens with the value `a` in `main()`.
-
-!split
-===== Call by value and reference =====
-
-  * Line 9: The value of y is an address and the symbol `*y` means the position in memory which has this address. The value in this location is now increased by 10. This means that the value of `b[0]` in the main program is equal to 10. Thus func() has modified a value in `main()`.
-  * Line 10: This statement has the same effect as line 9 except that it modifies the element `b[6]` in `main()` by adding a value of 10 to what was there originally, namely 5.
-  * Line 11: The program counter returns to `main()`, the next expression after `func(a,b)`. All data on the stack associated with `func()` are destroyed.
-
-!split
-===== Call by value and reference =====
-
-  * The value of a is transferred to `func()` and stored in a new memory location called `x`. Any modification of `x` in `func()` does not affect in any way the value of `a` in `main()`. This is called *transfer of data by value*.
-  * On the other hand the next argument in `func()` is an address which is transferred to `func()`. This address can be used to modify the corresponding value in `main()`. In the C language it is expressed as a modification of the value which `y` points to, namely the first element of `b`. This is called *transfer of data by reference* and is a method to transfer data back to the calling function, in this case `main()`.
-
-!split
-===== Call by value and reference =====
-
-C++ allows however the programmer to use solely call by reference
-(note that call by reference is implemented as pointers).
-To see the difference between C and C++, consider the following simple
-examples. In C we would write
+===== Call by value or reference =====
+C++ allows the programmer to use solely call by reference (note that call by reference is implemented as pointers). To see the difference between C and C++, consider the following simple examples.
+In C we would write
 
 !bc cppcod
    int n; n =8;
@@ -1451,9 +1371,7 @@ examples. In C we would write
      ....
    }
 !ec
-
 whereas in C++ we would write
-
 !bc cppcod
    int n; n =8;
    func(n); // just transfer n itself
@@ -1464,6 +1382,10 @@ whereas in C++ we would write
      ....
    }
 !ec
+
+
+!split
+===== Call by value or reference =====
 The reason why we emphasize the difference between call by value and call
 by reference is that it allows the programmer to avoid pitfalls
 like unwanted changes of variables. However, many people feel that this
@@ -2109,7 +2031,12 @@ fragments) are usually written such that they can be preformed at any
 time during the development to continually verify the behavior of the
 code. In this way, possible bugs will be identified early in the
 development cycle, making the debugging at later stage much
-easier. There are many benefits associated with Unit Testing, such as
+easier. 
+!eblock
+!split
+===== Unit Testing, benefits =====
+!bblock
+There are many benefits associated with Unit Testing, such as
   * It increases confidence in changing and maintaining code. Big changes can be made to the code quickly, since the tests will ensure that everything still is working properly.
   * Since the code needs to be modular to make Unit Testing possible, the code will be easier to reuse. This improves the code design.
   * Debugging is easier, since when a test fails, only the latest changes need to be debugged.
