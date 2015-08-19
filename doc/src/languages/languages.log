@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.10.30)  19 AUG 2015 07:29
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.10.30)  19 AUG 2015 08:06
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1382,8 +1382,7 @@ Type  H <return>  for immediate help.
                                                   
 l.10 \end{print}
                 
-? s
-OK, entering \scrollmode...
+? 
 
 ! LaTeX Error: Environment print undefined.
 
@@ -1393,10 +1392,7 @@ Type  H <return>  for immediate help.
                                                   
 l.21 \begin{print}
                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+? 
 
 ! LaTeX Error: \begin{minipage} on input line 3 ended by \end{print}.
 
@@ -1406,10 +1402,7 @@ Type  H <return>  for immediate help.
                                                   
 l.23 \end{print}
                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+? 
 ) [5
 
 ]
@@ -1425,58 +1418,31 @@ Type  H <return>  for immediate help.
                                                   
 l.7 \begin{print}
                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+? 
 ! You can't use `macro parameter character #' in internal vertical mode.
 l.8 #
       Comment lines
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
+? 
 ! You can't use `macro parameter character #' in horizontal mode.
 l.9 #
       General makefile for c - choose PROG =   name of given program
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
+? 
 ! You can't use `macro parameter character #' in horizontal mode.
 l.10 #
        Here we define compiler option, libraries and the  target
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
+? 
 ! You can't use `macro parameter character #' in horizontal mode.
 l.13 #
        this is the math library in C, not necessary for C++
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
+? 
 ! You can't use `macro parameter character #' in horizontal mode.
 l.15 #
        Here we make the executable file
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
+? 
 ! You can't use `macro parameter character #' in horizontal mode.
 l.18 #
        whereas here we create the object file
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
+? 
 
 ! LaTeX Error: \begin{beamer@framepauses} on input line 276 ended by \end{print
 }.
@@ -1487,10 +1453,7 @@ Type  H <return>  for immediate help.
                                                   
 l.21 \end{print}
                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+? 
 ) [6
 
 ]
@@ -1506,18 +1469,12 @@ Type  H <return>  for immediate help.
                                                   
 l.6 \begin{print}
                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+? 
 ! You can't use `macro parameter character #' in horizontal mode.
 l.8 #
      include <stdlib.h> /* atof function */
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
+? s
+OK, entering \scrollmode...
 ! You can't use `macro parameter character #' in horizontal mode.
 l.9 #
      include <math.h>   /* sine function */
