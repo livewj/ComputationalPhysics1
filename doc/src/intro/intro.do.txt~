@@ -1,30 +1,30 @@
 TITLE: Slides from FYS3150/4150 Lectures, introduction to the course
-AUTHOR: Morten Hjorth-Jensen at Department of Physics, University of Oslo & National Superconducting Cyclotron Laboratory, Michigan State University
-DATE: Fall 2014
+AUTHOR: Morten Hjorth-Jensen at Department of Physics, University of Oslo & Department of Physics and Astronomy and National Superconducting Cyclotron Laboratory, Michigan State University
+DATE: Fall 2015
 
 
 !split
 ===== Overview of week 34 =====
 
 !bblock
-  * Monday: First lecture: Presentation of the course, aims and content
-  * Monday: Second Lecture: Introduction to C++ programming and numerical precision.
-  * Tuesday: Numerical precision and C++ programming, continued and exercises for first week
+  * Thursday: First lecture: Presentation of the course, aims and content
+  * Thursday: Second Lecture: Introduction to C++ programming and numerical precision.
+  * Friday: Numerical precision and C++ programming, continued and exercises for first week
   * Numerical differentiation and loss of numerical precision (chapter 3 lecture notes)
-  * Computer lab: Thursday and Friday. First time: Thursday and Friday this week, Presentation of hardware and software at room FV329 first hour of every labgroup and solution of first simple exercises.
+  * Computer lab: Thursday and Friday. First time: Thursday and Friday this week, Presentation of hardware and software at room FV329 first hour of every labgroup and solution of first simple exercises. The first two weeks we focus on simple programming exercises and to set up github and QTcreator.
 !eblock
 
 !split
 ===== Lectures and ComputerLab =====
 
 !bblock
-  * Lectures: Monday (4.15pm-6pm) and Tuesday (12.15pm-2pm) only this and next week. Thereafter weeks 38 and 39, and weeks 43 and 44 and finally weeks 47 and 48.
+  * Lectures: Thursday (8.15am-10am) and Friday (8.15am-10am).
   * Weekly reading assignments needed to solve projects.
-  * First hour of each lab session used to discuss technicalities, address questions etc linked with projects.
+  * First hour of each lab session may be used to discuss technicalities, address questions etc linked with projects.
   * Detailed lecture notes, exercises, all programs presented, projects etc can be found at the homepage of the course.
-  * Computerlab: Thursday (9am-7pm) and Friday (9am-7pm) room FV329.
+  * Computerlab: Thursday (10am-6pm) and Friday (10am-6pm) room FV329.
   * Weekly plans and all other information are on the official webpage.
-  * Final written exam December 12, 9am (four hours).
+  * Final written exam December 14, 2.30pm (four hours).
 !eblock
 
 !split
@@ -32,7 +32,7 @@ DATE: Fall 2014
 
 !bblock
   * Several computer exercises, 5 compulsory projects. Electronic reports only.
-  * Evaluation and grading: The last project (50% of final grade) and a  final written exam (50% of final grade). Final written exam December 12.
+  * Evaluation and grading: The last project (50% of final grade) and a  final written exam (50% of final grade). Final written exam December 14.
   * The computer lab (room FV329)consists of 16 Linux PCs, but many prefer own laptops. C/C++ is the default programming language, but Fortran2008 and Python are also used. All source codes discussed during the lectures can be found at the webpage of the course. We recommend either C/C++, Fortran2008 or Python as languages.
 !eblock
 
@@ -44,10 +44,10 @@ DATE: Fall 2014
 |------------------------------------------------------|
 |      day         |            teacher                |
 |---------l-----------------------l--------------------|
-| Thursday 9am-1pm | Anders, Morten L., Håvard, MHJ |
-| Thursday 1pm-5pm | Anders, Morten L., Håvard, MHJ |
-| Friday 9am-1pm   | Anders, Morten L., Håvard, MHJ |
-| Friday 1pm-5pm   | Anders, Morten L., Håvard, MHJ |
+| Thursday 10am-2pm | Anders, Morten L., Håvard, MHJ |
+| Thursday 2pm-6pm | Anders, Morten L., Håvard, MHJ |
+| Friday 10am-2pm   | Anders, Morten L., Håvard, MHJ |
+| Friday 2pm-6pm   | Anders, Morten L., Håvard, MHJ |
 |------------------------------------------------------|
 
 !eblock
@@ -151,7 +151,7 @@ DATE: Fall 2014
 !split
 ===== And, there is nothing like a code which gives correct results!! =====
 
-FIGURE: [fig-slides/Nebbdyr2.pdf, width=500 frac=0.6]
+FIGURE: [fig-intro/Nebbdyr2.pdf, width=500 frac=0.6]
 
  * J. J. Barton and L. R. Nackman,*Scientific and Engineering C++*, Addison Wesley, 3rd edition 2000.
  * B. Stoustrup, *The C++ programming language*, Pearson, 1997.
