@@ -2170,7 +2170,7 @@ software for unit testing.
 !eblock
 
 
-
+!split
 ===== The report: how to write a good scienfitic/technical report =====
 !bblock What should it contain? A typical structure
  * An introduction where you explain the aims and rationale for the physics case and  what you have done. At the end of the introduction you should give a brief summary of the structure of the report
@@ -2182,7 +2182,7 @@ software for unit testing.
 Keep always a good log of what you do.
 !eblock
 
-
+!split
 ===== The report =====
 !bblock What should I focus on? Introduction
 You don't need to answer all questions in a chronological order.  When you write the introduction you could focus on the following aspects
